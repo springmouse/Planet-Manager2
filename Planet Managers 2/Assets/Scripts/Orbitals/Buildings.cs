@@ -55,16 +55,15 @@ public enum eBuildingTypes
 public class BuildingsManager
 {
     public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
-
+    private List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
     public BuildingsManager()
     {
-        CreatNewDictonarEntery(eBuildingTypes.BASICMINE);
-        CreatNewDictonarEntery(eBuildingTypes.DECENTMINE);
-        CreatNewDictonarEntery(eBuildingTypes.ADVANCEDMINE);
+        SetListOfBuildingTypesUp();
 
-        CreatNewDictonarEntery(eBuildingTypes.BASICPOWER);
-
-        CreatNewDictonarEntery(eBuildingTypes.BASICFARM);
+        foreach (eBuildingTypes type in m_buildingTypes)
+        {
+            CreatNewDictonarEntery(type);
+        }
     }
 
     private void CreatNewDictonarEntery(eBuildingTypes type)
@@ -74,13 +73,10 @@ public class BuildingsManager
 
     public void Update(float deltaTime, Orbital planet)
     {
-        UpdateBuildings(eBuildingTypes.BASICMINE, deltaTime);
-        UpdateBuildings(eBuildingTypes.DECENTMINE, deltaTime);
-        UpdateBuildings(eBuildingTypes.ADVANCEDMINE, deltaTime);
-
-        UpdateBuildings(eBuildingTypes.BASICPOWER, deltaTime);
-
-        UpdateBuildings(eBuildingTypes.BASICFARM, deltaTime);
+        foreach (eBuildingTypes type in m_buildingTypes)
+        {
+            UpdateBuildings(type, deltaTime);
+        }
     }
 
     private void UpdateBuildings(eBuildingTypes type, float deltaTime)
@@ -89,6 +85,75 @@ public class BuildingsManager
         {
             b.Update(deltaTime);
         }
+    }
+
+    private void SetListOfBuildingTypesUp()
+    {
+        m_buildingTypes.Add(eBuildingTypes.BASICMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICPOWER);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTPOWER);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDPOWER);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICFARM);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTFARM);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDFARM);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICREASERCH);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTREASERCH);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDREASERCH);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICHOSPITAL);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTHOSPITAL);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDHOSPITAL);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICPARK);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTPARK);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDPARK);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICTERRAFORMINGSTATION);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTTERRAFORMINGSTATION);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDTERRAFORMINGSTATION);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICHEALTHSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTHEALTHSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDHEALTHSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICHAPPYSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTHAPPYSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDHAPPYSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICTERRAFORMINGSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTTERRAFORMINGSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDTERRAFORMINGSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.BASICNULLSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.DECENTNULLSTONEMINE);
+
+        m_buildingTypes.Add(eBuildingTypes.ADVANCEDNULLSTONEMINE);
     }
 
     public void SetBuilding(eBuildingTypes type, Orbital planet)
