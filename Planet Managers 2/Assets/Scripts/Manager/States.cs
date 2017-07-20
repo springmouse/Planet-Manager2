@@ -91,9 +91,11 @@ public class InGameState : States
 
         m_activePlanet.Update(deltaTime);
 
-        GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.m_mineralIncome;
-        GameManager.GM.m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.m_energyIncome;
-        GameManager.GM.m_incomeFoodText.text = "Food Income = " + m_activePlanet.m_foodIncome;
+        GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
+        GameManager.GM.m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
+        GameManager.GM.m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
+
+        GameManager.GM.m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
 
         GameManager.GM.m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
         GameManager.GM.m_planetHealthText.text = "Health = " + m_activePlanet.m_health;
@@ -110,6 +112,8 @@ public class InGameState : States
         GameManager.GM.m_baseMineralsText.text = "Base Minerals = " + m_activePlanet.m_baseMinerals;
         GameManager.GM.m_baseEnergyText.text = "Base Energy = " + m_activePlanet.m_baseEnergy;
         GameManager.GM.m_baseFoodText.text = "Base Food = " + m_activePlanet.m_baseFood;
+
+        GameManager.GM.m_relicText.text = "Relics = " + m_activePlanet.m_relics;
 
         List<SpecialResources> used = new List<SpecialResources>();
 

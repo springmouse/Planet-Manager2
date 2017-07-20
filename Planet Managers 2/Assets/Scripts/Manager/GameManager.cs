@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Text m_mineralText;
     public Text m_energyText;
     public Text m_FoodText;
+    public Text m_reaserchText;
 
     public Text m_NullStoneText;
     public Text m_HappyStoneText;
@@ -32,9 +33,15 @@ public class GameManager : MonoBehaviour
     public Text m_incomeEnergyText;
     public Text m_incomeFoodText;
 
+    public Text m_relicText;
+    public Text m_reaserIncomeText;
+
     public Text m_planetSpaceText;
     public Text m_planetHealthText;
     public Text m_planetHappynessText;
+
+    public Text m_incomeTimer;
+    public Text m_reaserchTimer;
 
     public Text[] m_specialResouces;
     #endregion
@@ -73,14 +80,18 @@ public class GameManager : MonoBehaviour
 
             STM.Update(Time.deltaTime);
 
-            m_mineralText.text = "Minerals = " + Income.Instance.m_minerals;
-            m_energyText.text = "Energy = " + Income.Instance.m_energy;
-            m_FoodText.text = "Food = " + Income.Instance.m_food;
+            m_mineralText.text = "Minerals = " + (int)Income.Instance.m_minerals;
+            m_energyText.text = "Energy = " + (int)Income.Instance.m_energy;
+            m_FoodText.text = "Food = " + (int)Income.Instance.m_food;
+            m_reaserchText.text = "Reaserch = " + (int)Income.Instance.m_reaserch;
 
-            m_NullStoneText.text = "NullStone = " + Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.NULL);
-            m_HappyStoneText.text = "HappyStone = " + Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HAPPYSTONE);
-            m_HealthStoneText.text = "HealthStone = " + Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HEALTHSTONE);
-            m_TerraformingStoneText.text = "TerraformingStone = " + Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.TERRAFORMINGSTONE);
+            m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.NULL);
+            m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HAPPYSTONE);
+            m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HEALTHSTONE);
+            m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.TERRAFORMINGSTONE);
+
+            m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
+            m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
 
             m_totalRunTime += Time.deltaTime;
 
@@ -99,7 +110,14 @@ public class GameManager : MonoBehaviour
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         m_power[0].text = "Basic Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICPOWER].Count);
+        m_power[1].text = "Decent Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTPOWER].Count);
+        m_power[2].text = "Advanced Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDPOWER].Count);
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         m_farm[0].text = "Basic Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICFARM].Count);
+        m_farm[1].text = "Decent Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTFARM].Count);
+        m_farm[2].text = "Advanced Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDFARM].Count);
     }
 
     public void PushState()

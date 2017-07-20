@@ -23,6 +23,9 @@ public class Orbital
     public float m_energyIncome;
     public float m_foodIncome;
 
+    public float m_relics;
+    public float m_reaserchIncome;
+
     public float m_maxSpace;
     public float m_health;
     public float m_happiness;
@@ -35,6 +38,8 @@ public class Orbital
 
     public float m_resourceTimer;
 
+    public float m_reaserchTimer;
+
     public Orbital()
     {
         m_buildings = new BuildingsManager();
@@ -44,6 +49,7 @@ public class Orbital
     public virtual void Update(float deltaTime)
     {
         m_resourceTimer += deltaTime;
+        m_reaserchTimer += deltaTime;
 
         m_buildings.Update(deltaTime, this);
 
@@ -52,13 +58,82 @@ public class Orbital
             sp.Update(deltaTime);
         }
 
-        if (m_resourceTimer >= 15.0f)
+        if (m_reaserchTimer >= 60.0f)
         {
-            Income.Instance.AddResouceIncome(m_mineralIncome, m_energyIncome, m_foodIncome);
+            Income.Instance.AddReaserchIncome(CalculateReaserchIncome());
+            m_reaserchTimer = 0;
+        }
+
+        if (m_resourceTimer >= 30.0f)
+        {
+            Income.Instance.AddResouceIncome(CalculateMineralIncome(), CalculatePowerIncome(), CalculateFoodIncome());
             m_resourceTimer = 0;
         }
     }
+
+    public float GetResourceTimerRemaining()
+    {
+        return 30 - m_resourceTimer;
+    }
+
+    public float GetReaserchTimerRemaining()
+    {
+        return 60 - m_reaserchTimer;
+    }
+
+    public float CalculateReaserchIncome()
+    {
+        float r = m_reaserchIncome;
+        if (Income.Instance.m_energy <= 0 && m_energyIncome <= 0)
+        {
+            r = 0;
+        }
+        return r;
+    }
+
+    public float CalculateMineralIncome()
+    {
+        float m = m_mineralIncome;
+
+        if (Income.Instance.m_energy <= 0 && m_energyIncome <= 0)
+        {
+            m *= 0.5f;
+        }
+
+        if (Income.Instance.m_food <= 0 && m_foodIncome <= 0)
+        {
+            m *= 0.5f;
+        }
+
+        return m;
+    }
+
+    public float CalculatePowerIncome()
+    {
+        float e = m_energyIncome;
+
+        if (Income.Instance.m_food <= 0 && m_foodIncome <= 0)
+        {
+            e *= 0.5f;
+        }
+
+        return e;
+    }
+
+    public float CalculateFoodIncome()
+    {
+        float f = m_foodIncome;
+
+        if (Income.Instance.m_energy <= 0 && m_energyIncome <= 0)
+        {
+            f *= 0.5f;
+        }
+
+        return f;
+    }
+
 }
+
 
 public class StarterPlanet : Orbital
 {
@@ -73,6 +148,9 @@ public class StarterPlanet : Orbital
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
+
+        m_relics = Random.Range(1, 4);
+        m_reaserchIncome = 0;
 
         m_maxSpace = Random.Range(50, 101);
         m_health = 100;
@@ -100,6 +178,9 @@ public class TerrestrialEarchLike : Orbital
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
+
+        m_relics = Random.Range(0, 4);
+        m_reaserchIncome = 0;
 
         m_maxSpace = Random.Range(25, 101);
         m_health = 100;
@@ -130,6 +211,9 @@ public class TerrestrialRocky : Orbital
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
+        m_relics = Random.Range(1, 3);
+        m_reaserchIncome = 0;
+
         m_maxSpace = Random.Range(25, 101);
         m_health = 50;
         m_happiness = 75;
@@ -157,6 +241,9 @@ public class AStroidBelt : Orbital
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
+        m_relics = Random.Range(0, 2);
+        m_reaserchIncome = 0;
+
         m_maxSpace = Random.Range(1, 26);
         m_health = 25;
         m_happiness = 25;
@@ -180,6 +267,9 @@ public class GasGaint : Orbital
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
+
+        m_relics = 0;
+        m_reaserchIncome = 0;
 
         m_maxSpace = Random.Range(1, 26);
         m_health = 25;

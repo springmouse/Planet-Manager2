@@ -165,7 +165,7 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICMINE:
-                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) < planet.m_maxSpace)
+                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
                 {
                     planet.m_usedSpace += 1;
                     m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
@@ -192,7 +192,7 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICPOWER:
-                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) < planet.m_maxSpace)
+                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
                 {
                     planet.m_usedSpace += 1;
                     m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
@@ -220,7 +220,7 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICFARM:
-                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) < planet.m_maxSpace)
+                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
                 {
                     planet.m_usedSpace += 1;
                     m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));

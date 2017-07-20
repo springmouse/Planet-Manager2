@@ -9,6 +9,7 @@ public class Income
     public float m_minerals;
     public float m_energy;
     public float m_food;
+    public float m_reaserch;
 
     #region Sintleton
 
@@ -60,19 +61,9 @@ public class Income
         return m_specialResouces[type];
     }
 
-    public void AddOrDecreaseMinerals(float amount)
+    public void AddReaserchIncome(float r)
     {
-        m_minerals += amount;
-    }
-
-    public void AddOrDecreaseEnergy(float amount)
-    {
-        m_energy += amount;
-    }
-
-    public void AddOrDecreaseFood(float amount)
-    {
-        m_food += amount;
+        m_reaserch += r;
     }
 
     public void AddResouceIncome(float m, float e, float f)
