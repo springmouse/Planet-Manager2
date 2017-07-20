@@ -165,10 +165,10 @@ public class Factory
                 return new BasicPower(planet);
 
             case eBuildingTypes.DECENTPOWER:
-                return new DecentMine(planet);
+                return new DecentPower(planet);
 
             case eBuildingTypes.ADVANCEDPOWER:
-                return new AdvancedMine(planet);
+                return new AdvancedPower(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -176,10 +176,10 @@ public class Factory
                 return new BasicFarm(planet);
 
             case eBuildingTypes.DECENTFARM:
-                break;
+                return new DecentFarm(planet);
 
             case eBuildingTypes.ADVANCEDFARM:
-                break;
+                return new AdvancedFarm(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

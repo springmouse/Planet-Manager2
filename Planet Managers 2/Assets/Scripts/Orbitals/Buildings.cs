@@ -56,6 +56,7 @@ public class BuildingsManager
 {
     public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
     private List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
+
     public BuildingsManager()
     {
         SetListOfBuildingTypesUp();
@@ -199,9 +200,21 @@ public class BuildingsManager
                 break;
 
             case eBuildingTypes.DECENTPOWER:
+                if (Income.Instance.m_minerals >= 40 && m_buildings[eBuildingTypes.BASICPOWER].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICPOWER].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDPOWER:
+                if (Income.Instance.m_minerals >= 80 && m_buildings[eBuildingTypes.DECENTPOWER].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTPOWER].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -215,9 +228,21 @@ public class BuildingsManager
                 break;
 
             case eBuildingTypes.DECENTFARM:
+                if (Income.Instance.m_minerals >= 40 && m_buildings[eBuildingTypes.BASICFARM].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICFARM].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDFARM:
+                if (Income.Instance.m_minerals >= 80 && m_buildings[eBuildingTypes.DECENTFARM].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTFARM].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -317,6 +342,8 @@ public class BuildingsManager
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
 public class Buildings
 {
     protected float m_basicBuildTime = 20;
@@ -372,7 +399,24 @@ public class Buildings
     protected virtual void CleanUp() {}
 }
 
-public class BasicMine : Buildings
+//////////////////////////////////////////////////////////////////////////////
+
+public class Mine : Buildings
+{
+    public Mine() { }
+
+    protected override void IncomeType()
+    {
+        m_planet.m_mineralIncome += m_planet.m_baseMinerals * m_mulitpliyer;
+    }
+
+    protected override void CleanUp()
+    {
+        m_planet.m_mineralIncome -= m_planet.m_baseMinerals * m_mulitpliyer;
+    }
+}
+
+public class BasicMine : Mine
 {
     public BasicMine(Orbital planet)
     {
@@ -387,19 +431,9 @@ public class BasicMine : Buildings
         m_energyMaintanince = 3;
         m_foodMaintanince = 3;
     }
-
-    protected override void IncomeType()
-    {
-        m_planet.m_mineralIncome += m_planet.m_baseMinerals * m_mulitpliyer;
-    }
-
-    protected override void CleanUp()
-    {
-        m_planet.m_mineralIncome -= m_planet.m_baseMinerals * m_mulitpliyer;
-    }
 }
 
-public class DecentMine : Buildings
+public class DecentMine : Mine
 {
     public DecentMine(Orbital planet)
     {
@@ -414,20 +448,9 @@ public class DecentMine : Buildings
         m_energyMaintanince = 4;
         m_foodMaintanince = 4;
     }
-    
-    protected override void IncomeType()
-    {
-        m_planet.m_mineralIncome += m_planet.m_baseMinerals * m_mulitpliyer;
-    }
-
-    protected override void CleanUp()
-    {
-        m_planet.m_mineralIncome -= m_planet.m_baseMinerals * m_mulitpliyer;
-    }
-
 }
 
-public class AdvancedMine : Buildings
+public class AdvancedMine : Mine
 {
     public AdvancedMine(Orbital planet)
     {
@@ -442,20 +465,26 @@ public class AdvancedMine : Buildings
         m_energyMaintanince = 6;
         m_foodMaintanince = 6;
     }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class Power : Buildings
+{
+    public Power() { }
     
     protected override void IncomeType()
     {
-        m_planet.m_mineralIncome += m_planet.m_baseMinerals * m_mulitpliyer;
+        m_planet.m_energyIncome += m_planet.m_baseEnergy * m_mulitpliyer;
     }
-    
+
     protected override void CleanUp()
     {
-        m_planet.m_mineralIncome -= m_planet.m_baseMinerals * m_mulitpliyer;
+        m_planet.m_energyIncome -= m_planet.m_baseEnergy * m_mulitpliyer;
     }
-
 }
 
-public class BasicPower : Buildings
+public class BasicPower : Power
 {
     public BasicPower(Orbital planet)
     {
@@ -470,19 +499,58 @@ public class BasicPower : Buildings
         m_energyMaintanince = 0;
         m_foodMaintanince = 3;
     }
+}
 
+public class DecentPower : Power
+{
+    public DecentPower(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_decentCost;
+
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 0;
+        m_foodMaintanince = 4;
+    }
+}
+
+public class AdvancedPower : Power
+{
+    public AdvancedPower(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_advancedCost;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 0;
+        m_foodMaintanince = 6;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class Farm : Buildings
+{
     protected override void IncomeType()
     {
-        m_planet.m_energyIncome += m_planet.m_baseEnergy * m_mulitpliyer;
+        m_planet.m_foodIncome += m_planet.m_baseFood * m_mulitpliyer;
     }
 
     protected override void CleanUp()
     {
-        m_planet.m_energyIncome -= m_planet.m_baseEnergy * m_mulitpliyer;
+        m_planet.m_foodIncome -= m_planet.m_baseFood * m_mulitpliyer;
     }
 }
 
-public class BasicFarm : Buildings
+public class BasicFarm : Farm
 {
     public BasicFarm(Orbital planet)
     {
@@ -497,14 +565,41 @@ public class BasicFarm : Buildings
         m_energyMaintanince = 3;
         m_foodMaintanince = 0;
     }
+}
 
-    protected override void IncomeType()
+public class DecentFarm : Farm
+{
+    public DecentFarm(Orbital planet)
     {
-        m_planet.m_foodIncome += m_planet.m_baseFood * m_mulitpliyer;
-    }
+        Income.Instance.m_minerals -= m_decentCost;
 
-    protected override void CleanUp()
-    {
-        m_planet.m_foodIncome -= m_planet.m_baseFood * m_mulitpliyer;
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 4;
+        m_foodMaintanince = 0;
     }
 }
+
+public class AdvancedFarm : Farm
+{
+    public AdvancedFarm(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_advancedCost;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 0;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
