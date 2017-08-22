@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
+using System;
 
 public enum eBuildingTypes
 {
@@ -52,9 +54,13 @@ public enum eBuildingTypes
     END
 }
 
+[Serializable]
 public class BuildingsManager
 {
+    [XmlIgnore]
     public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
+
+    [XmlArray("List_of_Building_types"), XmlArrayItem(typeof(string), ElementName = "Building_Types")]
     private List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
 
     public BuildingsManager()

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
+using System;
 
 public enum eOrbital
 {
@@ -11,8 +13,16 @@ public enum eOrbital
     END
 }
 
+[Serializable]
+[XmlInclude(typeof(StarterPlanet))]
+[XmlInclude(typeof(TerrestrialEarchLike))]
+[XmlInclude(typeof(TerrestrialRocky))]
+[XmlInclude(typeof(AStroidBelt))]
+[XmlInclude(typeof(GasGaint))]
 public class Orbital
 {
+    public int ID;
+
     public string m_name;
 
     public float m_baseMinerals;
@@ -32,6 +42,7 @@ public class Orbital
 
     public float m_usedSpace;
 
+    [XmlArray("List_of_Special_Resouses"), XmlArrayItem(typeof(string), ElementName = "Special_Resouses")]
     public List<SpecialResources> m_spList;
 
     public BuildingsManager m_buildings;
@@ -44,6 +55,47 @@ public class Orbital
     {
         m_buildings = new BuildingsManager();
         m_resourceTimer = 0;
+        
+        CalcID();
+
+        while (CheckIfIDUsed())
+        {
+            CalcID();
+        }
+        if (GameManager.GM != null)
+        {
+            GameManager.GM.m_usedID.Add(ID);
+        }
+    }
+
+
+    private bool CheckIfIDUsed()
+    {
+        if (GameManager.GM == null)
+        {
+            return false;
+        }
+
+        if (GameManager.GM.m_usedID.Count == 0)
+        {
+            return false;
+        }
+
+        foreach (int i in GameManager.GM.m_usedID)
+        {
+            if (ID == i)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void CalcID()
+    {
+        System.Random R = new System.Random();
+        ID = ((R.Next(0, 10)) + (R.Next(10, 100)) + (R.Next(100, 1000)) + (R.Next(1000, 10000)) + (R.Next(10000, 100000)) + (R.Next(100000, 1000000)));
     }
 
     public virtual void Update(float deltaTime)
@@ -141,18 +193,18 @@ public class StarterPlanet : Orbital
     {
         m_name = "Terrastrial Earth";
 
-        m_baseMinerals = Random.Range(5, 11);
-        m_baseEnergy = Random.Range(5, 11);
-        m_baseFood = Random.Range(5, 20);
+        m_baseMinerals = UnityEngine.Random.Range(5, 11);
+        m_baseEnergy = UnityEngine.Random.Range(5, 11);
+        m_baseFood = UnityEngine.Random.Range(5, 20);
 
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
-        m_relics = Random.Range(1, 4);
+        m_relics = UnityEngine.Random.Range(1, 4);
         m_reaserchIncome = 0;
 
-        m_maxSpace = Random.Range(50, 101);
+        m_maxSpace = UnityEngine.Random.Range(50, 101);
         m_health = 100;
         m_happiness = 100;
 
@@ -171,18 +223,18 @@ public class TerrestrialEarchLike : Orbital
     {
         m_name = "Terrastrial Earth Like";
 
-        m_baseMinerals = Random.Range(1, 11);
-        m_baseEnergy = Random.Range(1, 9);
-        m_baseFood = Random.Range(5, 20);
+        m_baseMinerals = UnityEngine.Random.Range(1, 11);
+        m_baseEnergy = UnityEngine.Random.Range(1, 9);
+        m_baseFood = UnityEngine.Random.Range(5, 20);
 
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
-        m_relics = Random.Range(0, 4);
+        m_relics = UnityEngine.Random.Range(0, 4);
         m_reaserchIncome = 0;
 
-        m_maxSpace = Random.Range(25, 101);
+        m_maxSpace = UnityEngine.Random.Range(25, 101);
         m_health = 100;
         m_happiness = 100;
 
@@ -203,18 +255,18 @@ public class TerrestrialRocky : Orbital
     {
         m_name = "Terrastrial Rocky";
 
-        m_baseMinerals = Random.Range(1, 21);
-        m_baseEnergy = Random.Range(1, 9);
-        m_baseFood = Random.Range(1, 9);
+        m_baseMinerals = UnityEngine.Random.Range(1, 21);
+        m_baseEnergy = UnityEngine.Random.Range(1, 9);
+        m_baseFood = UnityEngine.Random.Range(1, 9);
 
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
-        m_relics = Random.Range(1, 3);
+        m_relics = UnityEngine.Random.Range(1, 3);
         m_reaserchIncome = 0;
 
-        m_maxSpace = Random.Range(25, 101);
+        m_maxSpace = UnityEngine.Random.Range(25, 101);
         m_health = 50;
         m_happiness = 75;
 
@@ -233,18 +285,18 @@ public class AStroidBelt : Orbital
     {
         m_name = "Astroid Belt";
 
-        m_baseMinerals = Random.Range(16, 31);
-        m_baseEnergy = Random.Range(1, 6);
-        m_baseFood = Random.Range(1, 3);
+        m_baseMinerals = UnityEngine.Random.Range(16, 31);
+        m_baseEnergy = UnityEngine.Random.Range(1, 6);
+        m_baseFood = UnityEngine.Random.Range(1, 3);
 
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
         m_foodIncome = m_baseFood;
 
-        m_relics = Random.Range(0, 2);
+        m_relics = UnityEngine.Random.Range(0, 2);
         m_reaserchIncome = 0;
 
-        m_maxSpace = Random.Range(1, 26);
+        m_maxSpace = UnityEngine.Random.Range(1, 26);
         m_health = 25;
         m_happiness = 25;
 
@@ -260,9 +312,9 @@ public class GasGaint : Orbital
     {
         m_name = "Gas Gaint";
 
-        m_baseMinerals = Random.Range(1, 9);
-        m_baseEnergy = Random.Range(10, 26);
-        m_baseFood = Random.Range(1, 6);
+        m_baseMinerals = UnityEngine.Random.Range(1, 9);
+        m_baseEnergy = UnityEngine.Random.Range(10, 26);
+        m_baseFood = UnityEngine.Random.Range(1, 6);
 
         m_mineralIncome = m_baseMinerals;
         m_energyIncome = m_baseEnergy;
@@ -271,7 +323,7 @@ public class GasGaint : Orbital
         m_relics = 0;
         m_reaserchIncome = 0;
 
-        m_maxSpace = Random.Range(1, 26);
+        m_maxSpace = UnityEngine.Random.Range(1, 26);
         m_health = 25;
         m_happiness = 25;
 

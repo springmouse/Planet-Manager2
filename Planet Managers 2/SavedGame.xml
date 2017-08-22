@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InGameState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List_of_Dictonary_of_universe>
+    <Key_and_Value>
+      <key>Sol</key>
+      <All_x0020_orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="TerrestrialEarchLike">
+          <ID>805306</ID>
+          <m_name>Terrastrial Earth Like</m_name>
+          <m_baseMinerals>1</m_baseMinerals>
+          <m_baseEnergy>1</m_baseEnergy>
+          <m_baseFood>8</m_baseFood>
+          <m_mineralIncome>1</m_mineralIncome>
+          <m_energyIncome>1</m_energyIncome>
+          <m_foodIncome>8</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>99</m_maxSpace>
+          <m_health>100</m_health>
+          <m_happiness>100</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>TerraFormingStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="TerrestrialRocky">
+          <ID>651731</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>5</m_baseMinerals>
+          <m_baseEnergy>7</m_baseEnergy>
+          <m_baseFood>4</m_baseFood>
+          <m_mineralIncome>5</m_mineralIncome>
+          <m_energyIncome>7</m_energyIncome>
+          <m_foodIncome>4</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>88</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+            <Special_Resouses>HealthStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="GasGaint">
+          <ID>846574</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>2</m_baseMinerals>
+          <m_baseEnergy>16</m_baseEnergy>
+          <m_baseFood>4</m_baseFood>
+          <m_mineralIncome>2</m_mineralIncome>
+          <m_energyIncome>16</m_energyIncome>
+          <m_foodIncome>4</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>21</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="AStroidBelt">
+          <ID>693000</ID>
+          <m_name>Astroid Belt</m_name>
+          <m_baseMinerals>28</m_baseMinerals>
+          <m_baseEnergy>2</m_baseEnergy>
+          <m_baseFood>1</m_baseFood>
+          <m_mineralIncome>28</m_mineralIncome>
+          <m_energyIncome>2</m_energyIncome>
+          <m_foodIncome>1</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>17</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>TerraFormingStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="TerrestrialRocky">
+          <ID>798834</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>7</m_baseMinerals>
+          <m_baseEnergy>4</m_baseEnergy>
+          <m_baseFood>1</m_baseFood>
+          <m_mineralIncome>7</m_mineralIncome>
+          <m_energyIncome>4</m_energyIncome>
+          <m_foodIncome>1</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>79</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+            <Special_Resouses>HappyStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="AStroidBelt">
+          <ID>734360</ID>
+          <m_name>Astroid Belt</m_name>
+          <m_baseMinerals>21</m_baseMinerals>
+          <m_baseEnergy>4</m_baseEnergy>
+          <m_baseFood>1</m_baseFood>
+          <m_mineralIncome>21</m_mineralIncome>
+          <m_energyIncome>4</m_energyIncome>
+          <m_foodIncome>1</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>16</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>TerraFormingStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+        <orbitals_x0020_in_x0020_system xsi:type="StarterPlanet">
+          <ID>580697</ID>
+          <m_name>Terrastrial Earth</m_name>
+          <m_baseMinerals>6</m_baseMinerals>
+          <m_baseEnergy>9</m_baseEnergy>
+          <m_baseFood>9</m_baseFood>
+          <m_mineralIncome>6</m_mineralIncome>
+          <m_energyIncome>9</m_energyIncome>
+          <m_foodIncome>9</m_foodIncome>
+          <m_relics>3</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>95</m_maxSpace>
+          <m_health>100</m_health>
+          <m_happiness>100</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses>HealthStone</Special_Resouses>
+            <Special_Resouses>HappyStone</Special_Resouses>
+            <Special_Resouses>NullStone</Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings />
+          <m_resourceTimer>0.70982</m_resourceTimer>
+          <m_reaserchTimer>0.70982</m_reaserchTimer>
+        </orbitals_x0020_in_x0020_system>
+      </All_x0020_orbitals_x0020_in_x0020_system>
+    </Key_and_Value>
+  </List_of_Dictonary_of_universe>
+  <System_Names_List>
+    <System_Names>Sol</System_Names>
+  </System_Names_List>
+  <Player_orbitals_List>
+    <Player_plantes xsi:type="StarterPlanet">
+      <ID>580697</ID>
+      <m_name>Terrastrial Earth</m_name>
+      <m_baseMinerals>6</m_baseMinerals>
+      <m_baseEnergy>9</m_baseEnergy>
+      <m_baseFood>9</m_baseFood>
+      <m_mineralIncome>6</m_mineralIncome>
+      <m_energyIncome>9</m_energyIncome>
+      <m_foodIncome>9</m_foodIncome>
+      <m_relics>3</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>95</m_maxSpace>
+      <m_health>100</m_health>
+      <m_happiness>100</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>HealthStone</Special_Resouses>
+        <Special_Resouses>HappyStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0.70982</m_resourceTimer>
+      <m_reaserchTimer>0.70982</m_reaserchTimer>
+    </Player_plantes>
+  </Player_orbitals_List>
+  <Active_System_of_orbitals_List>
+    <Active_plantes xsi:type="TerrestrialEarchLike">
+      <ID>805306</ID>
+      <m_name>Terrastrial Earth Like</m_name>
+      <m_baseMinerals>1</m_baseMinerals>
+      <m_baseEnergy>1</m_baseEnergy>
+      <m_baseFood>8</m_baseFood>
+      <m_mineralIncome>1</m_mineralIncome>
+      <m_energyIncome>1</m_energyIncome>
+      <m_foodIncome>8</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>99</m_maxSpace>
+      <m_health>100</m_health>
+      <m_happiness>100</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>TerraFormingStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>651731</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>5</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>4</m_baseFood>
+      <m_mineralIncome>5</m_mineralIncome>
+      <m_energyIncome>7</m_energyIncome>
+      <m_foodIncome>4</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>88</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+        <Special_Resouses>HealthStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>846574</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>2</m_baseMinerals>
+      <m_baseEnergy>16</m_baseEnergy>
+      <m_baseFood>4</m_baseFood>
+      <m_mineralIncome>2</m_mineralIncome>
+      <m_energyIncome>16</m_energyIncome>
+      <m_foodIncome>4</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>21</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="AStroidBelt">
+      <ID>693000</ID>
+      <m_name>Astroid Belt</m_name>
+      <m_baseMinerals>28</m_baseMinerals>
+      <m_baseEnergy>2</m_baseEnergy>
+      <m_baseFood>1</m_baseFood>
+      <m_mineralIncome>28</m_mineralIncome>
+      <m_energyIncome>2</m_energyIncome>
+      <m_foodIncome>1</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>17</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>TerraFormingStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>798834</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>7</m_baseMinerals>
+      <m_baseEnergy>4</m_baseEnergy>
+      <m_baseFood>1</m_baseFood>
+      <m_mineralIncome>7</m_mineralIncome>
+      <m_energyIncome>4</m_energyIncome>
+      <m_foodIncome>1</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>79</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+        <Special_Resouses>HappyStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="AStroidBelt">
+      <ID>734360</ID>
+      <m_name>Astroid Belt</m_name>
+      <m_baseMinerals>21</m_baseMinerals>
+      <m_baseEnergy>4</m_baseEnergy>
+      <m_baseFood>1</m_baseFood>
+      <m_mineralIncome>21</m_mineralIncome>
+      <m_energyIncome>4</m_energyIncome>
+      <m_foodIncome>1</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>16</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>TerraFormingStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="StarterPlanet">
+      <ID>580697</ID>
+      <m_name>Terrastrial Earth</m_name>
+      <m_baseMinerals>6</m_baseMinerals>
+      <m_baseEnergy>9</m_baseEnergy>
+      <m_baseFood>9</m_baseFood>
+      <m_mineralIncome>6</m_mineralIncome>
+      <m_energyIncome>9</m_energyIncome>
+      <m_foodIncome>9</m_foodIncome>
+      <m_relics>3</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>95</m_maxSpace>
+      <m_health>100</m_health>
+      <m_happiness>100</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses>HealthStone</Special_Resouses>
+        <Special_Resouses>HappyStone</Special_Resouses>
+        <Special_Resouses>NullStone</Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings />
+      <m_resourceTimer>0.70982</m_resourceTimer>
+      <m_reaserchTimer>0.70982</m_reaserchTimer>
+    </Active_plantes>
+  </Active_System_of_orbitals_List>
+  <Active_Planet_Name>Sol</Active_Planet_Name>
+  <Active_Planet xsi:type="StarterPlanet">
+    <ID>580697</ID>
+    <m_name>Terrastrial Earth</m_name>
+    <m_baseMinerals>6</m_baseMinerals>
+    <m_baseEnergy>9</m_baseEnergy>
+    <m_baseFood>9</m_baseFood>
+    <m_mineralIncome>6</m_mineralIncome>
+    <m_energyIncome>9</m_energyIncome>
+    <m_foodIncome>9</m_foodIncome>
+    <m_relics>3</m_relics>
+    <m_reaserchIncome>0</m_reaserchIncome>
+    <m_maxSpace>95</m_maxSpace>
+    <m_health>100</m_health>
+    <m_happiness>100</m_happiness>
+    <m_usedSpace>0</m_usedSpace>
+    <List_of_Special_Resouses>
+      <Special_Resouses>HealthStone</Special_Resouses>
+      <Special_Resouses>HappyStone</Special_Resouses>
+      <Special_Resouses>NullStone</Special_Resouses>
+    </List_of_Special_Resouses>
+    <m_buildings />
+    <m_resourceTimer>0.70982</m_resourceTimer>
+    <m_reaserchTimer>0.70982</m_reaserchTimer>
+  </Active_Planet>
+</InGameState>

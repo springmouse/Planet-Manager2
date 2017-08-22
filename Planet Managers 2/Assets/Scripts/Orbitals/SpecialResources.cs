@@ -1,6 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
+using System;
+
+[Serializable]
+[XmlInclude(typeof(NullStone))]
+[XmlInclude(typeof(HealthStone))]
+[XmlInclude(typeof(TerraFormingStone))]
+[XmlInclude(typeof(HappyStone))]
 
 public class SpecialResources
 {
@@ -24,14 +32,9 @@ public class SpecialResources
         }
     }
 
-    public eResouceType GetRosuceType()
-    {
-        return m_type;
-    }
-
     public string m_name;
 
-    protected eResouceType m_type = eResouceType.NULL;
+    public eResouceType m_type = eResouceType.NULL;
     protected float m_gatherTime = 0;
     protected float m_timeSpentGathering = 0;
     protected float m_amountGathered = 0;

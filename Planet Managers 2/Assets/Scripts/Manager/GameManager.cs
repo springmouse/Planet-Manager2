@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public List<int> m_usedID = new List<int>();
+
     public static GameManager GM;
 
     void Start ()

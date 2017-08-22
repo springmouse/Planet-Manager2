@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
+using System.IO;
+using System;
 
 public enum eGameStates
 {
@@ -53,15 +56,48 @@ public class MenuState : States
     }
 }
 
+[Serializable]
 public class InGameState : States
 {
+    [Serializable]
+    public class OrbitalDicToList
+    {
+        public string key;
+
+        [XmlArray(("All orbitals in system")), XmlArrayItem(typeof(Orbital), ElementName = "orbitals in system")]
+        public List<Orbital> value;
+
+        public OrbitalDicToList()
+        {
+        }
+
+        public OrbitalDicToList(string k, List<Orbital> v)
+        {
+            key = k;
+            value = v;
+        }
+    }
+
+
+    [XmlArray("List_of_Dictonary_of_universe"), XmlArrayItem(typeof(OrbitalDicToList), ElementName = "Key_and_Value")]
+    public List<OrbitalDicToList> ToSave = new List<OrbitalDicToList>();
+
+    [XmlIgnore]
     public Dictionary<string, List<Orbital>> m_Systems = new Dictionary<string, List<Orbital>>();
+
+    [XmlArray("System_Names_List"), XmlArrayItem(typeof(string), ElementName = "System_Names")]
     public List<string> m_systemNames = new List<string>();
 
+    [XmlArray("Player_orbitals_List"), XmlArrayItem(typeof(Orbital), ElementName = "Player_plantes")]
     public List<Orbital> m_playerOwned = new List<Orbital>();
 
+    [XmlArray("Active_System_of_orbitals_List"), XmlArrayItem(typeof(Orbital), ElementName = "Active_plantes")]
     public List<Orbital> m_activeSystem;
+
+    [XmlElement(ElementName = "Active_Planet_Name")]
     public string m_activeSytemName;
+
+    [XmlElement(ElementName = "Active_Planet")]
     public Orbital m_activePlanet;
 
     bool m_changedActivePlanets;
@@ -87,6 +123,12 @@ public class InGameState : States
         if (m_changedActivePlanets == true)
         {
             ChangedActivePlanets();
+        }
+
+        if (Input.GetKeyDown("s"))
+        {
+            Serialize();
+            Debug.Log("We Attempted to save the game");
         }
 
         m_activePlanet.Update(deltaTime);
@@ -127,7 +169,7 @@ public class InGameState : States
             {
                 foreach (SpecialResources Special in m_activePlanet.m_spList)
                 {
-                    if (sp.GetRosuceType() == Special.GetRosuceType() && CheckIfUsed(Special, used) == false)
+                    if (sp.m_type == Special.m_type && CheckIfUsed(Special, used) == false)
                     {
                         count++;
                         used.Add(Special);
@@ -165,5 +207,63 @@ public class InGameState : States
             }
         }
         return false;
+    }
+
+    public void Serialize()
+    {
+        XmlSerializer mySerializer = new XmlSerializer(typeof(InGameState));
+
+        StreamWriter streamWriter = new StreamWriter("SavedGame.xml");
+
+        ConvertDicToList();
+
+        mySerializer.Serialize(streamWriter, this);
+
+        streamWriter.Close();
+    }
+
+    public static InGameState Deserialize()
+    {
+        XmlSerializer mySerializer = new XmlSerializer(typeof(InGameState));
+
+        StreamReader SR = new StreamReader("SavedGame.xml");
+
+        InGameState p = mySerializer.Deserialize(SR) as InGameState;
+
+        SR.Close();
+
+        SetUpContainers(p);
+
+        return p;
+    }
+
+    private static void SetUpContainers(InGameState p)
+    {
+        ConvertListToDic(p);
+
+        List<Orbital> playerOwned = p.m_playerOwned;
+
+        List<Orbital> activeSystem = p.m_activeSystem;
+
+        Orbital activePlanet = p.m_activePlanet;
+
+    }
+
+    private static void ConvertListToDic(InGameState p)
+    {
+        foreach (InGameState.OrbitalDicToList I in p.ToSave)
+        {
+            p.m_Systems.Add(I.key, I.value);
+        }
+        p.ToSave.Clear();
+    }
+
+    private void ConvertDicToList()
+    {
+        ToSave.Clear();
+        foreach (string name in m_systemNames)
+        {
+            ToSave.Add(new OrbitalDicToList(name, m_Systems[name]));
+        }
     }
 }
