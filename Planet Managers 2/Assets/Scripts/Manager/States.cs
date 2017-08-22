@@ -92,7 +92,7 @@ public class InGameState : States
     public List<Orbital> m_playerOwned = new List<Orbital>();
 
     [XmlArray("Active_System_of_orbitals_List"), XmlArrayItem(typeof(Orbital), ElementName = "Active_plantes")]
-    public List<Orbital> m_activeSystem;
+    public List<Orbital> m_activeSystem = new List<Orbital>();
 
     [XmlElement(ElementName = "Active_Planet_Name")]
     public string m_activeSytemName;
@@ -229,10 +229,10 @@ public class InGameState : States
         StreamReader SR = new StreamReader("SavedGame.xml");
 
         InGameState p = mySerializer.Deserialize(SR) as InGameState;
+        
+        SetUpContainers(p);
 
         SR.Close();
-
-        SetUpContainers(p);
 
         return p;
     }
@@ -241,12 +241,52 @@ public class InGameState : States
     {
         ConvertListToDic(p);
 
-        List<Orbital> playerOwned = p.m_playerOwned;
+        GatherPlayerOwned(p);
 
-        List<Orbital> activeSystem = p.m_activeSystem;
+        p.m_activeSystem.Clear();
+        p.m_activeSystem = p.m_Systems[p.m_activeSytemName];
 
+        GatherActivePlanet(p);
+    }
+
+    private static void GatherActivePlanet(InGameState p)
+    {
         Orbital activePlanet = p.m_activePlanet;
+        p.m_activePlanet = null;
 
+        foreach (string name in p.m_systemNames)
+        {
+            foreach (Orbital check in p.m_Systems[name])
+            {
+                if (activePlanet.ID == check.ID)
+                {
+                    p.m_activePlanet = check;
+                    return;
+                }
+            }
+        }
+
+    }
+
+    private static void GatherPlayerOwned(InGameState p)
+    {
+        List<Orbital> playerOwned = p.m_playerOwned;
+        p.m_playerOwned.Clear();
+
+        foreach (Orbital O in playerOwned)
+        {
+            foreach (string name in p.m_systemNames)
+            {
+                foreach (Orbital check in p.m_Systems[name])
+                {
+                    if (O.ID == check.ID)
+                    {
+                        p.m_playerOwned.Add(check);
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     private static void ConvertListToDic(InGameState p)

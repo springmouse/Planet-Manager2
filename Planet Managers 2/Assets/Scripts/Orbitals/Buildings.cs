@@ -57,11 +57,12 @@ public enum eBuildingTypes
 [Serializable]
 public class BuildingsManager
 {
-    [XmlIgnore]
-    public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
 
     [XmlArray("List_of_Building_types"), XmlArrayItem(typeof(string), ElementName = "Building_Types")]
-    private List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
+    public List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
+
+    [XmlIgnore]
+    public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
 
     public BuildingsManager()
     {

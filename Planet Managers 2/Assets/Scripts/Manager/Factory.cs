@@ -135,7 +135,7 @@ public class Factory
                 return new MenuState();
 
             case eGameStates.INGAME:
-                return new InGameState();
+                return InGameState.Deserialize();
 
             default:
                 Debug.LogError("INVALIDE STATE PASSED!!!");

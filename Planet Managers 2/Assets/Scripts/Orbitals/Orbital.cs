@@ -43,9 +43,9 @@ public class Orbital
     public float m_usedSpace;
 
     [XmlArray("List_of_Special_Resouses"), XmlArrayItem(typeof(string), ElementName = "Special_Resouses")]
-    public List<SpecialResources> m_spList;
+    public List<SpecialResources> m_spList = new List<SpecialResources>();
 
-    public BuildingsManager m_buildings;
+    public BuildingsManager m_buildings = new BuildingsManager();
 
     public float m_resourceTimer;
 
