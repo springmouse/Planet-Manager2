@@ -299,6 +299,23 @@ public class InGameState : States
         p.m_activeSystem = p.m_Systems[p.m_activeSytemName];
 
         GatherActivePlanet(p);
+
+        SetUsedIDs(p);
+    }
+
+    private static void SetUsedIDs(InGameState p)
+    {
+
+        GameManager.GM.m_usedID.Clear();
+
+        foreach (string name in p.m_systemNames)
+        {
+            foreach (Orbital o in p.m_Systems[name])
+            {
+                GameManager.GM.m_usedID.Add(o.ID);
+            }
+        }
+
     }
 
     private static void GatherActivePlanet(InGameState p)
