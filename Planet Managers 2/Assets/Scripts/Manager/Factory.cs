@@ -152,7 +152,9 @@ public class Factory
                 return new MenuState();
 
             case eGameStates.INGAME:
-                return new InGameState();
+                InGameState IGS = new InGameState();
+                IGS.Init();
+                return IGS;
 
             default:
                 Debug.LogError("INVALIDE STATE PASSED!!!");

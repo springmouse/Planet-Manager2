@@ -13,7 +13,7 @@ public enum eGameStates
 
 public class States
 {
-    private bool m_active;
+    protected bool m_active;
 
     ///////////////////////////////////////////////////
 
@@ -50,15 +50,32 @@ public class States
 
 public class MenuState : States
 {
+    protected override void onEnter()
+    {
+        GameManager.GM.m_InGameRoot.SetActive(false);
+        GameManager.GM.m_InGame = false;
+    }
+
     override public void Update(float deltaTime)
     {
-        Debug.Log("Running");
     }
 }
 
 [Serializable]
 public class InGameState : States
 {
+    protected override void onEnter()
+    {
+        GameManager.GM.m_InGameRoot.SetActive(true);
+        GameManager.GM.m_InGame = true;
+    }
+
+    protected override void onExit()
+    {
+        GameManager.GM.m_InGameRoot.SetActive(false);
+        GameManager.GM.m_InGame = false;
+    }
+
     [Serializable]
     public class OrbitalDicToList
     {
@@ -94,7 +111,7 @@ public class InGameState : States
     [XmlArray("Active_System_of_orbitals_List"), XmlArrayItem(typeof(Orbital), ElementName = "Active_plantes")]
     public List<Orbital> m_activeSystem = new List<Orbital>();
 
-    [XmlElement(ElementName = "Active_Planet_Name")]
+    [XmlElement(ElementName = "Active_System_Name")]
     public string m_activeSytemName;
 
     [XmlElement(ElementName = "Active_Planet")]
@@ -103,6 +120,10 @@ public class InGameState : States
     bool m_changedActivePlanets;
 
     public InGameState()
+    {
+    }
+
+    public void Init()
     {
         m_systemNames.Add("Sol");
         m_activeSytemName = m_systemNames[0];
@@ -120,35 +141,37 @@ public class InGameState : States
 
     override public void Update(float deltaTime)
     {
-        if (m_changedActivePlanets == true)
+        if (m_active)
         {
-            ChangedActivePlanets();
+            if (m_changedActivePlanets == true)
+            {
+                ChangedActivePlanets();
+            }
+
+            if (Input.GetKeyDown("s"))
+            {
+                Serialize();
+                Debug.Log("We Attempted to save the game");
+            }
+
+            if (Input.GetKeyDown("l"))
+            {
+                InGameState t = Deserialize();
+                Debug.Log("We Attempted to Load the game");
+            }
+
+            m_activePlanet.Update(deltaTime);
+
+            GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
+            GameManager.GM.m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
+            GameManager.GM.m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
+
+            GameManager.GM.m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
+
+            GameManager.GM.m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
+            GameManager.GM.m_planetHealthText.text = "Health = " + m_activePlanet.m_health;
+            GameManager.GM.m_planetHappynessText.text = "Happyness = " + m_activePlanet.m_happiness;
         }
-
-        if (Input.GetKeyDown("s"))
-        {
-            Serialize();
-            Debug.Log("We Attempted to save the game");
-        }
-
-        if (Input.GetKeyDown("l"))
-        {
-            InGameState t = Deserialize();
-            Debug.Log("We Attempted to Load the game");
-        }
-
-        m_activePlanet.Update(deltaTime);
-
-        GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
-        GameManager.GM.m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
-        GameManager.GM.m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
-
-        GameManager.GM.m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
-
-        GameManager.GM.m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
-        GameManager.GM.m_planetHealthText.text = "Health = " + m_activePlanet.m_health;
-        GameManager.GM.m_planetHappynessText.text = "Happyness = " + m_activePlanet.m_happiness;
-
     }
 
     private void ChangedActivePlanets()

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject m_InGameRoot;
+    public bool m_InGame = false;
+
     public StateManager STM;
 
     public Orbital m_activePlanet;
@@ -72,32 +75,34 @@ public class GameManager : MonoBehaviour
         STM.RegisterState(Factory.Instance.CreatNewState(eGameStates.MENU));
         STM.RegisterState(Factory.Instance.CreatNewState(eGameStates.INGAME));
 
-        STM.PushState(1);
+        STM.PushState(0);
 	}
 	
 	void Update ()
     {
         if (STM.ActiveStateCount() > 0)
         { 
-
             STM.Update(Time.deltaTime);
 
-            m_mineralText.text = "Minerals = " + (int)Income.Instance.m_minerals;
-            m_energyText.text = "Energy = " + (int)Income.Instance.m_energy;
-            m_FoodText.text = "Food = " + (int)Income.Instance.m_food;
-            m_reaserchText.text = "Reaserch = " + (int)Income.Instance.m_reaserch;
+            if (m_InGame)
+            {
+                m_mineralText.text = "Minerals = " + (int)Income.Instance.m_minerals;
+                m_energyText.text = "Energy = " + (int)Income.Instance.m_energy;
+                m_FoodText.text = "Food = " + (int)Income.Instance.m_food;
+                m_reaserchText.text = "Reaserch = " + (int)Income.Instance.m_reaserch;
 
-            m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.NULL);
-            m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HAPPYSTONE);
-            m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HEALTHSTONE);
-            m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.TERRAFORMINGSTONE);
+                m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.NULL);
+                m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HAPPYSTONE);
+                m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HEALTHSTONE);
+                m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.TERRAFORMINGSTONE);
 
-            m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
-            m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
+                m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
+                m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
 
-            m_totalRunTime += Time.deltaTime;
+                m_totalRunTime += Time.deltaTime;
 
-            UpdateBuildingsText();
+                UpdateBuildingsText();
+            }
         }
 
         m_totalRunTimeText.text = "Game Run time: " + m_totalRunTime;
