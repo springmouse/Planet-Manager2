@@ -4,23 +4,22 @@ using UnityEngine;
 using System.Xml.Serialization;
 using System;
 
+public enum eResouceType
+{
+    NULL,
+    HEALTHSTONE,
+    TERRAFORMINGSTONE,
+    HAPPYSTONE,
+    END
+}
+
 [Serializable]
 [XmlInclude(typeof(NullStone))]
 [XmlInclude(typeof(HealthStone))]
 [XmlInclude(typeof(TerraFormingStone))]
 [XmlInclude(typeof(HappyStone))]
-
 public class SpecialResources
 {
-    public enum eResouceType
-    {
-        NULL,
-        HEALTHSTONE,
-        TERRAFORMINGSTONE,
-        HAPPYSTONE,
-        END
-    }
-
     public virtual void Update(float deltaTime)
     {
         m_timeSpentGathering += deltaTime;
@@ -36,8 +35,8 @@ public class SpecialResources
 
     public eResouceType m_type = eResouceType.NULL;
     protected float m_gatherTime = 0;
-    protected float m_timeSpentGathering = 0;
-    protected float m_amountGathered = 0;
+    public float m_timeSpentGathering = 0;
+    public float m_amountGathered = 0;
 }
 
 public class NullStone : SpecialResources

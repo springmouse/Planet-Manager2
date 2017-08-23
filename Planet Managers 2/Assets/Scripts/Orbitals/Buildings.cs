@@ -58,13 +58,18 @@ public enum eBuildingTypes
 public class BuildingsManager
 {
 
-    [XmlArray("List_of_Building_types"), XmlArrayItem(typeof(string), ElementName = "Building_Types")]
+    [XmlArray("List_of_Building_types"), XmlArrayItem(typeof(eBuildingTypes), ElementName = "Building_Types")]
     public List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
 
     [XmlIgnore]
     public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
 
     public BuildingsManager()
+    {
+        
+    }
+
+    public void Init()
     {
         SetListOfBuildingTypesUp();
 

@@ -87,10 +87,10 @@ public class GameManager : MonoBehaviour
             m_FoodText.text = "Food = " + (int)Income.Instance.m_food;
             m_reaserchText.text = "Reaserch = " + (int)Income.Instance.m_reaserch;
 
-            m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.NULL);
-            m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HAPPYSTONE);
-            m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.HEALTHSTONE);
-            m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(SpecialResources.eResouceType.TERRAFORMINGSTONE);
+            m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.NULL);
+            m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HAPPYSTONE);
+            m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HEALTHSTONE);
+            m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.TERRAFORMINGSTONE);
 
             m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
             m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
@@ -109,13 +109,13 @@ public class GameManager : MonoBehaviour
         m_mines[1].text = "Decent Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTMINE].Count);
         m_mines[2].text = "Advanced Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDMINE].Count);
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         m_power[0].text = "Basic Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICPOWER].Count);
         m_power[1].text = "Decent Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTPOWER].Count);
         m_power[2].text = "Advanced Power: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDPOWER].Count);
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         m_farm[0].text = "Basic Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICFARM].Count);
         m_farm[1].text = "Decent Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTFARM].Count);

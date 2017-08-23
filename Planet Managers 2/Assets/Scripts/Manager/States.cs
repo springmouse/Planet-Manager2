@@ -64,7 +64,7 @@ public class InGameState : States
     {
         public string key;
 
-        [XmlArray(("All orbitals in system")), XmlArrayItem(typeof(Orbital), ElementName = "orbitals in system")]
+        [XmlArray(("All_orbitals_in_system")), XmlArrayItem(typeof(Orbital), ElementName = "orbitals_in_system")]
         public List<Orbital> value;
 
         public OrbitalDicToList()
@@ -129,6 +129,12 @@ public class InGameState : States
         {
             Serialize();
             Debug.Log("We Attempted to save the game");
+        }
+
+        if (Input.GetKeyDown("l"))
+        {
+            InGameState t = Deserialize();
+            Debug.Log("We Attempted to Load the game");
         }
 
         m_activePlanet.Update(deltaTime);
@@ -213,10 +219,14 @@ public class InGameState : States
     {
         XmlSerializer mySerializer = new XmlSerializer(typeof(InGameState));
 
+        FileStream FS = File.Open("SavedGame.xml", FileMode.Open);
+        FS.SetLength(0);
+        FS.Close();
+
         StreamWriter streamWriter = new StreamWriter("SavedGame.xml");
 
         ConvertDicToList();
-
+        
         mySerializer.Serialize(streamWriter, this);
 
         streamWriter.Close();
@@ -270,10 +280,9 @@ public class InGameState : States
 
     private static void GatherPlayerOwned(InGameState p)
     {
-        List<Orbital> playerOwned = p.m_playerOwned;
-        p.m_playerOwned.Clear();
+        List<Orbital> playerOwned = new List<Orbital>();
 
-        foreach (Orbital O in playerOwned)
+        foreach (Orbital O in p.m_playerOwned)
         {
             foreach (string name in p.m_systemNames)
             {
@@ -281,16 +290,41 @@ public class InGameState : States
                 {
                     if (O.ID == check.ID)
                     {
-                        p.m_playerOwned.Add(check);
-                        break;
+                        if (playerOwned.Count > 0)
+                        {
+                            int count = 0;
+                            foreach (Orbital var in playerOwned)
+                            {
+                                if (check.ID == var.ID)
+                                {
+                                    count++;
+                                    break;
+                                }
+                            }
+                            if (count == 0)
+                            {
+                                playerOwned.Add(check);
+                                break;
+                            }
+                        }
+                        else
+                        {
+                            playerOwned.Add(check);
+                            break;
+                        }
+
                     }
                 }
             }
         }
+        
+        p.m_playerOwned.Clear();
+        p.m_playerOwned = playerOwned;
     }
 
     private static void ConvertListToDic(InGameState p)
     {
+        p.m_Systems.Clear();
         foreach (InGameState.OrbitalDicToList I in p.ToSave)
         {
             p.m_Systems.Add(I.key, I.value);

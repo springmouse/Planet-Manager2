@@ -17,7 +17,7 @@ public enum eOrbital
 [XmlInclude(typeof(StarterPlanet))]
 [XmlInclude(typeof(TerrestrialEarchLike))]
 [XmlInclude(typeof(TerrestrialRocky))]
-[XmlInclude(typeof(AStroidBelt))]
+[XmlInclude(typeof(AstroidBelt))]
 [XmlInclude(typeof(GasGaint))]
 public class Orbital
 {
@@ -42,7 +42,7 @@ public class Orbital
 
     public float m_usedSpace;
 
-    [XmlArray("List_of_Special_Resouses"), XmlArrayItem(typeof(string), ElementName = "Special_Resouses")]
+    [XmlArray("List_of_Special_Resouses"), XmlArrayItem(typeof(SpecialResources), ElementName = "Special_Resouses")]
     public List<SpecialResources> m_spList = new List<SpecialResources>();
 
     public BuildingsManager m_buildings = new BuildingsManager();
@@ -54,8 +54,11 @@ public class Orbital
     public Orbital()
     {
         m_buildings = new BuildingsManager();
+
+        m_spList = new List<SpecialResources>();
+
         m_resourceTimer = 0;
-        
+
         CalcID();
 
         while (CheckIfIDUsed())
@@ -66,8 +69,29 @@ public class Orbital
         {
             GameManager.GM.m_usedID.Add(ID);
         }
+
+        m_name = "___";
+
+        m_baseMinerals = 0;
+        m_baseEnergy = 0;
+        m_baseFood = 0;
+
+        m_mineralIncome = 0;
+        m_energyIncome = 0;
+        m_foodIncome = 0;
+
+        m_relics = 0;
+        m_reaserchIncome = 0;
+
+        m_maxSpace = 0;
+        m_health = 0;
+        m_happiness = 0;
     }
 
+    public virtual void Init()
+    {
+
+    }
 
     private bool CheckIfIDUsed()
     {
@@ -186,12 +210,19 @@ public class Orbital
 
 }
 
-
+[Serializable]
 public class StarterPlanet : Orbital
 {
     public StarterPlanet()
     {
+        
+    }
+
+    public override void Init()
+    {
         m_name = "Terrastrial Earth";
+
+        m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(5, 11);
         m_baseEnergy = UnityEngine.Random.Range(5, 11);
@@ -217,11 +248,18 @@ public class StarterPlanet : Orbital
     }
 }
 
+[Serializable]
 public class TerrestrialEarchLike : Orbital
 {
     public TerrestrialEarchLike()
     {
+        
+    }
+    public override void Init()
+    {
         m_name = "Terrastrial Earth Like";
+
+        m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 11);
         m_baseEnergy = UnityEngine.Random.Range(1, 9);
@@ -246,14 +284,19 @@ public class TerrestrialEarchLike : Orbital
         }
     }
 
-    
 }
 
 public class TerrestrialRocky : Orbital
 {
     public TerrestrialRocky()
     {
+    }
+
+    public override void Init()
+    {
         m_name = "Terrastrial Rocky";
+
+        m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 21);
         m_baseEnergy = UnityEngine.Random.Range(1, 9);
@@ -279,11 +322,18 @@ public class TerrestrialRocky : Orbital
     }
 }
 
-public class AStroidBelt : Orbital
+public class AstroidBelt : Orbital
 {
-    public AStroidBelt()
+    public AstroidBelt()
+    {
+        
+    }
+
+    public override void Init()
     {
         m_name = "Astroid Belt";
+
+        m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(16, 31);
         m_baseEnergy = UnityEngine.Random.Range(1, 6);
@@ -301,7 +351,7 @@ public class AStroidBelt : Orbital
         m_happiness = 25;
 
         m_spList = new List<SpecialResources>();
-        
+
         m_spList.Add(Factory.Instance.CreatNewSpecialResouces());
     }
 }
@@ -310,7 +360,13 @@ public class GasGaint : Orbital
 {
     public GasGaint()
     {
+    }
+
+    public override void Init()
+    {
         m_name = "Gas Gaint";
+
+        m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 9);
         m_baseEnergy = UnityEngine.Random.Range(10, 26);

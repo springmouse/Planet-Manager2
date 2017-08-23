@@ -21,7 +21,9 @@ public class Factory
 
     public Orbital CreatStarterPlanet()
     {
-        return new StarterPlanet();
+        StarterPlanet SP = new StarterPlanet();
+        SP.Init();
+        return SP;
     }
 
     public Orbital CreatNewOrbital(eOrbital h)
@@ -29,16 +31,23 @@ public class Factory
         switch (h)
         {
             case eOrbital.TERRESTRIALEARTHLIKE:
-                return new TerrestrialEarchLike();
+                TerrestrialEarchLike TE = new TerrestrialEarchLike();
+                TE.Init();
+                return TE;
 
             case eOrbital.TERRESTRIALROCKY:
-                return new TerrestrialRocky();
+                TerrestrialRocky TR = new TerrestrialRocky();
+                return TR;
 
             case eOrbital.ASTROIDBELT:
-                return new AStroidBelt();
+                AstroidBelt AB = new AstroidBelt();
+                AB.Init();
+                return AB;
 
             case eOrbital.GASGAINT:
-                return new GasGaint();
+                GasGaint GG = new GasGaint();
+                GG.Init();
+                return GG;
 
             case eOrbital.END:
                 return null;
@@ -54,16 +63,24 @@ public class Factory
         switch (h)
         {
             case eOrbital.TERRESTRIALEARTHLIKE:
-                return new TerrestrialEarchLike();
+                TerrestrialEarchLike TE = new TerrestrialEarchLike();
+                TE.Init();
+                return TE;
 
             case eOrbital.TERRESTRIALROCKY:
-                return new TerrestrialRocky();
+                TerrestrialRocky TR = new TerrestrialRocky();
+                TR.Init();
+                return TR;
 
             case eOrbital.ASTROIDBELT:
-                return new AStroidBelt();
+                AstroidBelt AB = new AstroidBelt();
+                AB.Init();
+                return AB;
 
             case eOrbital.GASGAINT:
-                return new GasGaint();
+                GasGaint GG = new GasGaint();
+                GG.Init();
+                return GG;
 
             case eOrbital.END:
                 return null;
@@ -107,20 +124,20 @@ public class Factory
 
     public SpecialResources CreatNewSpecialResouces()
     {
-        SpecialResources.eResouceType type = RandomResource();
+        eResouceType type = RandomResource();
 
         switch (type)
         {
-            case SpecialResources.eResouceType.NULL:
+            case eResouceType.NULL:
                 return new NullStone();
 
-            case SpecialResources.eResouceType.HEALTHSTONE:
+            case eResouceType.HEALTHSTONE:
                 return new HealthStone();
 
-            case SpecialResources.eResouceType.TERRAFORMINGSTONE:
+            case eResouceType.TERRAFORMINGSTONE:
                 return new TerraFormingStone();
 
-            case SpecialResources.eResouceType.HAPPYSTONE:
+            case eResouceType.HAPPYSTONE:
                 return new HappyStone();
         }
 
@@ -135,7 +152,7 @@ public class Factory
                 return new MenuState();
 
             case eGameStates.INGAME:
-                return InGameState.Deserialize();
+                return new InGameState();
 
             default:
                 Debug.LogError("INVALIDE STATE PASSED!!!");
@@ -280,26 +297,26 @@ public class Factory
         return null;
     }
 
-    private SpecialResources.eResouceType RandomResource()
+    private eResouceType RandomResource()
     {
         int r = Random.Range(0, 150);
 
         if (r <= 25)
         {
-            return SpecialResources.eResouceType.HEALTHSTONE;
+            return eResouceType.HEALTHSTONE;
         }
 
         if (r <= 50)
         {
-            return SpecialResources.eResouceType.TERRAFORMINGSTONE;
+            return eResouceType.TERRAFORMINGSTONE;
         }
 
         if (r <= 75)
         {
-            return SpecialResources.eResouceType.HAPPYSTONE;
+            return eResouceType.HAPPYSTONE;
         }
 
-        return SpecialResources.eResouceType.NULL;
+        return eResouceType.NULL;
     }
 
     private eOrbital RandomOrbital()

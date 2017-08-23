@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Income
 {
-    Dictionary<SpecialResources.eResouceType, float> m_specialResouces = new Dictionary<SpecialResources.eResouceType, float>();
+    Dictionary<eResouceType, float> m_specialResouces = new Dictionary<eResouceType, float>();
 
     public float m_minerals;
     public float m_energy;
@@ -15,10 +15,10 @@ public class Income
 
     private Income()
     {
-        m_specialResouces.Add(SpecialResources.eResouceType.NULL, 0.0f);
-        m_specialResouces.Add(SpecialResources.eResouceType.HEALTHSTONE, 0.0f);
-        m_specialResouces.Add(SpecialResources.eResouceType.TERRAFORMINGSTONE, 0.0f);
-        m_specialResouces.Add(SpecialResources.eResouceType.HAPPYSTONE, 0.0f);
+        m_specialResouces.Add(eResouceType.NULL, 0.0f);
+        m_specialResouces.Add(eResouceType.HEALTHSTONE, 0.0f);
+        m_specialResouces.Add(eResouceType.TERRAFORMINGSTONE, 0.0f);
+        m_specialResouces.Add(eResouceType.HAPPYSTONE, 0.0f);
 
         m_minerals = 100;
         m_energy = 100;
@@ -41,11 +41,11 @@ public class Income
 
     #endregion
     
-    public void AddSpecialResouce(SpecialResources.eResouceType key, float amount)
+    public void AddSpecialResouce(eResouceType key, float amount)
     {
-        if (key >= SpecialResources.eResouceType.END)
+        if (key >= eResouceType.END)
         {
-            if (key >= SpecialResources.eResouceType.END)
+            if (key >= eResouceType.END)
             {
                 Debug.LogError("INVALIDE SPECIAL RESOUCE");
             }
@@ -56,7 +56,7 @@ public class Income
         Debug.Log(key + " " + m_specialResouces[key]);
     }
 
-    public float GetSpecialResouce(SpecialResources.eResouceType type)
+    public float GetSpecialResouce(eResouceType type)
     {
         return m_specialResouces[type];
     }
