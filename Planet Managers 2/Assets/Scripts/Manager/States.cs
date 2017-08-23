@@ -50,32 +50,35 @@ public class States
 
 public class MenuState : States
 {
+
+    public string[] m_mapNames;
+
     protected override void onEnter()
     {
         GameManager.GM.m_InGameRoot.SetActive(false);
         GameManager.GM.m_InGame = false;
+
+        m_mapNames = Directory.GetFiles(Application.dataPath + "/Saves/", "*.xml");
+
+        for (int i = 0; i < m_mapNames.Length; i++)
+        {
+            Debug.Log(m_mapNames[i]);
+        }
     }
 
     override public void Update(float deltaTime)
     {
+        if (Input.GetKeyDown("l"))
+        {
+            GameManager.GM.PushState();
+        }
     }
 }
 
 [Serializable]
 public class InGameState : States
 {
-    protected override void onEnter()
-    {
-        GameManager.GM.m_InGameRoot.SetActive(true);
-        GameManager.GM.m_InGame = true;
-    }
-
-    protected override void onExit()
-    {
-        GameManager.GM.m_InGameRoot.SetActive(false);
-        GameManager.GM.m_InGame = false;
-    }
-
+   
     [Serializable]
     public class OrbitalDicToList
     {
@@ -117,6 +120,8 @@ public class InGameState : States
     [XmlElement(ElementName = "Active_Planet")]
     public Orbital m_activePlanet;
 
+    public string m_saveName = "tester";
+
     bool m_changedActivePlanets;
 
     public InGameState()
@@ -139,6 +144,19 @@ public class InGameState : States
         m_changedActivePlanets = true;
     }
 
+    protected override void onEnter()
+    {
+        GameManager.GM.m_InGameRoot.SetActive(true);
+        GameManager.GM.m_InGame = true;
+
+    }
+
+    protected override void onExit()
+    {
+        GameManager.GM.m_InGameRoot.SetActive(false);
+        GameManager.GM.m_InGame = false;
+    }
+
     override public void Update(float deltaTime)
     {
         if (m_active)
@@ -154,10 +172,9 @@ public class InGameState : States
                 Debug.Log("We Attempted to save the game");
             }
 
-            if (Input.GetKeyDown("l"))
+            if (Input.GetKeyDown("escape"))
             {
-                InGameState t = Deserialize();
-                Debug.Log("We Attempted to Load the game");
+                GameManager.GM.PopState();
             }
 
             m_activePlanet.Update(deltaTime);
@@ -246,7 +263,9 @@ public class InGameState : States
         FS.SetLength(0);
         FS.Close();
 
-        StreamWriter streamWriter = new StreamWriter("SavedGame.xml");
+        System.IO.Directory.CreateDirectory(Application.dataPath + "/Saves");
+
+        StreamWriter streamWriter = new StreamWriter(Application.dataPath + "/Saves/" + m_saveName + ".xml");
 
         ConvertDicToList();
         
@@ -255,11 +274,11 @@ public class InGameState : States
         streamWriter.Close();
     }
 
-    public static InGameState Deserialize()
+    public static InGameState Deserialize(string name)
     {
         XmlSerializer mySerializer = new XmlSerializer(typeof(InGameState));
 
-        StreamReader SR = new StreamReader("SavedGame.xml");
+        StreamReader SR = new StreamReader(Application.dataPath + "/Saves/" + name + ".xml");
 
         InGameState p = mySerializer.Deserialize(SR) as InGameState;
         

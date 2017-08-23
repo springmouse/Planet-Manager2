@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public GameObject m_InGameRoot;
     public bool m_InGame = false;
 
+    public GameObject m_mainMenu;
+
     public StateManager STM;
 
     public Orbital m_activePlanet;
