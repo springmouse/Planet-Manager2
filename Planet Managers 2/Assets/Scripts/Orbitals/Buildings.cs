@@ -57,12 +57,34 @@ public enum eBuildingTypes
 [Serializable]
 public class BuildingsManager
 {
+    [Serializable]
+    public class BuildingDicToList
+    {
+        public eBuildingTypes key;
 
-    [XmlArray("List_of_Building_types"), XmlArrayItem(typeof(eBuildingTypes), ElementName = "Building_Types")]
+        [XmlArray(("All_Buildings_On_Planet")), XmlArrayItem(typeof(Buildings), ElementName = "Buildings")]
+        public List<Buildings> value = new List<Buildings>();
+
+        public BuildingDicToList()
+        {
+        }
+
+        public BuildingDicToList(eBuildingTypes k, List<Buildings> v)
+        {
+            key = k;
+            value = v;
+        }
+    }
+
+
+    [XmlIgnore]
     public List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
 
     [XmlIgnore]
     public Dictionary<eBuildingTypes, List<Buildings>> m_buildings = new Dictionary<eBuildingTypes, List<Buildings>>();
+
+    [XmlArray("ListOfBuildings"), XmlArrayItem(typeof(BuildingDicToList), ElementName = "Buildings")]
+    public List<BuildingDicToList> m_listOfBuildings = new List<BuildingDicToList>();
 
     public BuildingsManager()
     {
@@ -77,6 +99,49 @@ public class BuildingsManager
         {
             CreatNewDictonarEntery(type);
         }
+    }
+
+    public void ConvertDicToList()
+    {
+        m_listOfBuildings.Clear();
+        
+        foreach (eBuildingTypes type in m_buildingTypes)
+        {
+            m_listOfBuildings.Add(new BuildingDicToList(type, m_buildings[type]));
+        }
+    }
+
+    public void ConvertListToDic(Orbital planet)
+    {
+        m_buildings.Clear();
+
+        Debug.Log("we ran");
+
+        foreach (BuildingDicToList holder in m_listOfBuildings)
+        {
+            foreach (Buildings building in holder.value)
+            {
+                building.SetPlanet(planet);
+            }
+        }
+
+        Debug.Log("we set planet");
+
+        SetListOfBuildingTypesUp();
+
+        foreach (eBuildingTypes type in m_buildingTypes)
+        {
+            CreatNewDictonarEntery(type);
+        }
+
+        foreach (BuildingDicToList item in m_listOfBuildings)
+        {
+            m_buildings[item.key] = item.value;
+        }
+        
+        Debug.Log("yes");
+
+        m_listOfBuildings.Clear();
     }
 
     private void CreatNewDictonarEntery(eBuildingTypes type)
@@ -355,27 +420,52 @@ public class BuildingsManager
 }
 
 //////////////////////////////////////////////////////////////////////////////
-
+[Serializable]
+[XmlInclude(typeof(Mine))]
+[XmlInclude(typeof(BasicMine))]
+[XmlInclude(typeof(DecentMine))]
+[XmlInclude(typeof(AdvancedMine))]
+[XmlInclude(typeof(Power))]
+[XmlInclude(typeof(BasicPower))]
+[XmlInclude(typeof(DecentPower))]
+[XmlInclude(typeof(AdvancedPower))]
+[XmlInclude(typeof(Farm))]
+[XmlInclude(typeof(BasicFarm))]
+[XmlInclude(typeof(DecentFarm))]
+[XmlInclude(typeof(AdvancedFarm))]
 public class Buildings
 {
     protected float m_basicBuildTime = 20;
     protected float m_decentBuildTime = 40;
     protected float m_advancedBuildTime = 60;
 
-    protected float m_timer;
+    public float m_timer;
 
     protected float m_basicCost = 20;
     protected float m_decentCost = 40;
     protected float m_advancedCost = 80;
 
-    protected int m_mulitpliyer;
+    public int m_mulitpliyer;
 
-    protected int m_energyMaintanince;
-    protected int m_foodMaintanince;
+    public int m_energyMaintanince;
+    public int m_foodMaintanince;
 
-    protected bool m_isbuilding = true;
+    public bool m_isbuilding = true;
 
+    [XmlIgnore]
     protected Orbital m_planet;
+
+    public Buildings()
+    {
+        m_timer = 0;
+
+        m_planet = null;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 0;
+        m_foodMaintanince = 0;
+    }
 
     public virtual void Update(float deltaTime)
     {
@@ -394,6 +484,11 @@ public class Buildings
             }
         }
     }
+
+    public void SetPlanet(Orbital planet)
+    {
+        m_planet = planet;
+    } 
 
     protected virtual void IncomeType() { }
 
@@ -430,6 +525,8 @@ public class Mine : Buildings
 
 public class BasicMine : Mine
 {
+    public BasicMine() { }
+
     public BasicMine(Orbital planet)
     {
         Income.Instance.m_minerals -= m_basicCost;
@@ -447,6 +544,8 @@ public class BasicMine : Mine
 
 public class DecentMine : Mine
 {
+    public DecentMine() { }
+    
     public DecentMine(Orbital planet)
     {
         Income.Instance.m_minerals -= m_decentCost;
@@ -464,6 +563,8 @@ public class DecentMine : Mine
 
 public class AdvancedMine : Mine
 {
+    public AdvancedMine() { }
+
     public AdvancedMine(Orbital planet)
     {
         Income.Instance.m_minerals -= m_advancedCost;
@@ -498,6 +599,8 @@ public class Power : Buildings
 
 public class BasicPower : Power
 {
+    public BasicPower() { }
+
     public BasicPower(Orbital planet)
     {
         Income.Instance.m_minerals -= m_basicCost;
@@ -515,6 +618,8 @@ public class BasicPower : Power
 
 public class DecentPower : Power
 {
+    public DecentPower() { }
+
     public DecentPower(Orbital planet)
     {
         Income.Instance.m_minerals -= m_decentCost;
@@ -532,6 +637,8 @@ public class DecentPower : Power
 
 public class AdvancedPower : Power
 {
+    public AdvancedPower() { }
+
     public AdvancedPower(Orbital planet)
     {
         Income.Instance.m_minerals -= m_advancedCost;
@@ -551,6 +658,8 @@ public class AdvancedPower : Power
 
 public class Farm : Buildings
 {
+    public Farm() { }
+
     protected override void IncomeType()
     {
         m_planet.m_foodIncome += m_planet.m_baseFood * m_mulitpliyer;
@@ -564,6 +673,8 @@ public class Farm : Buildings
 
 public class BasicFarm : Farm
 {
+    public BasicFarm() { }
+
     public BasicFarm(Orbital planet)
     {
         Income.Instance.m_minerals -= m_basicCost;
@@ -581,6 +692,8 @@ public class BasicFarm : Farm
 
 public class DecentFarm : Farm
 {
+    public DecentFarm() { }
+
     public DecentFarm(Orbital planet)
     {
         Income.Instance.m_minerals -= m_decentCost;
@@ -598,6 +711,8 @@ public class DecentFarm : Farm
 
 public class AdvancedFarm : Farm
 {
+    public AdvancedFarm() { }
+
     public AdvancedFarm(Orbital planet)
     {
         Income.Instance.m_minerals -= m_advancedCost;

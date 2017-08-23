@@ -8,9 +8,7 @@ public class BuilderManager : MonoBehaviour
 
     public void BuildBasicMine()
     {
-        Debug.Log("button pressed");
         GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICMINE, GameManager.GM.m_activePlanet);
-
     }
 
     public void BuildDecentMine()

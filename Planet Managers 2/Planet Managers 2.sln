@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planet Managers 2", "Planet Managers 2.csproj", "{9AC8FDA8-48AE-FFF0-5987-94B1BA60B66A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planet Managers 2", "Assembly-CSharp.csproj", "{F613904B-C1DE-F8D9-5339-AFD066CAD020}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9AC8FDA8-48AE-FFF0-5987-94B1BA60B66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AC8FDA8-48AE-FFF0-5987-94B1BA60B66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AC8FDA8-48AE-FFF0-5987-94B1BA60B66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AC8FDA8-48AE-FFF0-5987-94B1BA60B66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F613904B-C1DE-F8D9-5339-AFD066CAD020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F613904B-C1DE-F8D9-5339-AFD066CAD020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F613904B-C1DE-F8D9-5339-AFD066CAD020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F613904B-C1DE-F8D9-5339-AFD066CAD020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

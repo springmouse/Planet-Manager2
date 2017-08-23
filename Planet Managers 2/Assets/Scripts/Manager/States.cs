@@ -56,6 +56,7 @@ public class MenuState : States
     protected override void onEnter()
     {
         GameManager.GM.m_InGameRoot.SetActive(false);
+        GameManager.GM.m_mainMenu.SetActive(true);
         GameManager.GM.m_InGame = false;
 
         m_mapNames = Directory.GetFiles(Application.dataPath + "/Saves/", "*.xml");
@@ -85,7 +86,7 @@ public class InGameState : States
         public string key;
 
         [XmlArray(("All_orbitals_in_system")), XmlArrayItem(typeof(Orbital), ElementName = "orbitals_in_system")]
-        public List<Orbital> value;
+        public List<Orbital> value = new List<Orbital>();
 
         public OrbitalDicToList()
         {
@@ -147,6 +148,7 @@ public class InGameState : States
     protected override void onEnter()
     {
         GameManager.GM.m_InGameRoot.SetActive(true);
+        GameManager.GM.m_mainMenu.SetActive(false);
         GameManager.GM.m_InGame = true;
 
     }
@@ -154,6 +156,7 @@ public class InGameState : States
     protected override void onExit()
     {
         GameManager.GM.m_InGameRoot.SetActive(false);
+        GameManager.GM.m_mainMenu.SetActive(true);
         GameManager.GM.m_InGame = false;
     }
 
@@ -258,19 +261,15 @@ public class InGameState : States
     public void Serialize()
     {
         XmlSerializer mySerializer = new XmlSerializer(typeof(InGameState));
-
-        FileStream FS = File.Open("SavedGame.xml", FileMode.Open);
-        FS.SetLength(0);
-        FS.Close();
-
+        
         System.IO.Directory.CreateDirectory(Application.dataPath + "/Saves");
 
         StreamWriter streamWriter = new StreamWriter(Application.dataPath + "/Saves/" + m_saveName + ".xml");
-
-        ConvertDicToList();
         
+        ConvertDicToList();
+       
         mySerializer.Serialize(streamWriter, this);
-
+        
         streamWriter.Close();
     }
 
@@ -282,9 +281,9 @@ public class InGameState : States
 
         InGameState p = mySerializer.Deserialize(SR) as InGameState;
         
-        SetUpContainers(p);
-
         SR.Close();
+
+        SetUpContainers(p);
 
         return p;
     }
@@ -301,6 +300,16 @@ public class InGameState : States
         GatherActivePlanet(p);
 
         SetUsedIDs(p);
+
+        SetUpBuildings(p);
+    }
+
+    private static void SetUpBuildings(InGameState p)
+    {
+        foreach (Orbital o in p.m_playerOwned)
+        {
+            o.m_buildings.ConvertListToDic(o);
+        }
     }
 
     private static void SetUsedIDs(InGameState p)
@@ -397,6 +406,11 @@ public class InGameState : States
         foreach (string name in m_systemNames)
         {
             ToSave.Add(new OrbitalDicToList(name, m_Systems[name]));
+        }
+
+        foreach (Orbital o in m_playerOwned)
+        {
+            o.m_buildings.ConvertDicToList();
         }
     }
 }
