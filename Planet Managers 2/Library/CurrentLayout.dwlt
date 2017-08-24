@@ -68,7 +68,7 @@ MonoBehaviour:
     y: 0
     width: 1858
     height: 1037
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &4
 MonoBehaviour:
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 342}
   m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 67
+  controlID: 21
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 10
+  controlID: 22
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -178,8 +178,8 @@ MonoBehaviour:
     y: 0
     width: 1347
     height: 686
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -372,14 +372,14 @@ MonoBehaviour:
     width: 1343
     height: 665
   m_SceneLighting: 1
-  lastFramingTime: 4466.322792539822
+  lastFramingTime: 17747.15382488225
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 686.5836, y: 305.40686, z: 238.56886}
+    m_Target: {x: 676.7269, y: 323.09293, z: 90.144226}
     speed: 2
-    m_Value: {x: 686.5836, y: 305.40686, z: 238.56886}
+    m_Value: {x: 676.7269, y: 323.09293, z: 90.144226}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -402,13 +402,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.024303228, y: -0.019489609, z: 0.00047387762, w: -0.9995145}
+    m_Target: {x: -0.010809993, y: 0.0030032175, z: -0.000032479682, w: -0.99993706}
     speed: 2
-    m_Value: {x: -0.024303228, y: -0.01948961, z: 0.00047387762, w: -0.9995145}
+    m_Value: {x: -0.010809993, y: 0.0030032175, z: -0.000032479682, w: -0.99993706}
   m_Size:
-    m_Target: 294.09973
+    m_Target: 105.64826
     speed: 2
-    m_Value: 294.09973
+    m_Value: 105.64826
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -473,9 +473,9 @@ MonoBehaviour:
     height: 966
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b82f0000
-    m_LastClickedID: 12216
-    m_ExpandedIDs: c8daffff1afcffff00000000c4260000f8260000
+    m_SelectedIDs: 94270000
+    m_LastClickedID: 10132
+    m_ExpandedIDs: a4eaecffaaeaecffb455edff2a3df0ffe25bf0ffe84bf7ff1afcffff000000004827000094270000e8270000f62700001e280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,20 +569,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts/Manager
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Manager
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\callu.DESKTOP-LVUVE2B\Documents\GitHub\Planet-Manager2\Planet
     Managers 2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20260000
-    m_LastClickedID: 9760
-    m_ExpandedIDs: 00000000202600002a26000000ca9a3bffffff7f
+    m_SelectedIDs: 2c260000
+    m_LastClickedID: 9772
+    m_ExpandedIDs: 00000000242600002e26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -610,7 +610,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000202600002a260000
+    m_ExpandedIDs: 00000000242600002e260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -635,8 +635,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 30260000
-    m_LastClickedInstanceID: 9776
+    m_SelectedInstanceIDs: 2053f0ff
+    m_LastClickedInstanceID: -1027296
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: fa1a0000dadbf4ffb22f0000380100003c00000050000000ce290000d4290000c6290000b6290000c2290000bc29000010ebfaff9e45ffffc802000000000000
     m_RenameOverlay:

@@ -222,7 +222,7 @@ public class StarterPlanet : Orbital
     {
         m_name = "Terrastrial Earth";
 
-        m_buildings.Init();
+        //m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(5, 11);
         m_baseEnergy = UnityEngine.Random.Range(5, 11);
@@ -259,7 +259,7 @@ public class TerrestrialEarchLike : Orbital
     {
         m_name = "Terrastrial Earth Like";
 
-        m_buildings.Init();
+        //m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 11);
         m_baseEnergy = UnityEngine.Random.Range(1, 9);
@@ -296,7 +296,7 @@ public class TerrestrialRocky : Orbital
     {
         m_name = "Terrastrial Rocky";
 
-        m_buildings.Init();
+        //m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 21);
         m_baseEnergy = UnityEngine.Random.Range(1, 9);
@@ -333,7 +333,7 @@ public class AstroidBelt : Orbital
     {
         m_name = "Astroid Belt";
 
-        m_buildings.Init();
+        //m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(16, 31);
         m_baseEnergy = UnityEngine.Random.Range(1, 6);
@@ -366,7 +366,7 @@ public class GasGaint : Orbital
     {
         m_name = "Gas Gaint";
 
-        m_buildings.Init();
+        //m_buildings.Init();
 
         m_baseMinerals = UnityEngine.Random.Range(1, 9);
         m_baseEnergy = UnityEngine.Random.Range(10, 26);

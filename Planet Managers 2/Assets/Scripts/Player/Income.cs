@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Income
 {
-    Dictionary<eResouceType, float> m_specialResouces = new Dictionary<eResouceType, float>();
+    public Dictionary<eResouceType, float> m_specialResouces = new Dictionary<eResouceType, float>();
 
     public float m_minerals;
     public float m_energy;
@@ -45,10 +45,7 @@ public class Income
     {
         if (key >= eResouceType.END)
         {
-            if (key >= eResouceType.END)
-            {
-                Debug.LogError("INVALIDE SPECIAL RESOUCE");
-            }
+            Debug.LogError("INVALIDE SPECIAL RESOUCE");
             return;
         }
 

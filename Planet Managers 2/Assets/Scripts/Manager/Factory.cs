@@ -152,8 +152,9 @@ public class Factory
                 return new MenuState();
 
             case eGameStates.INGAME:
-                InGameState IGS = new InGameState();
-                IGS.Init();
+                InGameState IGS = InGameState.Deserialize("tester");
+                //InGameState IGS = new InGameState();
+                //IGS.Init();
                 return IGS;
 
             default:

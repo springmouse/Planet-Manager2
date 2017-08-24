@@ -74,16 +74,24 @@ public class GameManager : MonoBehaviour
 
         STM = new StateManager();
 
-        STM.RegisterState(Factory.Instance.CreatNewState(eGameStates.MENU));
-        STM.RegisterState(Factory.Instance.CreatNewState(eGameStates.INGAME));
+        MenuState ms = (MenuState)Factory.Instance.CreatNewState(eGameStates.MENU);
+        STM.RegisterState(ms);
 
         STM.PushState(0);
+
+        gameObject.GetComponent<ButtonBehavioursMenu>().SetMenuState(ms);
 	}
+
+
+    public void RegisterInGameState(States IGS)
+    {
+        STM.RegisterState(IGS);
+    }
 	
 	void Update ()
     {
         if (STM.ActiveStateCount() > 0)
-        { 
+        {
             STM.Update(Time.deltaTime);
 
             if (m_InGame)

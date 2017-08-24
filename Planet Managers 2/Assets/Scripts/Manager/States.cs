@@ -49,9 +49,8 @@ public class States
 }
 
 public class MenuState : States
-{
-
-    public string[] m_mapNames;
+{    
+    public List<string> m_saveNames = new List<string>();
 
     protected override void onEnter()
     {
@@ -59,20 +58,35 @@ public class MenuState : States
         GameManager.GM.m_mainMenu.SetActive(true);
         GameManager.GM.m_InGame = false;
 
-        m_mapNames = Directory.GetFiles(Application.dataPath + "/Saves/", "*.xml");
+        string filePath = Application.dataPath + "/Saves/";
 
-        for (int i = 0; i < m_mapNames.Length; i++)
+        string[]  m_SaveFileLocations = Directory.GetFiles(filePath, "*.xml");
+
+        m_saveNames.Clear();
+
+        for (int i = 0; i < m_SaveFileLocations.Length; i++)
         {
-            Debug.Log(m_mapNames[i]);
+            m_saveNames.Add(m_SaveFileLocations[i]);
+
+            m_saveNames[i] = m_saveNames[i].Substring(filePath.Length);
+
+            m_saveNames[i] = m_saveNames[i].Remove(m_saveNames[i].Length - 4);
+
+            Debug.Log(m_saveNames[i]);
+        }
+
+        for (int i = 0; i < m_SaveFileLocations.Length; i++)
+        {
+            Debug.Log(m_SaveFileLocations[i]);
         }
     }
 
     override public void Update(float deltaTime)
     {
-        if (Input.GetKeyDown("l"))
-        {
-            GameManager.GM.PushState();
-        }
+        //if (Input.GetKeyDown("l"))
+        //{
+        //    GameManager.GM.PushState();
+        //}
     }
 }
 
@@ -121,6 +135,8 @@ public class InGameState : States
     [XmlElement(ElementName = "Active_Planet")]
     public Orbital m_activePlanet;
 
+    public IncomeSaveFile m_incomeSaveFile = new IncomeSaveFile();
+
     public string m_saveName = "tester";
 
     bool m_changedActivePlanets;
@@ -129,8 +145,10 @@ public class InGameState : States
     {
     }
 
-    public void Init()
+    public void Init(string name)
     {
+        m_saveName = name;
+
         m_systemNames.Add("Sol");
         m_activeSytemName = m_systemNames[0];
 
@@ -179,6 +197,11 @@ public class InGameState : States
             {
                 GameManager.GM.PopState();
             }
+
+            //if (Input.GetKeyDown("l"))
+            //{
+            //    InGameState IGS = InGameState.Deserialize(m_saveName);
+            //}
 
             m_activePlanet.Update(deltaTime);
 
@@ -285,6 +308,8 @@ public class InGameState : States
 
         SetUpContainers(p);
 
+        p.m_changedActivePlanets = true;
+
         return p;
     }
 
@@ -302,6 +327,8 @@ public class InGameState : States
         SetUsedIDs(p);
 
         SetUpBuildings(p);
+
+        p.m_incomeSaveFile.IncomeDeserialization();
     }
 
     private static void SetUpBuildings(InGameState p)
@@ -412,5 +439,7 @@ public class InGameState : States
         {
             o.m_buildings.ConvertDicToList();
         }
+
+        m_incomeSaveFile.IncomeSerizalization();
     }
 }

@@ -5,36 +5,182 @@
       <key>Sol</key>
       <All_orbitals_in_system>
         <orbitals_in_system xsi:type="TerrestrialRocky">
-          <ID>1001742</ID>
+          <ID>206169</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>6</m_baseMinerals>
+          <m_baseEnergy>8</m_baseEnergy>
+          <m_baseFood>4</m_baseFood>
+          <m_mineralIncome>6</m_mineralIncome>
+          <m_energyIncome>8</m_energyIncome>
+          <m_foodIncome>4</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>84</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>311923</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>6</m_baseMinerals>
+          <m_baseEnergy>16</m_baseEnergy>
+          <m_baseFood>3</m_baseFood>
+          <m_mineralIncome>6</m_mineralIncome>
+          <m_energyIncome>16</m_energyIncome>
+          <m_foodIncome>3</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>22</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>158341</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>3</m_baseMinerals>
+          <m_baseEnergy>12</m_baseEnergy>
+          <m_baseFood>3</m_baseFood>
+          <m_mineralIncome>3</m_mineralIncome>
+          <m_energyIncome>12</m_energyIncome>
+          <m_foodIncome>3</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>8</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>1003766</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>5</m_baseMinerals>
+          <m_baseEnergy>12</m_baseEnergy>
+          <m_baseFood>3</m_baseFood>
+          <m_mineralIncome>5</m_mineralIncome>
+          <m_energyIncome>12</m_energyIncome>
+          <m_foodIncome>3</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>20</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>199709</ID>
           <m_name>Terrastrial Rocky</m_name>
           <m_baseMinerals>16</m_baseMinerals>
-          <m_baseEnergy>8</m_baseEnergy>
-          <m_baseFood>8</m_baseFood>
+          <m_baseEnergy>5</m_baseEnergy>
+          <m_baseFood>7</m_baseFood>
           <m_mineralIncome>16</m_mineralIncome>
-          <m_energyIncome>8</m_energyIncome>
-          <m_foodIncome>8</m_foodIncome>
-          <m_relics>2</m_relics>
+          <m_energyIncome>5</m_energyIncome>
+          <m_foodIncome>7</m_foodIncome>
+          <m_relics>1</m_relics>
           <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>48</m_maxSpace>
+          <m_maxSpace>77</m_maxSpace>
           <m_health>50</m_health>
           <m_happiness>75</m_happiness>
           <m_usedSpace>0</m_usedSpace>
           <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
               <m_timeSpentGathering>0</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
-            <Special_Resouses xsi:type="TerraFormingStone">
-              <m_name>TerraFormingStone</m_name>
-              <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
               <m_timeSpentGathering>0</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
@@ -46,309 +192,58 @@
           <m_reaserchTimer>0</m_reaserchTimer>
         </orbitals_in_system>
         <orbitals_in_system xsi:type="TerrestrialEarchLike">
-          <ID>288573</ID>
+          <ID>946036</ID>
           <m_name>Terrastrial Earth Like</m_name>
-          <m_baseMinerals>7</m_baseMinerals>
-          <m_baseEnergy>7</m_baseEnergy>
-          <m_baseFood>12</m_baseFood>
-          <m_mineralIncome>7</m_mineralIncome>
-          <m_energyIncome>7</m_energyIncome>
-          <m_foodIncome>12</m_foodIncome>
-          <m_relics>1</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>61</m_maxSpace>
-          <m_health>100</m_health>
-          <m_happiness>100</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="HappyStone">
-              <m_name>HappyStone</m_name>
-              <m_type>HAPPYSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="TerraFormingStone">
-              <m_name>TerraFormingStone</m_name>
-              <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="GasGaint">
-          <ID>1035001</ID>
-          <m_name>Gas Gaint</m_name>
-          <m_baseMinerals>8</m_baseMinerals>
-          <m_baseEnergy>21</m_baseEnergy>
-          <m_baseFood>4</m_baseFood>
-          <m_mineralIncome>8</m_mineralIncome>
-          <m_energyIncome>21</m_energyIncome>
-          <m_foodIncome>4</m_foodIncome>
-          <m_relics>0</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>18</m_maxSpace>
-          <m_health>25</m_health>
-          <m_happiness>25</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="HappyStone">
-              <m_name>HappyStone</m_name>
-              <m_type>HAPPYSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="AstroidBelt">
-          <ID>889529</ID>
-          <m_name>Astroid Belt</m_name>
-          <m_baseMinerals>23</m_baseMinerals>
-          <m_baseEnergy>1</m_baseEnergy>
-          <m_baseFood>1</m_baseFood>
-          <m_mineralIncome>23</m_mineralIncome>
-          <m_energyIncome>1</m_energyIncome>
-          <m_foodIncome>1</m_foodIncome>
-          <m_relics>1</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>16</m_maxSpace>
-          <m_health>25</m_health>
-          <m_happiness>25</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="TerraFormingStone">
-              <m_name>TerraFormingStone</m_name>
-              <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="GasGaint">
-          <ID>1076271</ID>
-          <m_name>Gas Gaint</m_name>
           <m_baseMinerals>4</m_baseMinerals>
-          <m_baseEnergy>25</m_baseEnergy>
-          <m_baseFood>1</m_baseFood>
-          <m_mineralIncome>4</m_mineralIncome>
-          <m_energyIncome>25</m_energyIncome>
-          <m_foodIncome>1</m_foodIncome>
-          <m_relics>0</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>11</m_maxSpace>
-          <m_health>25</m_health>
-          <m_happiness>25</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="TerraFormingStone">
-              <m_name>TerraFormingStone</m_name>
-              <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="TerrestrialRocky">
-          <ID>931697</ID>
-          <m_name>Terrastrial Rocky</m_name>
-          <m_baseMinerals>8</m_baseMinerals>
-          <m_baseEnergy>2</m_baseEnergy>
-          <m_baseFood>4</m_baseFood>
-          <m_mineralIncome>8</m_mineralIncome>
-          <m_energyIncome>2</m_energyIncome>
-          <m_foodIncome>4</m_foodIncome>
-          <m_relics>2</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>37</m_maxSpace>
-          <m_health>50</m_health>
-          <m_happiness>75</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="GasGaint">
-          <ID>1027639</ID>
-          <m_name>Gas Gaint</m_name>
-          <m_baseMinerals>8</m_baseMinerals>
-          <m_baseEnergy>23</m_baseEnergy>
-          <m_baseFood>1</m_baseFood>
-          <m_mineralIncome>8</m_mineralIncome>
-          <m_energyIncome>23</m_energyIncome>
-          <m_foodIncome>1</m_foodIncome>
-          <m_relics>0</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>2</m_maxSpace>
-          <m_health>25</m_health>
-          <m_happiness>25</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="GasGaint">
-          <ID>973056</ID>
-          <m_name>Gas Gaint</m_name>
-          <m_baseMinerals>8</m_baseMinerals>
-          <m_baseEnergy>19</m_baseEnergy>
-          <m_baseFood>4</m_baseFood>
-          <m_mineralIncome>8</m_mineralIncome>
-          <m_energyIncome>19</m_energyIncome>
-          <m_foodIncome>4</m_foodIncome>
-          <m_relics>0</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>25</m_maxSpace>
-          <m_health>25</m_health>
-          <m_happiness>25</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="NullStone">
-              <m_name>NullStone</m_name>
-              <m_type>NULL</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="TerrestrialRocky">
-          <ID>819484</ID>
-          <m_name>Terrastrial Rocky</m_name>
-          <m_baseMinerals>14</m_baseMinerals>
-          <m_baseEnergy>4</m_baseEnergy>
-          <m_baseFood>6</m_baseFood>
-          <m_mineralIncome>14</m_mineralIncome>
-          <m_energyIncome>4</m_energyIncome>
-          <m_foodIncome>6</m_foodIncome>
-          <m_relics>2</m_relics>
-          <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>75</m_maxSpace>
-          <m_health>50</m_health>
-          <m_happiness>75</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
-          <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="HappyStone">
-              <m_name>HappyStone</m_name>
-              <m_type>HAPPYSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
-              <m_timeSpentGathering>0</m_timeSpentGathering>
-              <m_amountGathered>1</m_amountGathered>
-            </Special_Resouses>
-          </List_of_Special_Resouses>
-          <m_buildings>
-            <ListOfBuildings />
-          </m_buildings>
-          <m_resourceTimer>0</m_resourceTimer>
-          <m_reaserchTimer>0</m_reaserchTimer>
-        </orbitals_in_system>
-        <orbitals_in_system xsi:type="TerrestrialEarchLike">
-          <ID>916234</ID>
-          <m_name>Terrastrial Earth Like</m_name>
-          <m_baseMinerals>9</m_baseMinerals>
           <m_baseEnergy>1</m_baseEnergy>
-          <m_baseFood>5</m_baseFood>
-          <m_mineralIncome>9</m_mineralIncome>
+          <m_baseFood>14</m_baseFood>
+          <m_mineralIncome>4</m_mineralIncome>
           <m_energyIncome>1</m_energyIncome>
-          <m_foodIncome>5</m_foodIncome>
+          <m_foodIncome>14</m_foodIncome>
           <m_relics>3</m_relics>
           <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>35</m_maxSpace>
+          <m_maxSpace>54</m_maxSpace>
+          <m_health>100</m_health>
+          <m_happiness>100</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialEarchLike">
+          <ID>891462</ID>
+          <m_name>Terrastrial Earth Like</m_name>
+          <m_baseMinerals>3</m_baseMinerals>
+          <m_baseEnergy>2</m_baseEnergy>
+          <m_baseFood>11</m_baseFood>
+          <m_mineralIncome>3</m_mineralIncome>
+          <m_energyIncome>2</m_energyIncome>
+          <m_foodIncome>11</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>88</m_maxSpace>
           <m_health>100</m_health>
           <m_happiness>100</m_happiness>
           <m_usedSpace>0</m_usedSpace>
@@ -362,6 +257,82 @@
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>987406</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>1</m_baseMinerals>
+          <m_baseEnergy>20</m_baseEnergy>
+          <m_baseFood>3</m_baseFood>
+          <m_mineralIncome>1</m_mineralIncome>
+          <m_energyIncome>20</m_energyIncome>
+          <m_foodIncome>3</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>4</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>842821</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>4</m_baseMinerals>
+          <m_baseEnergy>4</m_baseEnergy>
+          <m_baseFood>2</m_baseFood>
+          <m_mineralIncome>4</m_mineralIncome>
+          <m_energyIncome>4</m_energyIncome>
+          <m_foodIncome>2</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>73</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
               <m_timeSpentGathering>0</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
@@ -379,37 +350,37 @@
           <m_reaserchTimer>0</m_reaserchTimer>
         </orbitals_in_system>
         <orbitals_in_system xsi:type="StarterPlanet">
-          <ID>860752</ID>
+          <ID>1029574</ID>
           <m_name>Terrastrial Earth</m_name>
-          <m_baseMinerals>6</m_baseMinerals>
-          <m_baseEnergy>10</m_baseEnergy>
-          <m_baseFood>5</m_baseFood>
-          <m_mineralIncome>6</m_mineralIncome>
-          <m_energyIncome>10</m_energyIncome>
-          <m_foodIncome>5</m_foodIncome>
+          <m_baseMinerals>9</m_baseMinerals>
+          <m_baseEnergy>7</m_baseEnergy>
+          <m_baseFood>12</m_baseFood>
+          <m_mineralIncome>9</m_mineralIncome>
+          <m_energyIncome>7</m_energyIncome>
+          <m_foodIncome>12</m_foodIncome>
           <m_relics>2</m_relics>
           <m_reaserchIncome>0</m_reaserchIncome>
-          <m_maxSpace>84</m_maxSpace>
+          <m_maxSpace>71</m_maxSpace>
           <m_health>100</m_health>
           <m_happiness>100</m_happiness>
           <m_usedSpace>0</m_usedSpace>
           <List_of_Special_Resouses>
-            <Special_Resouses xsi:type="HealthStone">
-              <m_name>HealthStone</m_name>
-              <m_type>HEALTHSTONE</m_type>
-              <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
-              <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
-            <Special_Resouses xsi:type="HappyStone">
-              <m_name>HappyStone</m_name>
-              <m_type>HAPPYSTONE</m_type>
-              <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
           </List_of_Special_Resouses>
@@ -549,8 +520,8 @@
               </Buildings>
             </ListOfBuildings>
           </m_buildings>
-          <m_resourceTimer>1.90571725</m_resourceTimer>
-          <m_reaserchTimer>1.90571725</m_reaserchTimer>
+          <m_resourceTimer>4.480439</m_resourceTimer>
+          <m_reaserchTimer>4.480439</m_reaserchTimer>
         </orbitals_in_system>
       </All_orbitals_in_system>
     </Key_and_Value>
@@ -560,37 +531,37 @@
   </System_Names_List>
   <Player_orbitals_List>
     <Player_plantes xsi:type="StarterPlanet">
-      <ID>860752</ID>
+      <ID>1029574</ID>
       <m_name>Terrastrial Earth</m_name>
-      <m_baseMinerals>6</m_baseMinerals>
-      <m_baseEnergy>10</m_baseEnergy>
-      <m_baseFood>5</m_baseFood>
-      <m_mineralIncome>6</m_mineralIncome>
-      <m_energyIncome>10</m_energyIncome>
-      <m_foodIncome>5</m_foodIncome>
+      <m_baseMinerals>9</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>12</m_baseFood>
+      <m_mineralIncome>9</m_mineralIncome>
+      <m_energyIncome>7</m_energyIncome>
+      <m_foodIncome>12</m_foodIncome>
       <m_relics>2</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>84</m_maxSpace>
+      <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
       <m_usedSpace>0</m_usedSpace>
       <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
-        <Special_Resouses xsi:type="HappyStone">
-          <m_name>HappyStone</m_name>
-          <m_type>HAPPYSTONE</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -730,42 +701,188 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>1.90571725</m_resourceTimer>
-      <m_reaserchTimer>1.90571725</m_reaserchTimer>
+      <m_resourceTimer>4.480439</m_resourceTimer>
+      <m_reaserchTimer>4.480439</m_reaserchTimer>
     </Player_plantes>
   </Player_orbitals_List>
   <Active_System_of_orbitals_List>
     <Active_plantes xsi:type="TerrestrialRocky">
-      <ID>1001742</ID>
+      <ID>206169</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>6</m_baseMinerals>
+      <m_baseEnergy>8</m_baseEnergy>
+      <m_baseFood>4</m_baseFood>
+      <m_mineralIncome>6</m_mineralIncome>
+      <m_energyIncome>8</m_energyIncome>
+      <m_foodIncome>4</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>84</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>311923</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>6</m_baseMinerals>
+      <m_baseEnergy>16</m_baseEnergy>
+      <m_baseFood>3</m_baseFood>
+      <m_mineralIncome>6</m_mineralIncome>
+      <m_energyIncome>16</m_energyIncome>
+      <m_foodIncome>3</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>22</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>158341</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>3</m_baseMinerals>
+      <m_baseEnergy>12</m_baseEnergy>
+      <m_baseFood>3</m_baseFood>
+      <m_mineralIncome>3</m_mineralIncome>
+      <m_energyIncome>12</m_energyIncome>
+      <m_foodIncome>3</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>8</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>1003766</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>5</m_baseMinerals>
+      <m_baseEnergy>12</m_baseEnergy>
+      <m_baseFood>3</m_baseFood>
+      <m_mineralIncome>5</m_mineralIncome>
+      <m_energyIncome>12</m_energyIncome>
+      <m_foodIncome>3</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>20</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>199709</ID>
       <m_name>Terrastrial Rocky</m_name>
       <m_baseMinerals>16</m_baseMinerals>
-      <m_baseEnergy>8</m_baseEnergy>
-      <m_baseFood>8</m_baseFood>
+      <m_baseEnergy>5</m_baseEnergy>
+      <m_baseFood>7</m_baseFood>
       <m_mineralIncome>16</m_mineralIncome>
-      <m_energyIncome>8</m_energyIncome>
-      <m_foodIncome>8</m_foodIncome>
-      <m_relics>2</m_relics>
+      <m_energyIncome>5</m_energyIncome>
+      <m_foodIncome>7</m_foodIncome>
+      <m_relics>1</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>48</m_maxSpace>
+      <m_maxSpace>77</m_maxSpace>
       <m_health>50</m_health>
       <m_happiness>75</m_happiness>
       <m_usedSpace>0</m_usedSpace>
       <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
           <m_timeSpentGathering>0</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
-        <Special_Resouses xsi:type="TerraFormingStone">
-          <m_name>TerraFormingStone</m_name>
-          <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
           <m_timeSpentGathering>0</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
@@ -777,309 +894,58 @@
       <m_reaserchTimer>0</m_reaserchTimer>
     </Active_plantes>
     <Active_plantes xsi:type="TerrestrialEarchLike">
-      <ID>288573</ID>
+      <ID>946036</ID>
       <m_name>Terrastrial Earth Like</m_name>
-      <m_baseMinerals>7</m_baseMinerals>
-      <m_baseEnergy>7</m_baseEnergy>
-      <m_baseFood>12</m_baseFood>
-      <m_mineralIncome>7</m_mineralIncome>
-      <m_energyIncome>7</m_energyIncome>
-      <m_foodIncome>12</m_foodIncome>
-      <m_relics>1</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>61</m_maxSpace>
-      <m_health>100</m_health>
-      <m_happiness>100</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="HappyStone">
-          <m_name>HappyStone</m_name>
-          <m_type>HAPPYSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="TerraFormingStone">
-          <m_name>TerraFormingStone</m_name>
-          <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="GasGaint">
-      <ID>1035001</ID>
-      <m_name>Gas Gaint</m_name>
-      <m_baseMinerals>8</m_baseMinerals>
-      <m_baseEnergy>21</m_baseEnergy>
-      <m_baseFood>4</m_baseFood>
-      <m_mineralIncome>8</m_mineralIncome>
-      <m_energyIncome>21</m_energyIncome>
-      <m_foodIncome>4</m_foodIncome>
-      <m_relics>0</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>18</m_maxSpace>
-      <m_health>25</m_health>
-      <m_happiness>25</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="HappyStone">
-          <m_name>HappyStone</m_name>
-          <m_type>HAPPYSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="AstroidBelt">
-      <ID>889529</ID>
-      <m_name>Astroid Belt</m_name>
-      <m_baseMinerals>23</m_baseMinerals>
-      <m_baseEnergy>1</m_baseEnergy>
-      <m_baseFood>1</m_baseFood>
-      <m_mineralIncome>23</m_mineralIncome>
-      <m_energyIncome>1</m_energyIncome>
-      <m_foodIncome>1</m_foodIncome>
-      <m_relics>1</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>16</m_maxSpace>
-      <m_health>25</m_health>
-      <m_happiness>25</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="TerraFormingStone">
-          <m_name>TerraFormingStone</m_name>
-          <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="GasGaint">
-      <ID>1076271</ID>
-      <m_name>Gas Gaint</m_name>
       <m_baseMinerals>4</m_baseMinerals>
-      <m_baseEnergy>25</m_baseEnergy>
-      <m_baseFood>1</m_baseFood>
-      <m_mineralIncome>4</m_mineralIncome>
-      <m_energyIncome>25</m_energyIncome>
-      <m_foodIncome>1</m_foodIncome>
-      <m_relics>0</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>11</m_maxSpace>
-      <m_health>25</m_health>
-      <m_happiness>25</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="TerraFormingStone">
-          <m_name>TerraFormingStone</m_name>
-          <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="TerrestrialRocky">
-      <ID>931697</ID>
-      <m_name>Terrastrial Rocky</m_name>
-      <m_baseMinerals>8</m_baseMinerals>
-      <m_baseEnergy>2</m_baseEnergy>
-      <m_baseFood>4</m_baseFood>
-      <m_mineralIncome>8</m_mineralIncome>
-      <m_energyIncome>2</m_energyIncome>
-      <m_foodIncome>4</m_foodIncome>
-      <m_relics>2</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>37</m_maxSpace>
-      <m_health>50</m_health>
-      <m_happiness>75</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="GasGaint">
-      <ID>1027639</ID>
-      <m_name>Gas Gaint</m_name>
-      <m_baseMinerals>8</m_baseMinerals>
-      <m_baseEnergy>23</m_baseEnergy>
-      <m_baseFood>1</m_baseFood>
-      <m_mineralIncome>8</m_mineralIncome>
-      <m_energyIncome>23</m_energyIncome>
-      <m_foodIncome>1</m_foodIncome>
-      <m_relics>0</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>2</m_maxSpace>
-      <m_health>25</m_health>
-      <m_happiness>25</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="GasGaint">
-      <ID>973056</ID>
-      <m_name>Gas Gaint</m_name>
-      <m_baseMinerals>8</m_baseMinerals>
-      <m_baseEnergy>19</m_baseEnergy>
-      <m_baseFood>4</m_baseFood>
-      <m_mineralIncome>8</m_mineralIncome>
-      <m_energyIncome>19</m_energyIncome>
-      <m_foodIncome>4</m_foodIncome>
-      <m_relics>0</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>25</m_maxSpace>
-      <m_health>25</m_health>
-      <m_happiness>25</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="NullStone">
-          <m_name>NullStone</m_name>
-          <m_type>NULL</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="TerrestrialRocky">
-      <ID>819484</ID>
-      <m_name>Terrastrial Rocky</m_name>
-      <m_baseMinerals>14</m_baseMinerals>
-      <m_baseEnergy>4</m_baseEnergy>
-      <m_baseFood>6</m_baseFood>
-      <m_mineralIncome>14</m_mineralIncome>
-      <m_energyIncome>4</m_energyIncome>
-      <m_foodIncome>6</m_foodIncome>
-      <m_relics>2</m_relics>
-      <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>75</m_maxSpace>
-      <m_health>50</m_health>
-      <m_happiness>75</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
-      <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="HappyStone">
-          <m_name>HappyStone</m_name>
-          <m_type>HAPPYSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>0</m_timeSpentGathering>
-          <m_amountGathered>1</m_amountGathered>
-        </Special_Resouses>
-      </List_of_Special_Resouses>
-      <m_buildings>
-        <ListOfBuildings />
-      </m_buildings>
-      <m_resourceTimer>0</m_resourceTimer>
-      <m_reaserchTimer>0</m_reaserchTimer>
-    </Active_plantes>
-    <Active_plantes xsi:type="TerrestrialEarchLike">
-      <ID>916234</ID>
-      <m_name>Terrastrial Earth Like</m_name>
-      <m_baseMinerals>9</m_baseMinerals>
       <m_baseEnergy>1</m_baseEnergy>
-      <m_baseFood>5</m_baseFood>
-      <m_mineralIncome>9</m_mineralIncome>
+      <m_baseFood>14</m_baseFood>
+      <m_mineralIncome>4</m_mineralIncome>
       <m_energyIncome>1</m_energyIncome>
-      <m_foodIncome>5</m_foodIncome>
+      <m_foodIncome>14</m_foodIncome>
       <m_relics>3</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>35</m_maxSpace>
+      <m_maxSpace>54</m_maxSpace>
+      <m_health>100</m_health>
+      <m_happiness>100</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialEarchLike">
+      <ID>891462</ID>
+      <m_name>Terrastrial Earth Like</m_name>
+      <m_baseMinerals>3</m_baseMinerals>
+      <m_baseEnergy>2</m_baseEnergy>
+      <m_baseFood>11</m_baseFood>
+      <m_mineralIncome>3</m_mineralIncome>
+      <m_energyIncome>2</m_energyIncome>
+      <m_foodIncome>11</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>88</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
       <m_usedSpace>0</m_usedSpace>
@@ -1093,6 +959,82 @@
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>987406</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>1</m_baseMinerals>
+      <m_baseEnergy>20</m_baseEnergy>
+      <m_baseFood>3</m_baseFood>
+      <m_mineralIncome>1</m_mineralIncome>
+      <m_energyIncome>20</m_energyIncome>
+      <m_foodIncome>3</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>4</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>842821</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>4</m_baseMinerals>
+      <m_baseEnergy>4</m_baseEnergy>
+      <m_baseFood>2</m_baseFood>
+      <m_mineralIncome>4</m_mineralIncome>
+      <m_energyIncome>4</m_energyIncome>
+      <m_foodIncome>2</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>73</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
           <m_timeSpentGathering>0</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
@@ -1110,37 +1052,37 @@
       <m_reaserchTimer>0</m_reaserchTimer>
     </Active_plantes>
     <Active_plantes xsi:type="StarterPlanet">
-      <ID>860752</ID>
+      <ID>1029574</ID>
       <m_name>Terrastrial Earth</m_name>
-      <m_baseMinerals>6</m_baseMinerals>
-      <m_baseEnergy>10</m_baseEnergy>
-      <m_baseFood>5</m_baseFood>
-      <m_mineralIncome>6</m_mineralIncome>
-      <m_energyIncome>10</m_energyIncome>
-      <m_foodIncome>5</m_foodIncome>
+      <m_baseMinerals>9</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>12</m_baseFood>
+      <m_mineralIncome>9</m_mineralIncome>
+      <m_energyIncome>7</m_energyIncome>
+      <m_foodIncome>12</m_foodIncome>
       <m_relics>2</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
-      <m_maxSpace>84</m_maxSpace>
+      <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
       <m_usedSpace>0</m_usedSpace>
       <List_of_Special_Resouses>
-        <Special_Resouses xsi:type="HealthStone">
-          <m_name>HealthStone</m_name>
-          <m_type>HEALTHSTONE</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
-        <Special_Resouses xsi:type="HappyStone">
-          <m_name>HappyStone</m_name>
-          <m_type>HAPPYSTONE</m_type>
-          <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -1280,43 +1222,43 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>1.90571725</m_resourceTimer>
-      <m_reaserchTimer>1.90571725</m_reaserchTimer>
+      <m_resourceTimer>4.480439</m_resourceTimer>
+      <m_reaserchTimer>4.480439</m_reaserchTimer>
     </Active_plantes>
   </Active_System_of_orbitals_List>
   <Active_System_Name>Sol</Active_System_Name>
   <Active_Planet xsi:type="StarterPlanet">
-    <ID>860752</ID>
+    <ID>1029574</ID>
     <m_name>Terrastrial Earth</m_name>
-    <m_baseMinerals>6</m_baseMinerals>
-    <m_baseEnergy>10</m_baseEnergy>
-    <m_baseFood>5</m_baseFood>
-    <m_mineralIncome>6</m_mineralIncome>
-    <m_energyIncome>10</m_energyIncome>
-    <m_foodIncome>5</m_foodIncome>
+    <m_baseMinerals>9</m_baseMinerals>
+    <m_baseEnergy>7</m_baseEnergy>
+    <m_baseFood>12</m_baseFood>
+    <m_mineralIncome>9</m_mineralIncome>
+    <m_energyIncome>7</m_energyIncome>
+    <m_foodIncome>12</m_foodIncome>
     <m_relics>2</m_relics>
     <m_reaserchIncome>0</m_reaserchIncome>
-    <m_maxSpace>84</m_maxSpace>
+    <m_maxSpace>71</m_maxSpace>
     <m_health>100</m_health>
     <m_happiness>100</m_happiness>
     <m_usedSpace>0</m_usedSpace>
     <List_of_Special_Resouses>
-      <Special_Resouses xsi:type="HealthStone">
-        <m_name>HealthStone</m_name>
-        <m_type>HEALTHSTONE</m_type>
-        <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+      <Special_Resouses xsi:type="TerraFormingStone">
+        <m_name>TerraFormingStone</m_name>
+        <m_type>TERRAFORMINGSTONE</m_type>
+        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="NullStone">
         <m_name>NullStone</m_name>
         <m_type>NULL</m_type>
-        <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
-      <Special_Resouses xsi:type="HappyStone">
-        <m_name>HappyStone</m_name>
-        <m_type>HAPPYSTONE</m_type>
-        <m_timeSpentGathering>1.90571725</m_timeSpentGathering>
+      <Special_Resouses xsi:type="TerraFormingStone">
+        <m_name>TerraFormingStone</m_name>
+        <m_type>TERRAFORMINGSTONE</m_type>
+        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
     </List_of_Special_Resouses>
@@ -1456,8 +1398,8 @@
         </Buildings>
       </ListOfBuildings>
     </m_buildings>
-    <m_resourceTimer>1.90571725</m_resourceTimer>
-    <m_reaserchTimer>1.90571725</m_reaserchTimer>
+    <m_resourceTimer>4.480439</m_resourceTimer>
+    <m_reaserchTimer>4.480439</m_reaserchTimer>
   </Active_Planet>
   <m_incomeSaveFile>
     <All_Special_Resouces>
@@ -1483,5 +1425,5 @@
     <m_food>100</m_food>
     <m_reaserch>0</m_reaserch>
   </m_incomeSaveFile>
-  <m_saveName>tester</m_saveName>
+  <m_saveName>Sabar Imperium</m_saveName>
 </InGameState>

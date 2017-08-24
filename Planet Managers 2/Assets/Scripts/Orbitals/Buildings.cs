@@ -88,11 +88,6 @@ public class BuildingsManager
 
     public BuildingsManager()
     {
-        
-    }
-
-    public void Init()
-    {
         SetListOfBuildingTypesUp();
 
         foreach (eBuildingTypes type in m_buildingTypes)
@@ -100,6 +95,16 @@ public class BuildingsManager
             CreatNewDictonarEntery(type);
         }
     }
+
+    //public void Init()
+    //{
+    //    SetListOfBuildingTypesUp();
+
+    //    foreach (eBuildingTypes type in m_buildingTypes)
+    //    {
+    //        CreatNewDictonarEntery(type);
+    //    }
+    //}
 
     public void ConvertDicToList()
     {
@@ -114,9 +119,7 @@ public class BuildingsManager
     public void ConvertListToDic(Orbital planet)
     {
         m_buildings.Clear();
-
-        Debug.Log("we ran");
-
+        
         foreach (BuildingDicToList holder in m_listOfBuildings)
         {
             foreach (Buildings building in holder.value)
@@ -125,21 +128,10 @@ public class BuildingsManager
             }
         }
 
-        Debug.Log("we set planet");
-
-        SetListOfBuildingTypesUp();
-
-        foreach (eBuildingTypes type in m_buildingTypes)
-        {
-            CreatNewDictonarEntery(type);
-        }
-
         foreach (BuildingDicToList item in m_listOfBuildings)
         {
             m_buildings[item.key] = item.value;
         }
-        
-        Debug.Log("yes");
 
         m_listOfBuildings.Clear();
     }
