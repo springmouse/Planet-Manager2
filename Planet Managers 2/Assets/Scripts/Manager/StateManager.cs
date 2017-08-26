@@ -18,6 +18,24 @@ public class StateManager
         m_pushedStates.Add(m_registeredStates[id]);
     }
 
+    public void RemoveRegisteredState(States S)
+    {
+        bool check = false;
+        foreach (States item in m_registeredStates)
+        {
+            if (S == item)
+            {
+                check = true;
+            }
+        }
+
+        if (check == true)
+        {
+            m_registeredStates.Remove(S);
+            Debug.Log("removed state");
+        }
+    }
+
     public void PopState() { m_pop = true; }
     
     public int ActiveStateCount() { return (m_stateStack.Count + m_pushedStates.Count); }

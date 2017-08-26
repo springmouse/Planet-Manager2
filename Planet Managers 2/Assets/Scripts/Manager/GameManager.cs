@@ -146,4 +146,11 @@ public class GameManager : MonoBehaviour
     {
         STM.PopState();
     }
+
+    public void RemoveInGameState(InGameState IGS)
+    {
+
+        STM.RemoveRegisteredState(IGS);
+
+    }
 }

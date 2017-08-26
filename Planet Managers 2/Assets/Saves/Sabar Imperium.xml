@@ -355,32 +355,32 @@
           <m_baseMinerals>9</m_baseMinerals>
           <m_baseEnergy>7</m_baseEnergy>
           <m_baseFood>12</m_baseFood>
-          <m_mineralIncome>9</m_mineralIncome>
-          <m_energyIncome>7</m_energyIncome>
-          <m_foodIncome>12</m_foodIncome>
+          <m_mineralIncome>99</m_mineralIncome>
+          <m_energyIncome>5</m_energyIncome>
+          <m_foodIncome>5</m_foodIncome>
           <m_relics>2</m_relics>
           <m_reaserchIncome>0</m_reaserchIncome>
           <m_maxSpace>71</m_maxSpace>
           <m_health>100</m_health>
           <m_happiness>100</m_happiness>
-          <m_usedSpace>0</m_usedSpace>
+          <m_usedSpace>17</m_usedSpace>
           <List_of_Special_Resouses>
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+              <m_timeSpentGathering>78.42182</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
-              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+              <m_timeSpentGathering>258.4539</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+              <m_timeSpentGathering>78.42182</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
           </List_of_Special_Resouses>
@@ -388,11 +388,76 @@
             <ListOfBuildings>
               <Buildings>
                 <key>BASICMINE</key>
-                <All_Buildings_On_Planet />
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.009228624</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.00034624245</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.000154733658</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.0129760141</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.006921962</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.01077284</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.000144233927</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.0138416477</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
               </Buildings>
               <Buildings>
                 <key>DECENTMINE</key>
-                <All_Buildings_On_Planet />
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="DecentMine">
+                    <m_timer>-0.00235920772</m_timer>
+                    <m_mulitpliyer>2</m_mulitpliyer>
+                    <m_energyMaintanince>4</m_energyMaintanince>
+                    <m_foodMaintanince>4</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
               </Buildings>
               <Buildings>
                 <key>ADVANCEDMINE</key>
@@ -400,7 +465,43 @@
               </Buildings>
               <Buildings>
                 <key>BASICPOWER</key>
-                <All_Buildings_On_Planet />
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.0155122951</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.00402545743</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.00372886</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.0149907116</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.0109662767</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
               </Buildings>
               <Buildings>
                 <key>DECENTPOWER</key>
@@ -412,7 +513,29 @@
               </Buildings>
               <Buildings>
                 <key>BASICFARM</key>
-                <All_Buildings_On_Planet />
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicFarm">
+                    <m_timer>-0.008643504</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>0</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicFarm">
+                    <m_timer>-0.0119983107</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>0</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicFarm">
+                    <m_timer>-0.01062483</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>0</m_foodMaintanince>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
               </Buildings>
               <Buildings>
                 <key>DECENTFARM</key>
@@ -520,8 +643,8 @@
               </Buildings>
             </ListOfBuildings>
           </m_buildings>
-          <m_resourceTimer>4.480439</m_resourceTimer>
-          <m_reaserchTimer>4.480439</m_reaserchTimer>
+          <m_resourceTimer>18.387619</m_resourceTimer>
+          <m_reaserchTimer>18.4207554</m_reaserchTimer>
         </orbitals_in_system>
       </All_orbitals_in_system>
     </Key_and_Value>
@@ -536,32 +659,32 @@
       <m_baseMinerals>9</m_baseMinerals>
       <m_baseEnergy>7</m_baseEnergy>
       <m_baseFood>12</m_baseFood>
-      <m_mineralIncome>9</m_mineralIncome>
-      <m_energyIncome>7</m_energyIncome>
-      <m_foodIncome>12</m_foodIncome>
+      <m_mineralIncome>99</m_mineralIncome>
+      <m_energyIncome>5</m_energyIncome>
+      <m_foodIncome>5</m_foodIncome>
       <m_relics>2</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
       <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
+      <m_usedSpace>17</m_usedSpace>
       <List_of_Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>78.42182</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>258.4539</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>78.42182</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -569,11 +692,76 @@
         <ListOfBuildings>
           <Buildings>
             <key>BASICMINE</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.009228624</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.00034624245</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.000154733658</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0129760141</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.006921962</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.01077284</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.000144233927</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0138416477</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTMINE</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="DecentMine">
+                <m_timer>-0.00235920772</m_timer>
+                <m_mulitpliyer>2</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>ADVANCEDMINE</key>
@@ -581,7 +769,43 @@
           </Buildings>
           <Buildings>
             <key>BASICPOWER</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0155122951</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.00402545743</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.00372886</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0149907116</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0109662767</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTPOWER</key>
@@ -593,7 +817,29 @@
           </Buildings>
           <Buildings>
             <key>BASICFARM</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.008643504</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0119983107</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.01062483</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTFARM</key>
@@ -701,8 +947,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>4.480439</m_resourceTimer>
-      <m_reaserchTimer>4.480439</m_reaserchTimer>
+      <m_resourceTimer>18.387619</m_resourceTimer>
+      <m_reaserchTimer>18.4207554</m_reaserchTimer>
     </Player_plantes>
   </Player_orbitals_List>
   <Active_System_of_orbitals_List>
@@ -1057,32 +1303,32 @@
       <m_baseMinerals>9</m_baseMinerals>
       <m_baseEnergy>7</m_baseEnergy>
       <m_baseFood>12</m_baseFood>
-      <m_mineralIncome>9</m_mineralIncome>
-      <m_energyIncome>7</m_energyIncome>
-      <m_foodIncome>12</m_foodIncome>
+      <m_mineralIncome>99</m_mineralIncome>
+      <m_energyIncome>5</m_energyIncome>
+      <m_foodIncome>5</m_foodIncome>
       <m_relics>2</m_relics>
       <m_reaserchIncome>0</m_reaserchIncome>
       <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
-      <m_usedSpace>0</m_usedSpace>
+      <m_usedSpace>17</m_usedSpace>
       <List_of_Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>78.42182</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>258.4539</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+          <m_timeSpentGathering>78.42182</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -1090,11 +1336,76 @@
         <ListOfBuildings>
           <Buildings>
             <key>BASICMINE</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.009228624</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.00034624245</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.000154733658</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0129760141</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.006921962</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.01077284</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.000144233927</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0138416477</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTMINE</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="DecentMine">
+                <m_timer>-0.00235920772</m_timer>
+                <m_mulitpliyer>2</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>ADVANCEDMINE</key>
@@ -1102,7 +1413,43 @@
           </Buildings>
           <Buildings>
             <key>BASICPOWER</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0155122951</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.00402545743</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.00372886</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0149907116</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0109662767</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTPOWER</key>
@@ -1114,7 +1461,29 @@
           </Buildings>
           <Buildings>
             <key>BASICFARM</key>
-            <All_Buildings_On_Planet />
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.008643504</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0119983107</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.01062483</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
           </Buildings>
           <Buildings>
             <key>DECENTFARM</key>
@@ -1222,8 +1591,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>4.480439</m_resourceTimer>
-      <m_reaserchTimer>4.480439</m_reaserchTimer>
+      <m_resourceTimer>18.387619</m_resourceTimer>
+      <m_reaserchTimer>18.4207554</m_reaserchTimer>
     </Active_plantes>
   </Active_System_of_orbitals_List>
   <Active_System_Name>Sol</Active_System_Name>
@@ -1233,32 +1602,32 @@
     <m_baseMinerals>9</m_baseMinerals>
     <m_baseEnergy>7</m_baseEnergy>
     <m_baseFood>12</m_baseFood>
-    <m_mineralIncome>9</m_mineralIncome>
-    <m_energyIncome>7</m_energyIncome>
-    <m_foodIncome>12</m_foodIncome>
+    <m_mineralIncome>99</m_mineralIncome>
+    <m_energyIncome>5</m_energyIncome>
+    <m_foodIncome>5</m_foodIncome>
     <m_relics>2</m_relics>
     <m_reaserchIncome>0</m_reaserchIncome>
     <m_maxSpace>71</m_maxSpace>
     <m_health>100</m_health>
     <m_happiness>100</m_happiness>
-    <m_usedSpace>0</m_usedSpace>
+    <m_usedSpace>17</m_usedSpace>
     <List_of_Special_Resouses>
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+        <m_timeSpentGathering>78.42182</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="NullStone">
         <m_name>NullStone</m_name>
         <m_type>NULL</m_type>
-        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+        <m_timeSpentGathering>258.4539</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>4.480439</m_timeSpentGathering>
+        <m_timeSpentGathering>78.42182</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
     </List_of_Special_Resouses>
@@ -1266,11 +1635,76 @@
       <ListOfBuildings>
         <Buildings>
           <key>BASICMINE</key>
-          <All_Buildings_On_Planet />
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.009228624</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.00034624245</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.000154733658</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.0129760141</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.006921962</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.01077284</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.000144233927</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.0138416477</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
         </Buildings>
         <Buildings>
           <key>DECENTMINE</key>
-          <All_Buildings_On_Planet />
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="DecentMine">
+              <m_timer>-0.00235920772</m_timer>
+              <m_mulitpliyer>2</m_mulitpliyer>
+              <m_energyMaintanince>4</m_energyMaintanince>
+              <m_foodMaintanince>4</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
         </Buildings>
         <Buildings>
           <key>ADVANCEDMINE</key>
@@ -1278,7 +1712,43 @@
         </Buildings>
         <Buildings>
           <key>BASICPOWER</key>
-          <All_Buildings_On_Planet />
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.0155122951</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.00402545743</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.00372886</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.0149907116</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.0109662767</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
         </Buildings>
         <Buildings>
           <key>DECENTPOWER</key>
@@ -1290,7 +1760,29 @@
         </Buildings>
         <Buildings>
           <key>BASICFARM</key>
-          <All_Buildings_On_Planet />
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicFarm">
+              <m_timer>-0.008643504</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>0</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicFarm">
+              <m_timer>-0.0119983107</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>0</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicFarm">
+              <m_timer>-0.01062483</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>0</m_foodMaintanince>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
         </Buildings>
         <Buildings>
           <key>DECENTFARM</key>
@@ -1398,8 +1890,8 @@
         </Buildings>
       </ListOfBuildings>
     </m_buildings>
-    <m_resourceTimer>4.480439</m_resourceTimer>
-    <m_reaserchTimer>4.480439</m_reaserchTimer>
+    <m_resourceTimer>18.387619</m_resourceTimer>
+    <m_reaserchTimer>18.4207554</m_reaserchTimer>
   </Active_Planet>
   <m_incomeSaveFile>
     <All_Special_Resouces>
@@ -1417,12 +1909,12 @@
       </Special_Resouces>
       <Special_Resouces>
         <key>TERRAFORMINGSTONE</key>
-        <value>0</value>
+        <value>4</value>
       </Special_Resouces>
     </All_Special_Resouces>
-    <m_minerals>100</m_minerals>
-    <m_energy>100</m_energy>
-    <m_food>100</m_food>
+    <m_minerals>204</m_minerals>
+    <m_energy>118</m_energy>
+    <m_food>138</m_food>
     <m_reaserch>0</m_reaserch>
   </m_incomeSaveFile>
   <m_saveName>Sabar Imperium</m_saveName>

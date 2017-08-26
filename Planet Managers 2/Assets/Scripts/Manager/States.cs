@@ -71,13 +71,6 @@ public class MenuState : States
             m_saveNames[i] = m_saveNames[i].Substring(filePath.Length);
 
             m_saveNames[i] = m_saveNames[i].Remove(m_saveNames[i].Length - 4);
-
-            Debug.Log(m_saveNames[i]);
-        }
-
-        for (int i = 0; i < m_SaveFileLocations.Length; i++)
-        {
-            Debug.Log(m_SaveFileLocations[i]);
         }
     }
 
@@ -176,6 +169,10 @@ public class InGameState : States
         GameManager.GM.m_InGameRoot.SetActive(false);
         GameManager.GM.m_mainMenu.SetActive(true);
         GameManager.GM.m_InGame = false;
+
+        Serialize();
+
+        GameManager.GM.RemoveInGameState(this);
     }
 
     override public void Update(float deltaTime)
@@ -197,12 +194,7 @@ public class InGameState : States
             {
                 GameManager.GM.PopState();
             }
-
-            //if (Input.GetKeyDown("l"))
-            //{
-            //    InGameState IGS = InGameState.Deserialize(m_saveName);
-            //}
-
+            
             m_activePlanet.Update(deltaTime);
 
             GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();

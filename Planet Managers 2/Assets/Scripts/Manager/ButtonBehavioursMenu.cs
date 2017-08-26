@@ -11,23 +11,50 @@ public class ButtonBehavioursMenu : MonoBehaviour {
     public GameObject m_startNewGame;
     public GameObject m_loadGame;
 
+    public Button m_loadButtonPrefab;
+
+    List<Button> m_loadGameButtons = new List<Button>();
+
     public Text m_gameName;
     public Text m_notValidName;
 
     public float m_InvalidTimer;
 
-	// Use this for initialization
+    bool m_nameListCreated = false;
+   
 	void Start ()
     {
-        m_menu.SetActive(true);
-        m_startNewGame.SetActive(false);
-        m_loadGame.SetActive(false);
+        Menu();
         m_InvalidTimer = 6;
+    }
+
+    public void LoadGameButtonFunction()
+    {
+        Debug.Log(gameObject.name);
     }
 
     public void Update()
     {
         m_InvalidTimer += Time.deltaTime;
+
+        LoadGameButtons();
+
+        foreach (Button btn in m_loadGameButtons)
+        {
+            if (btn.gameObject.transform.localPosition.y > 230 || btn.gameObject.transform.localPosition.y < -230)
+            {
+                btn.gameObject.SetActive(false);
+            }
+            else
+            {
+                btn.gameObject.SetActive(true);
+            }
+        }
+
+        if (Input.GetKeyDown("escape"))
+        {
+            Menu();
+        }
 
         if (m_InvalidTimer <= 5)
         {
@@ -39,11 +66,52 @@ public class ButtonBehavioursMenu : MonoBehaviour {
         }
     }
 
+    void LoadGameButtons()
+    {
+        if (m_nameListCreated == false)
+        {
+            int count = 50;
+            Vector2 holder = new Vector3(-10, 230, 0);
+            m_loadGameButtons.Clear();
+
+            foreach (string _name in MS.m_saveNames)
+            {
+                Button btn = Button.Instantiate(m_loadButtonPrefab, holder, Quaternion.identity, m_loadGame.transform);
+
+                btn.gameObject.transform.localPosition = holder;
+
+                btn.onClick.AddListener(() => 
+                {
+                    GameManager.GM.RegisterInGameState(InGameState.Deserialize(_name));
+                    GameManager.GM.PushState();
+                });
+
+                btn.name = _name;
+
+                Text textholder = btn.GetComponentInChildren<Text>();
+
+                textholder.text = _name;
+
+                m_loadGameButtons.Add(btn);
+
+                holder.y -= count;
+            }
+
+            m_nameListCreated = true;
+        }
+    }
+
     public void SetMenuState(MenuState ms)
     {
         MS = ms;
     }
 
+    public void Menu()
+    {
+        m_menu.SetActive(true);
+        m_startNewGame.SetActive(false);
+        m_loadGame.SetActive(false);
+    }
 
     public void StartNewGame()
     {
@@ -77,6 +145,9 @@ public class ButtonBehavioursMenu : MonoBehaviour {
             m_InvalidTimer = 0;
             return;
         }
+
+        GameManager.GM.m_usedID.Clear();
+        m_nameListCreated = false;
 
         InGameState IGS = new InGameState();
         IGS.Init(newName);
