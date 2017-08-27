@@ -15,6 +15,13 @@ public class Income
 
     private Income()
     {
+        Init();
+    }
+
+    public void Init()
+    {
+        m_specialResouces.Clear();
+
         m_specialResouces.Add(eResouceType.NULL, 0.0f);
         m_specialResouces.Add(eResouceType.HEALTHSTONE, 0.0f);
         m_specialResouces.Add(eResouceType.TERRAFORMINGSTONE, 0.0f);

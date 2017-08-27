@@ -72,6 +72,12 @@ public class ButtonBehavioursMenu : MonoBehaviour {
         {
             int count = 50;
             Vector2 holder = new Vector3(-10, 230, 0);
+
+            foreach (Button btn in m_loadGameButtons)
+            {
+                Destroy(btn.gameObject);
+            }
+
             m_loadGameButtons.Clear();
 
             foreach (string _name in MS.m_saveNames)
@@ -145,6 +151,8 @@ public class ButtonBehavioursMenu : MonoBehaviour {
             m_InvalidTimer = 0;
             return;
         }
+
+        Income.Instance.Init();
 
         GameManager.GM.m_usedID.Clear();
         m_nameListCreated = false;
