@@ -368,19 +368,19 @@
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+              <m_timeSpentGathering>83.55455</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
-              <m_timeSpentGathering>261.6367</m_timeSpentGathering>
+              <m_timeSpentGathering>263.587219</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+              <m_timeSpentGathering>83.55455</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
           </List_of_Special_Resouses>
@@ -643,8 +643,8 @@
               </Buildings>
             </ListOfBuildings>
           </m_buildings>
-          <m_resourceTimer>21.5699368</m_resourceTimer>
-          <m_reaserchTimer>21.603075</m_reaserchTimer>
+          <m_resourceTimer>23.5208187</m_resourceTimer>
+          <m_reaserchTimer>23.553957</m_reaserchTimer>
         </orbitals_in_system>
       </All_orbitals_in_system>
     </Key_and_Value>
@@ -672,19 +672,19 @@
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>261.6367</m_timeSpentGathering>
+          <m_timeSpentGathering>263.587219</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -947,8 +947,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>21.5699368</m_resourceTimer>
-      <m_reaserchTimer>21.603075</m_reaserchTimer>
+      <m_resourceTimer>23.5208187</m_resourceTimer>
+      <m_reaserchTimer>23.553957</m_reaserchTimer>
     </Player_plantes>
   </Player_orbitals_List>
   <Active_System_of_orbitals_List>
@@ -1316,19 +1316,19 @@
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>261.6367</m_timeSpentGathering>
+          <m_timeSpentGathering>263.587219</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -1591,8 +1591,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>21.5699368</m_resourceTimer>
-      <m_reaserchTimer>21.603075</m_reaserchTimer>
+      <m_resourceTimer>23.5208187</m_resourceTimer>
+      <m_reaserchTimer>23.553957</m_reaserchTimer>
     </Active_plantes>
   </Active_System_of_orbitals_List>
   <Active_System_Name>Sol</Active_System_Name>
@@ -1615,19 +1615,19 @@
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+        <m_timeSpentGathering>83.55455</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="NullStone">
         <m_name>NullStone</m_name>
         <m_type>NULL</m_type>
-        <m_timeSpentGathering>261.6367</m_timeSpentGathering>
+        <m_timeSpentGathering>263.587219</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>81.6039658</m_timeSpentGathering>
+        <m_timeSpentGathering>83.55455</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
     </List_of_Special_Resouses>
@@ -1890,8 +1890,8 @@
         </Buildings>
       </ListOfBuildings>
     </m_buildings>
-    <m_resourceTimer>21.5699368</m_resourceTimer>
-    <m_reaserchTimer>21.603075</m_reaserchTimer>
+    <m_resourceTimer>23.5208187</m_resourceTimer>
+    <m_reaserchTimer>23.553957</m_reaserchTimer>
   </Active_Planet>
   <m_incomeSaveFile>
     <All_Special_Resouces>

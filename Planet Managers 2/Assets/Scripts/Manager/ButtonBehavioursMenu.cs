@@ -20,7 +20,6 @@ public class ButtonBehavioursMenu : MonoBehaviour {
 
     public float m_InvalidTimer;
 
-    bool m_nameListCreated = false;
    
 	void Start ()
     {
@@ -68,7 +67,7 @@ public class ButtonBehavioursMenu : MonoBehaviour {
 
     void LoadGameButtons()
     {
-        if (m_nameListCreated == false)
+        if (MS.m_nameListCreated == false)
         {
             int count = 50;
             Vector2 holder = new Vector3(-10, 230, 0);
@@ -103,7 +102,7 @@ public class ButtonBehavioursMenu : MonoBehaviour {
                 holder.y -= count;
             }
 
-            m_nameListCreated = true;
+            MS.m_nameListCreated = true;
         }
     }
 
@@ -155,7 +154,6 @@ public class ButtonBehavioursMenu : MonoBehaviour {
         Income.Instance.Init();
 
         GameManager.GM.m_usedID.Clear();
-        m_nameListCreated = false;
 
         InGameState IGS = new InGameState();
         IGS.Init(newName);

@@ -52,11 +52,15 @@ public class MenuState : States
 {    
     public List<string> m_saveNames = new List<string>();
 
+    public bool m_nameListCreated = false;
+
     protected override void onEnter()
     {
         GameManager.GM.m_InGameRoot.SetActive(false);
         GameManager.GM.m_mainMenu.SetActive(true);
         GameManager.GM.m_InGame = false;
+        
+        m_nameListCreated = false;
 
         string filePath = Application.dataPath + "/Saves/";
 
