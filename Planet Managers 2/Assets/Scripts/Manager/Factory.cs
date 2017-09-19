@@ -204,13 +204,13 @@ public class Factory
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICREASERCH:
-                break;
+                return new BasicLab(planet);
 
             case eBuildingTypes.DECENTREASERCH:
-                break;
+                return new DecentLab(planet);
 
             case eBuildingTypes.ADVANCEDREASERCH:
-                break;
+                return new AdvancedLab(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

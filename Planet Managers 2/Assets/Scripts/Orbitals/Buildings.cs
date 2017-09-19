@@ -75,8 +75,7 @@ public class BuildingsManager
             value = v;
         }
     }
-
-
+    
     [XmlIgnore]
     public List<eBuildingTypes> m_buildingTypes = new List<eBuildingTypes>();
 
@@ -95,16 +94,6 @@ public class BuildingsManager
             CreatNewDictonarEntery(type);
         }
     }
-
-    //public void Init()
-    //{
-    //    SetListOfBuildingTypesUp();
-
-    //    foreach (eBuildingTypes type in m_buildingTypes)
-    //    {
-    //        CreatNewDictonarEntery(type);
-    //    }
-    //}
 
     public void ConvertDicToList()
     {
@@ -317,12 +306,29 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICREASERCH:
+                if (Income.Instance.m_minerals >= 20 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTREASERCH:
+                if (Income.Instance.m_minerals >= 40 && m_buildings[eBuildingTypes.BASICREASERCH].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICREASERCH].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDREASERCH:
+                if (Income.Instance.m_minerals >= 80 && m_buildings[eBuildingTypes.DECENTREASERCH].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTREASERCH].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -722,3 +728,74 @@ public class AdvancedFarm : Farm
 
 //////////////////////////////////////////////////////////////////////////////
 
+public class Lab : Buildings
+{
+    public Lab() { }
+
+    protected override void IncomeType()
+    {
+        m_planet.m_reaserchIncome += m_planet.m_relics * m_mulitpliyer;
+    }
+
+    protected override void CleanUp()
+    {
+        m_planet.m_reaserchIncome -= m_planet.m_relics * m_mulitpliyer;
+    }
+}
+
+public class BasicLab : Lab
+{
+    public BasicLab() { }
+
+    public BasicLab(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_basicCost;
+
+        m_timer = m_basicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 3;
+    }
+}
+
+public class DecentLab : Lab
+{
+    public DecentLab() { }
+
+    public DecentLab(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_decentCost;
+
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 4;
+    }
+}
+
+public class AdvancedLab : Lab
+{
+    public AdvancedLab() { }
+
+    public AdvancedLab(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_advancedCost;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 12;
+        m_foodMaintanince = 6;
+    }
+}

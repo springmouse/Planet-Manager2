@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
     public Text[] m_power;
     public Text[] m_farm;
 
+    public Text[] m_reaserch;
+
     #endregion
 
     #endregion
@@ -135,6 +137,12 @@ public class GameManager : MonoBehaviour
         m_farm[0].text = "Basic Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICFARM].Count);
         m_farm[1].text = "Decent Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTFARM].Count);
         m_farm[2].text = "Advanced Farm: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDFARM].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_reaserch[0].text = "Basic Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICREASERCH].Count);
+        m_reaserch[1].text = "Decent Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTREASERCH].Count);
+        m_reaserch[2].text = "Advanced Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDREASERCH].Count);
     }
 
     public void PushState()

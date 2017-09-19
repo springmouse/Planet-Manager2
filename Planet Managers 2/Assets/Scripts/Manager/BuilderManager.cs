@@ -56,4 +56,20 @@ public class BuilderManager : MonoBehaviour
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicLab()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICREASERCH, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentLab()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTREASERCH, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedLab()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDREASERCH, GameManager.GM.m_activePlanet);
+    }
+
 }

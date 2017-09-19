@@ -363,24 +363,24 @@
           <m_maxSpace>71</m_maxSpace>
           <m_health>100</m_health>
           <m_happiness>100</m_happiness>
-          <m_usedSpace>17</m_usedSpace>
+          <m_usedSpace>19</m_usedSpace>
           <List_of_Special_Resouses>
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+              <m_timeSpentGathering>4.404926</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="NullStone">
               <m_name>NullStone</m_name>
               <m_type>NULL</m_type>
-              <m_timeSpentGathering>263.587219</m_timeSpentGathering>
+              <m_timeSpentGathering>274.442871</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
             <Special_Resouses xsi:type="TerraFormingStone">
               <m_name>TerraFormingStone</m_name>
               <m_type>TERRAFORMINGSTONE</m_type>
-              <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+              <m_timeSpentGathering>4.404926</m_timeSpentGathering>
               <m_amountGathered>1</m_amountGathered>
             </Special_Resouses>
           </List_of_Special_Resouses>
@@ -444,6 +444,20 @@
                     <m_energyMaintanince>3</m_energyMaintanince>
                     <m_foodMaintanince>3</m_foodMaintanince>
                     <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>15.3803358</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>true</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>15.8932133</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_isbuilding>true</m_isbuilding>
                   </Buildings>
                 </All_Buildings_On_Planet>
               </Buildings>
@@ -643,8 +657,8 @@
               </Buildings>
             </ListOfBuildings>
           </m_buildings>
-          <m_resourceTimer>23.5208187</m_resourceTimer>
-          <m_reaserchTimer>23.553957</m_reaserchTimer>
+          <m_resourceTimer>4.37183237</m_resourceTimer>
+          <m_reaserchTimer>34.408577</m_reaserchTimer>
         </orbitals_in_system>
       </All_orbitals_in_system>
     </Key_and_Value>
@@ -667,24 +681,24 @@
       <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
-      <m_usedSpace>17</m_usedSpace>
+      <m_usedSpace>19</m_usedSpace>
       <List_of_Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+          <m_timeSpentGathering>4.404926</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>263.587219</m_timeSpentGathering>
+          <m_timeSpentGathering>274.442871</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+          <m_timeSpentGathering>4.404926</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -748,6 +762,20 @@
                 <m_energyMaintanince>3</m_energyMaintanince>
                 <m_foodMaintanince>3</m_foodMaintanince>
                 <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>15.3803358</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>true</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>15.8932133</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>true</m_isbuilding>
               </Buildings>
             </All_Buildings_On_Planet>
           </Buildings>
@@ -947,8 +975,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>23.5208187</m_resourceTimer>
-      <m_reaserchTimer>23.553957</m_reaserchTimer>
+      <m_resourceTimer>4.37183237</m_resourceTimer>
+      <m_reaserchTimer>34.408577</m_reaserchTimer>
     </Player_plantes>
   </Player_orbitals_List>
   <Active_System_of_orbitals_List>
@@ -1311,24 +1339,24 @@
       <m_maxSpace>71</m_maxSpace>
       <m_health>100</m_health>
       <m_happiness>100</m_happiness>
-      <m_usedSpace>17</m_usedSpace>
+      <m_usedSpace>19</m_usedSpace>
       <List_of_Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+          <m_timeSpentGathering>4.404926</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="NullStone">
           <m_name>NullStone</m_name>
           <m_type>NULL</m_type>
-          <m_timeSpentGathering>263.587219</m_timeSpentGathering>
+          <m_timeSpentGathering>274.442871</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
         <Special_Resouses xsi:type="TerraFormingStone">
           <m_name>TerraFormingStone</m_name>
           <m_type>TERRAFORMINGSTONE</m_type>
-          <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+          <m_timeSpentGathering>4.404926</m_timeSpentGathering>
           <m_amountGathered>1</m_amountGathered>
         </Special_Resouses>
       </List_of_Special_Resouses>
@@ -1392,6 +1420,20 @@
                 <m_energyMaintanince>3</m_energyMaintanince>
                 <m_foodMaintanince>3</m_foodMaintanince>
                 <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>15.3803358</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>true</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>15.8932133</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_isbuilding>true</m_isbuilding>
               </Buildings>
             </All_Buildings_On_Planet>
           </Buildings>
@@ -1591,8 +1633,8 @@
           </Buildings>
         </ListOfBuildings>
       </m_buildings>
-      <m_resourceTimer>23.5208187</m_resourceTimer>
-      <m_reaserchTimer>23.553957</m_reaserchTimer>
+      <m_resourceTimer>4.37183237</m_resourceTimer>
+      <m_reaserchTimer>34.408577</m_reaserchTimer>
     </Active_plantes>
   </Active_System_of_orbitals_List>
   <Active_System_Name>Sol</Active_System_Name>
@@ -1610,24 +1652,24 @@
     <m_maxSpace>71</m_maxSpace>
     <m_health>100</m_health>
     <m_happiness>100</m_happiness>
-    <m_usedSpace>17</m_usedSpace>
+    <m_usedSpace>19</m_usedSpace>
     <List_of_Special_Resouses>
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+        <m_timeSpentGathering>4.404926</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="NullStone">
         <m_name>NullStone</m_name>
         <m_type>NULL</m_type>
-        <m_timeSpentGathering>263.587219</m_timeSpentGathering>
+        <m_timeSpentGathering>274.442871</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
       <Special_Resouses xsi:type="TerraFormingStone">
         <m_name>TerraFormingStone</m_name>
         <m_type>TERRAFORMINGSTONE</m_type>
-        <m_timeSpentGathering>83.55455</m_timeSpentGathering>
+        <m_timeSpentGathering>4.404926</m_timeSpentGathering>
         <m_amountGathered>1</m_amountGathered>
       </Special_Resouses>
     </List_of_Special_Resouses>
@@ -1691,6 +1733,20 @@
               <m_energyMaintanince>3</m_energyMaintanince>
               <m_foodMaintanince>3</m_foodMaintanince>
               <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>15.3803358</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>true</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>15.8932133</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_isbuilding>true</m_isbuilding>
             </Buildings>
           </All_Buildings_On_Planet>
         </Buildings>
@@ -1890,8 +1946,8 @@
         </Buildings>
       </ListOfBuildings>
     </m_buildings>
-    <m_resourceTimer>23.5208187</m_resourceTimer>
-    <m_reaserchTimer>23.553957</m_reaserchTimer>
+    <m_resourceTimer>4.37183237</m_resourceTimer>
+    <m_reaserchTimer>34.408577</m_reaserchTimer>
   </Active_Planet>
   <m_incomeSaveFile>
     <All_Special_Resouces>
@@ -1909,12 +1965,12 @@
       </Special_Resouces>
       <Special_Resouces>
         <key>TERRAFORMINGSTONE</key>
-        <value>4</value>
+        <value>6</value>
       </Special_Resouces>
     </All_Special_Resouces>
-    <m_minerals>204</m_minerals>
-    <m_energy>118</m_energy>
-    <m_food>138</m_food>
+    <m_minerals>263</m_minerals>
+    <m_energy>123</m_energy>
+    <m_food>143</m_food>
     <m_reaserch>0</m_reaserch>
   </m_incomeSaveFile>
   <m_saveName>Sabar Imperium</m_saveName>
