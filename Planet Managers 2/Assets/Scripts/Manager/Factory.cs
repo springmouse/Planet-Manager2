@@ -226,13 +226,13 @@ public class Factory
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICPARK:
-                break;
+                return new BasicPark(planet);
 
             case eBuildingTypes.DECENTPARK:
-                break;
+                return new DecentPark(planet);
 
             case eBuildingTypes.ADVANCEDPARK:
-                break;
+                return new AdvancedPark(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -59,6 +59,9 @@ public class GameManager : MonoBehaviour
 
     public Text[] m_reaserch;
 
+    public Text[] m_park;
+    public Text[] m_clinic;
+    public Text[] m_Terraformer;
     #endregion
 
     #endregion
@@ -82,6 +85,8 @@ public class GameManager : MonoBehaviour
         STM.PushState(0);
 
         gameObject.GetComponent<ButtonBehavioursMenu>().SetMenuState(ms);
+
+        Application.runInBackground = true;
 	}
 
 
@@ -143,6 +148,12 @@ public class GameManager : MonoBehaviour
         m_reaserch[0].text = "Basic Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICREASERCH].Count);
         m_reaserch[1].text = "Decent Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTREASERCH].Count);
         m_reaserch[2].text = "Advanced Lab: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDREASERCH].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_park[0].text = "Basic Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICPARK].Count);
+        m_park[1].text = "Decent Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTPARK].Count);
+        m_park[2].text = "Advanced Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDPARK].Count);
     }
 
     public void PushState()

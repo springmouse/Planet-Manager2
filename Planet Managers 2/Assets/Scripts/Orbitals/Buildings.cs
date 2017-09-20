@@ -345,12 +345,29 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICPARK:
+                if (Income.Instance.m_minerals >= 30 && Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] >= 1 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTPARK:
+                if (Income.Instance.m_minerals >= 60 && Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] >= 2 && m_buildings[eBuildingTypes.BASICPARK].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICREASERCH].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDPARK:
+                if (Income.Instance.m_minerals >= 120 && Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] >= 4 && m_buildings[eBuildingTypes.DECENTPARK].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTREASERCH].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -431,6 +448,14 @@ public class BuildingsManager
 [XmlInclude(typeof(BasicFarm))]
 [XmlInclude(typeof(DecentFarm))]
 [XmlInclude(typeof(AdvancedFarm))]
+[XmlInclude(typeof(Lab))]
+[XmlInclude(typeof(BasicLab))]
+[XmlInclude(typeof(DecentLab))]
+[XmlInclude(typeof(AdvancedLab))]
+[XmlInclude(typeof(Park))]
+[XmlInclude(typeof(BasicPark))]
+[XmlInclude(typeof(DecentPark))]
+[XmlInclude(typeof(AdvancedPark))]
 public class Buildings
 {
     protected float m_basicBuildTime = 20;
@@ -443,10 +468,17 @@ public class Buildings
     protected float m_decentCost = 40;
     protected float m_advancedCost = 80;
 
+    protected float m_specialBasicCost = 30;
+    protected float m_specialDecentCost = 60;
+    protected float m_specialAdvancedCost = 120;
+
     public int m_mulitpliyer;
 
     public int m_energyMaintanince;
     public int m_foodMaintanince;
+
+    public int m_healthCost;
+    public int m_happynessCost;
 
     public bool m_isbuilding = true;
 
@@ -463,6 +495,9 @@ public class Buildings
 
         m_energyMaintanince = 0;
         m_foodMaintanince = 0;
+
+        m_happynessCost = 0;
+        m_healthCost = 0;
     }
 
     public virtual void Update(float deltaTime)
@@ -477,6 +512,9 @@ public class Buildings
 
                 m_planet.m_energyIncome += -m_energyMaintanince;
                 m_planet.m_foodIncome += -m_foodMaintanince;
+
+                m_planet.m_happiness += -m_happynessCost;
+                m_planet.m_health += -m_healthCost;
 
                 m_isbuilding = false;
             }
@@ -498,6 +536,9 @@ public class Buildings
             CleanUp();
             m_planet.m_energyIncome += m_energyMaintanince;
             m_planet.m_foodIncome += m_foodMaintanince;
+
+            m_planet.m_health += m_healthCost;
+            m_planet.m_happiness += m_happynessCost;
         }
     }
 
@@ -537,6 +578,9 @@ public class BasicMine : Mine
 
         m_energyMaintanince = 3;
         m_foodMaintanince = 3;
+
+        m_happynessCost = 2;
+        m_healthCost = 3;
     }
 }
 
@@ -556,6 +600,9 @@ public class DecentMine : Mine
 
         m_energyMaintanince = 4;
         m_foodMaintanince = 4;
+        
+        m_happynessCost = 2;
+        m_healthCost = 3;
     }
 }
 
@@ -575,6 +622,10 @@ public class AdvancedMine : Mine
 
         m_energyMaintanince = 6;
         m_foodMaintanince = 6;
+
+
+        m_happynessCost = 2;
+        m_healthCost = 4;
     }
 }
 
@@ -611,6 +662,9 @@ public class BasicPower : Power
 
         m_energyMaintanince = 0;
         m_foodMaintanince = 3;
+        
+        m_happynessCost = 2;
+        m_healthCost = 3;
     }
 }
 
@@ -630,6 +684,9 @@ public class DecentPower : Power
 
         m_energyMaintanince = 0;
         m_foodMaintanince = 4;
+        
+        m_happynessCost = 2;
+        m_healthCost = 3;
     }
 }
 
@@ -649,6 +706,9 @@ public class AdvancedPower : Power
 
         m_energyMaintanince = 0;
         m_foodMaintanince = 6;
+        
+        m_happynessCost = 2;
+        m_healthCost = 4;
     }
 }
 
@@ -685,6 +745,10 @@ public class BasicFarm : Farm
 
         m_energyMaintanince = 3;
         m_foodMaintanince = 0;
+
+
+        m_happynessCost = 3;
+        m_healthCost = 2;
     }
 }
 
@@ -704,6 +768,9 @@ public class DecentFarm : Farm
 
         m_energyMaintanince = 4;
         m_foodMaintanince = 0;
+
+        m_happynessCost = 3;
+        m_healthCost = 2;
     }
 }
 
@@ -723,6 +790,9 @@ public class AdvancedFarm : Farm
 
         m_energyMaintanince = 6;
         m_foodMaintanince = 0;
+
+        m_happynessCost = 4;
+        m_healthCost = 2;
     }
 }
 
@@ -797,5 +867,92 @@ public class AdvancedLab : Lab
 
         m_energyMaintanince = 12;
         m_foodMaintanince = 6;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+public class Park : Buildings
+{
+    public Park() { }
+
+    protected override void IncomeType()
+    {
+    }
+
+    protected override void CleanUp()
+    {
+    }
+}
+
+public class BasicPark : Park
+{
+    public BasicPark() { }
+
+    public BasicPark(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+        Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] -= 1;
+
+        m_timer = m_basicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 2;
+        m_foodMaintanince = 4;
+
+
+        m_happynessCost = -12;
+        m_healthCost = 0;
+    }
+}
+
+public class DecentPark : Park
+{
+    public DecentPark() { }
+
+    public DecentPark(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+        Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] -= 2;
+
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 2;
+        m_foodMaintanince = 5;
+
+
+        m_happynessCost = -24;
+        m_healthCost = 0;
+    }
+}
+
+public class AdvancedPark : Park
+{
+    public AdvancedPark() { }
+
+    public AdvancedPark(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+        Income.Instance.m_specialResouces[eResouceType.HAPPYSTONE] -= 4;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 2;
+        m_foodMaintanince = 6;
+        
+        m_happynessCost = -48;
+        m_healthCost = 0;
     }
 }

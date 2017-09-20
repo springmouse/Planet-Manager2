@@ -72,4 +72,20 @@ public class BuilderManager : MonoBehaviour
         GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDREASERCH, GameManager.GM.m_activePlanet);
     }
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicPark()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICPARK, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentPark()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTPARK, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedPark()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDPARK, GameManager.GM.m_activePlanet);
+    }
 }
