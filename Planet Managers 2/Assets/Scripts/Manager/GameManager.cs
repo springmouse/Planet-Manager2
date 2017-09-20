@@ -62,6 +62,17 @@ public class GameManager : MonoBehaviour
     public Text[] m_park;
     public Text[] m_clinic;
     public Text[] m_Terraformer;
+
+    public Text[] m_nullStoneMine;
+    public Text[] m_happyStoneMine;
+    public Text[] m_healthStoneMine;
+    public Text[] m_terraformingStoneMine;
+
+    public GameObject m_nullMineHolder;
+    public GameObject m_happyMineHolder;
+    public GameObject m_healthMineHolder;
+    public GameObject m_TerraformingMineHolder;
+
     #endregion
 
     #endregion
@@ -108,13 +119,23 @@ public class GameManager : MonoBehaviour
                 m_FoodText.text = "Food = " + (int)Income.Instance.m_food;
                 m_reaserchText.text = "Reaserch = " + (int)Income.Instance.m_reaserch;
 
-                m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.NULL);
-                m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HAPPYSTONE);
-                m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HEALTHSTONE);
-                m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.TERRAFORMINGSTONE);
+                m_NullStoneText.text = "NullStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.NULL) + " + " + GatherAmount(eResouceType.NULL).ToString();
+                m_HappyStoneText.text = "HappyStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HAPPYSTONE) + " + " + GatherAmount(eResouceType.HAPPYSTONE).ToString();
+                m_HealthStoneText.text = "HealthStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.HEALTHSTONE) + " + " + GatherAmount(eResouceType.HEALTHSTONE).ToString();
+                m_TerraformingStoneText.text = "TerraformingStone = " + (int)Income.Instance.GetSpecialResouce(eResouceType.TERRAFORMINGSTONE) + " + " + GatherAmount(eResouceType.TERRAFORMINGSTONE).ToString();
 
                 m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
                 m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
+                
+                m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
+                m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
+                m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
+
+                m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
+
+                m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
+                m_planetHealthText.text = "Health = " + m_activePlanet.m_health;
+                m_planetHappynessText.text = "Happyness = " + m_activePlanet.m_happiness;
 
                 m_totalRunTime += Time.deltaTime;
 
@@ -123,6 +144,58 @@ public class GameManager : MonoBehaviour
         }
 
         m_totalRunTimeText.text = "Game Run time: " + m_totalRunTime;
+    }
+
+    private float GatherAmount(eResouceType type)
+    {
+        float holder = 0;
+
+        switch (type)
+        {
+            case eResouceType.NULL:
+                foreach (SpecialResources sp in m_activePlanet.m_spList)
+                {
+                    if (sp.GetType() == typeof(NullStone))
+                    {
+                        holder += sp.m_amountGathered;
+                    }
+                }
+                break;
+
+            case eResouceType.HEALTHSTONE:
+                foreach (SpecialResources sp in m_activePlanet.m_spList)
+                {
+                    if (sp.GetType() == typeof(HealthStone))
+                    {
+                        holder += sp.m_amountGathered;
+                    }
+                }
+                break;
+            case eResouceType.TERRAFORMINGSTONE:
+                foreach (SpecialResources sp in m_activePlanet.m_spList)
+                {
+                    if (sp.GetType() == typeof(TerraFormingStone))
+                    {
+                        holder += sp.m_amountGathered;
+                    }
+                }
+                break;
+            case eResouceType.HAPPYSTONE:
+                foreach (SpecialResources sp in m_activePlanet.m_spList)
+                {
+                    if (sp.GetType() == typeof(HappyStone))
+                    {
+                        holder += sp.m_amountGathered;
+                    }
+                }
+                break;
+            case eResouceType.END:
+                break;
+            default:
+                break;
+        }
+
+        return holder;
     }
 
     private void UpdateBuildingsText()
@@ -166,6 +239,31 @@ public class GameManager : MonoBehaviour
         m_Terraformer[0].text = "Basic Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICTERRAFORMINGSTATION].Count);
         m_Terraformer[1].text = "Decent Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTATION].Count);
         m_Terraformer[2].text = "Advanced Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDTERRAFORMINGSTATION].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_nullStoneMine[0].text = "Basic Null Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICNULLSTONEMINE].Count);
+        m_nullStoneMine[1].text = "Decent Null Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTNULLSTONEMINE].Count);
+        m_nullStoneMine[2].text = "Advanced Null Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDNULLSTONEMINE].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_happyStoneMine[0].text = "Basic Happy Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICHAPPYSTONEMINE].Count);
+        m_happyStoneMine[1].text = "Decent Happy Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTHAPPYSTONEMINE].Count);
+        m_happyStoneMine[2].text = "Advanced Happy Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDHAPPYSTONEMINE].Count);
+        
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_healthStoneMine[0].text = "Basic Health Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICHEALTHSTONEMINE].Count);
+        m_healthStoneMine[1].text = "Decent Health Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTHEALTHSTONEMINE].Count);
+        m_healthStoneMine[2].text = "Advanced Health Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDHEALTHSTONEMINE].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_terraformingStoneMine[0].text = "Basic Terraforming Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICTERRAFORMINGSTONEMINE].Count);
+        m_terraformingStoneMine[1].text = "Decent Terraforming Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTONEMINE].Count);
+        m_terraformingStoneMine[2].text = "Advanced Terraforming Mine: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDTERRAFORMINGSTONEMINE].Count);
+
     }
 
     public void PushState()

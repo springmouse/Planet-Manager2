@@ -123,4 +123,72 @@ public class BuilderManager : MonoBehaviour
     {
         GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDTERRAFORMINGSTATION, GameManager.GM.m_activePlanet);
     }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicNullMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICNULLSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentNullMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTNULLSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedNullMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDNULLSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicHappyMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICHAPPYSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentHappyMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTHAPPYSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedHappyMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDHAPPYSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicHealthMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICHEALTHSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentHealthMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTHEALTHSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedhealthMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDHEALTHSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicTerraformingMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICTERRAFORMINGSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentTerraformingMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTTERRAFORMINGSTONEMINE, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedTerraformingMine()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDTERRAFORMINGSTONEMINE, GameManager.GM.m_activePlanet);
+    }
 }

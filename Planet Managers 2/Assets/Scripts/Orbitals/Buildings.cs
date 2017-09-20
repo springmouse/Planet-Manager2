@@ -415,45 +415,113 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICNULLSTONEMINE:
+                if (Income.Instance.m_minerals >= 30 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTNULLSTONEMINE:
+                if (Income.Instance.m_minerals >= 60 && m_buildings[eBuildingTypes.BASICNULLSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICNULLSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDNULLSTONEMINE:
+                if (Income.Instance.m_minerals >= 120 && m_buildings[eBuildingTypes.DECENTNULLSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTNULLSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHAPPYSTONEMINE:
+                if (Income.Instance.m_minerals >= 30 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTHAPPYSTONEMINE:
+                if (Income.Instance.m_minerals >= 60 && m_buildings[eBuildingTypes.BASICHAPPYSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICHAPPYSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDHAPPYSTONEMINE:
+                if (Income.Instance.m_minerals >= 120 && m_buildings[eBuildingTypes.DECENTHAPPYSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTHAPPYSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHEALTHSTONEMINE:
+                if (Income.Instance.m_minerals >= 30 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTHEALTHSTONEMINE:
+                if (Income.Instance.m_minerals >= 60 && m_buildings[eBuildingTypes.BASICHEALTHSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICHEALTHSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDHEALTHSTONEMINE:
+                if (Income.Instance.m_minerals >= 120 && m_buildings[eBuildingTypes.DECENTHEALTHSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTHEALTHSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICTERRAFORMINGSTONEMINE:
+                if (Income.Instance.m_minerals >= 30 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTTERRAFORMINGSTONEMINE:
+                if (Income.Instance.m_minerals >= 60 && m_buildings[eBuildingTypes.BASICTERRAFORMINGSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICTERRAFORMINGSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDTERRAFORMINGSTONEMINE:
+                if (Income.Instance.m_minerals >= 120 && m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTONEMINE].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTONEMINE].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -495,11 +563,31 @@ public class BuildingsManager
 [XmlInclude(typeof(BasicTerraformingStation))]
 [XmlInclude(typeof(DecentTerraformingStation))]
 [XmlInclude(typeof(AdvancedTerraformingStation))]
+[XmlInclude(typeof(NullStoneMine))]
+[XmlInclude(typeof(BasicNullStoneMine))]
+[XmlInclude(typeof(DecentNullStoneMine))]
+[XmlInclude(typeof(AdvancedNullStoneMine))]
+[XmlInclude(typeof(HappyStoneMine))]
+[XmlInclude(typeof(BasicHappyStoneMine))]
+[XmlInclude(typeof(DecentHappyStoneMine))]
+[XmlInclude(typeof(AdvancedHappyStoneMine))]
+[XmlInclude(typeof(HealthStoneMine))]
+[XmlInclude(typeof(BasicHealthStoneMine))]
+[XmlInclude(typeof(DecentHealthStoneMine))]
+[XmlInclude(typeof(AdvancedHealthStoneMine))]
+[XmlInclude(typeof(TerraformingStoneMine))]
+[XmlInclude(typeof(BasicTerraformingStoneMine))]
+[XmlInclude(typeof(DecentTerraformingStoneMine))]
+[XmlInclude(typeof(AdvancedTerraformingStoneMine))]
 public class Buildings
 {
     protected float m_basicBuildTime = 20;
     protected float m_decentBuildTime = 40;
     protected float m_advancedBuildTime = 60;
+
+    protected float m_specialbasicBuildTime = 40;
+    protected float m_specialdecentBuildTime = 80;
+    protected float m_specialadvancedBuildTime = 160;
 
     public float m_timer;
 
@@ -552,6 +640,7 @@ public class Buildings
             if (m_timer <= 0)
             {
                 IncomeType();
+                SpecialResourceIncome();
 
                 m_planet.m_energyIncome += -m_energyMaintanince;
                 m_planet.m_foodIncome += -m_foodMaintanince;
@@ -572,13 +661,18 @@ public class Buildings
     } 
 
     protected virtual void IncomeType() { }
+    protected virtual void CleanUp() { }
 
+    protected virtual void SpecialResourceIncome() { }
+    protected virtual void CleanUpSpecialResource() { }
 
     ~Buildings()
     {
         if (m_isbuilding == false)
         {
             CleanUp();
+            CleanUpSpecialResource();
+
             m_planet.m_energyIncome += m_energyMaintanince;
             m_planet.m_foodIncome += m_foodMaintanince;
 
@@ -589,7 +683,6 @@ public class Buildings
         }
     }
 
-    protected virtual void CleanUp() {}
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1178,6 +1271,394 @@ public class AdvancedTerraformingStation : Hospital
         m_healthCost = 0;
 
         m_addPlanetSpace = 20;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class NullStoneMine : Buildings
+{
+    public NullStoneMine() { }
+
+    protected override void SpecialResourceIncome()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(NullStone))
+            {
+                sp.IncreaseGatherAmount(m_mulitpliyer);
+            }
+        }
+    }
+
+    protected override void CleanUpSpecialResource()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(NullStone))
+            {
+                sp.IncreaseGatherAmount(-m_mulitpliyer);
+            }
+        }
+    }
+}
+
+public class BasicNullStoneMine : NullStoneMine
+{
+    public BasicNullStoneMine() { }
+
+    public BasicNullStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+
+        m_timer = m_specialbasicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 6;
+
+
+        m_happynessCost = 4;
+        m_healthCost = 4;
+    }
+}
+
+public class DecentNullStoneMine : NullStoneMine
+{
+    public DecentNullStoneMine() { }
+
+    public DecentNullStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+
+        m_timer = m_specialdecentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 8;
+
+
+        m_happynessCost = 6;
+        m_healthCost = 6;
+    }
+}
+
+public class AdvancedNullStoneMine : NullStoneMine
+{
+    public AdvancedNullStoneMine() { }
+
+    public AdvancedNullStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+
+        m_timer = m_specialadvancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 10;
+        m_foodMaintanince = 10;
+
+        m_happynessCost = 8;
+        m_healthCost = 8;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class HappyStoneMine : Buildings
+{
+    public HappyStoneMine() { }
+
+    protected override void SpecialResourceIncome()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(HappyStone))
+            {
+                sp.IncreaseGatherAmount(m_mulitpliyer);
+            }
+        }
+    }
+
+    protected override void CleanUpSpecialResource()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(HappyStone))
+            {
+                sp.IncreaseGatherAmount(-m_mulitpliyer);
+            }
+        }
+    }
+}
+
+public class BasicHappyStoneMine : HappyStoneMine
+{
+    public BasicHappyStoneMine() { }
+
+    public BasicHappyStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+
+        m_timer = m_specialbasicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 6;
+
+
+        m_happynessCost = 4;
+        m_healthCost = 4;
+    }
+}
+
+public class DecentHappyStoneMine : HappyStoneMine
+{
+    public DecentHappyStoneMine() { }
+
+    public DecentHappyStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+
+        m_timer = m_specialdecentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 8;
+
+
+        m_happynessCost = 6;
+        m_healthCost = 6;
+    }
+}
+
+public class AdvancedHappyStoneMine : HappyStoneMine
+{
+    public AdvancedHappyStoneMine() { }
+
+    public AdvancedHappyStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+
+        m_timer = m_specialadvancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 10;
+        m_foodMaintanince = 10;
+
+        m_happynessCost = 8;
+        m_healthCost = 8;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class HealthStoneMine : Buildings
+{
+    public HealthStoneMine() { }
+
+    protected override void SpecialResourceIncome()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(HealthStone))
+            {
+                sp.IncreaseGatherAmount(m_mulitpliyer);
+            }
+        }
+    }
+
+    protected override void CleanUpSpecialResource()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(HealthStone))
+            {
+                sp.IncreaseGatherAmount(-m_mulitpliyer);
+            }
+        }
+    }
+}
+
+public class BasicHealthStoneMine : HealthStoneMine
+{
+    public BasicHealthStoneMine() { }
+
+    public BasicHealthStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+
+        m_timer = m_specialbasicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 6;
+
+
+        m_happynessCost = 4;
+        m_healthCost = 4;
+    }
+}
+
+public class DecentHealthStoneMine : HealthStoneMine
+{
+    public DecentHealthStoneMine() { }
+
+    public DecentHealthStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+
+        m_timer = m_specialdecentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 8;
+
+
+        m_happynessCost = 6;
+        m_healthCost = 6;
+    }
+}
+
+public class AdvancedHealthStoneMine : HealthStoneMine
+{
+    public AdvancedHealthStoneMine() { }
+
+    public AdvancedHealthStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+
+        m_timer = m_specialadvancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 10;
+        m_foodMaintanince = 10;
+
+        m_happynessCost = 8;
+        m_healthCost = 8;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class TerraformingStoneMine : Buildings
+{
+    public TerraformingStoneMine() { }
+
+    protected override void SpecialResourceIncome()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(TerraFormingStone))
+            {
+                sp.IncreaseGatherAmount(m_mulitpliyer);
+            }
+        }
+    }
+
+    protected override void CleanUpSpecialResource()
+    {
+        foreach (SpecialResources sp in m_planet.m_spList)
+        {
+            if (sp.GetType() == typeof(TerraFormingStone))
+            {
+                sp.IncreaseGatherAmount(-m_mulitpliyer);
+            }
+        }
+    }
+}
+
+public class BasicTerraformingStoneMine : TerraformingStoneMine
+{
+    public BasicTerraformingStoneMine() { }
+
+    public BasicTerraformingStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+
+        m_timer = m_specialbasicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 1;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 6;
+
+
+        m_happynessCost = 4;
+        m_healthCost = 4;
+    }
+}
+
+public class DecentTerraformingStoneMine : TerraformingStoneMine
+{
+    public DecentTerraformingStoneMine() { }
+
+    public DecentTerraformingStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+
+        m_timer = m_specialdecentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 2;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 8;
+
+
+        m_happynessCost = 6;
+        m_healthCost = 6;
+    }
+}
+
+public class AdvancedTerraformingStoneMine : TerraformingStoneMine
+{
+    public AdvancedTerraformingStoneMine() { }
+
+    public AdvancedTerraformingStoneMine(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+
+        m_timer = m_specialadvancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 4;
+
+        m_energyMaintanince = 10;
+        m_foodMaintanince = 10;
+
+        m_happynessCost = 8;
+        m_healthCost = 8;
     }
 }
 

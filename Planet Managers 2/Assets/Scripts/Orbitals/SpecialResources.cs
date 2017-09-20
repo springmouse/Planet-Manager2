@@ -31,6 +31,11 @@ public class SpecialResources
         }
     }
 
+    public void IncreaseGatherAmount(int amount)
+    {
+        m_amountGathered += amount;
+    }
+
     public string m_name;
 
     public eResouceType m_type = eResouceType.NULL;

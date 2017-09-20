@@ -248,46 +248,46 @@ public class Factory
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICNULLSTONEMINE:
-                break;
+                return new BasicNullStoneMine(planet);
 
             case eBuildingTypes.DECENTNULLSTONEMINE:
-                break;
+                return new DecentNullStoneMine(planet);
 
             case eBuildingTypes.ADVANCEDNULLSTONEMINE:
-                break;
+                return new AdvancedNullStoneMine(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHAPPYSTONEMINE:
-                break;
+                return new BasicHappyStoneMine(planet);
 
             case eBuildingTypes.DECENTHAPPYSTONEMINE:
-                break;
+                return new DecentHappyStoneMine(planet);
 
             case eBuildingTypes.ADVANCEDHAPPYSTONEMINE:
-                break;
+                return new AdvancedHappyStoneMine(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHEALTHSTONEMINE:
-                break;
+                return new BasicHealthStoneMine(planet);
 
             case eBuildingTypes.DECENTHEALTHSTONEMINE:
-                break;
+                return new DecentHealthStoneMine(planet);
 
             case eBuildingTypes.ADVANCEDHEALTHSTONEMINE:
-                break;
+                return new AdvancedHealthStoneMine(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICTERRAFORMINGSTONEMINE:
-                break;
+                return new BasicTerraformingStoneMine(planet);
 
             case eBuildingTypes.DECENTTERRAFORMINGSTONEMINE:
-                break;
+                return new DecentTerraformingStoneMine(planet);
 
             case eBuildingTypes.ADVANCEDTERRAFORMINGSTONEMINE:
-                break;
+                return new AdvancedTerraformingStoneMine(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

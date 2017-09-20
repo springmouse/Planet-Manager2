@@ -200,16 +200,6 @@ public class InGameState : States
             }
             
             m_activePlanet.Update(deltaTime);
-
-            GameManager.GM.m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
-            GameManager.GM.m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
-            GameManager.GM.m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
-
-            GameManager.GM.m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
-
-            GameManager.GM.m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
-            GameManager.GM.m_planetHealthText.text = "Health = " + m_activePlanet.m_health;
-            GameManager.GM.m_planetHappynessText.text = "Happyness = " + m_activePlanet.m_happiness;
         }
     }
 
@@ -262,6 +252,34 @@ public class InGameState : States
         for (int i = textNum; i < 3; i++)
         {
             GameManager.GM.m_specialResouces[i].text = "";
+        }
+
+        GameManager.GM.m_nullMineHolder.SetActive(false);
+        GameManager.GM.m_happyMineHolder.SetActive(false);
+        GameManager.GM.m_healthMineHolder.SetActive(false);
+        GameManager.GM.m_TerraformingMineHolder.SetActive(false);
+
+        foreach (SpecialResources sp in m_activePlanet.m_spList)
+        {
+            if (sp.GetType() == typeof(NullStone))
+            {
+                GameManager.GM.m_nullMineHolder.SetActive(true);
+            }
+
+            if (sp.GetType() == typeof(HappyStone))
+            {
+                GameManager.GM.m_happyMineHolder.SetActive(true);
+            }
+
+            if (sp.GetType() == typeof(HealthStone))
+            {
+                GameManager.GM.m_healthMineHolder.SetActive(true);
+            }
+
+            if (sp.GetType() == typeof(TerraFormingStone))
+            {
+                GameManager.GM.m_TerraformingMineHolder.SetActive(true);
+            }
         }
     }
 
