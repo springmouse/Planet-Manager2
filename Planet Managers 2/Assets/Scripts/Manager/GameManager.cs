@@ -151,9 +151,21 @@ public class GameManager : MonoBehaviour
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        m_clinic[0].text = "Basic Clinic: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICHOSPITAL].Count);
+        m_clinic[1].text = "Decent Clinic: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTHOSPITAL].Count);
+        m_clinic[2].text = "Advanced Clinic: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDHOSPITAL].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         m_park[0].text = "Basic Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICPARK].Count);
         m_park[1].text = "Decent Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTPARK].Count);
         m_park[2].text = "Advanced Park: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDPARK].Count);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        m_Terraformer[0].text = "Basic Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.BASICTERRAFORMINGSTATION].Count);
+        m_Terraformer[1].text = "Decent Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTATION].Count);
+        m_Terraformer[2].text = "Advanced Terraformer: " + (m_activePlanet.m_buildings.m_buildings[eBuildingTypes.ADVANCEDTERRAFORMINGSTATION].Count);
     }
 
     public void PushState()

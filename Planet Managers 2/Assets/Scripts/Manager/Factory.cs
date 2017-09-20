@@ -215,13 +215,13 @@ public class Factory
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHOSPITAL:
-                break;
+                return new BasicHospital(planet);
 
             case eBuildingTypes.DECENTHOSPITAL:
-                break;
+                return new DecentHospital(planet);
 
             case eBuildingTypes.ADVANCEDHOSPITAL:
-                break;
+                return new AdvancedHospital(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -237,13 +237,13 @@ public class Factory
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICTERRAFORMINGSTATION:
-                break;
+                return new BasicTerraformingStation(planet);
 
             case eBuildingTypes.DECENTTERRAFORMINGSTATION:
-                break;
+                return new DecentTerraformingStation(planet);
 
             case eBuildingTypes.ADVANCEDTERRAFORMINGSTATION:
-                break;
+                return new AdvancedTerraformingStation(planet);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

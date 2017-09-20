@@ -334,12 +334,29 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICHOSPITAL:
+                if (Income.Instance.m_minerals >= 30 && Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] >= 1 && (planet.m_usedSpace + 1) <= planet.m_maxSpace)
+                {
+                    planet.m_usedSpace += 1;
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTHOSPITAL:
+                if (Income.Instance.m_minerals >= 60 && Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] >= 2 && m_buildings[eBuildingTypes.BASICHOSPITAL].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.BASICHOSPITAL].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDHOSPITAL:
+                if (Income.Instance.m_minerals >= 120 && Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] >= 4 && m_buildings[eBuildingTypes.DECENTHOSPITAL].Count >= 2)
+                {
+                    planet.m_usedSpace += -1;
+                    m_buildings[eBuildingTypes.DECENTHOSPITAL].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -373,12 +390,26 @@ public class BuildingsManager
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             case eBuildingTypes.BASICTERRAFORMINGSTATION:
+                if (Income.Instance.m_minerals >= 30 && Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] >= 1)
+                {
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.DECENTTERRAFORMINGSTATION:
+                if (Income.Instance.m_minerals >= 60 && Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] >= 2)
+                {
+                    m_buildings[eBuildingTypes.BASICTERRAFORMINGSTATION].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             case eBuildingTypes.ADVANCEDTERRAFORMINGSTATION:
+                if (Income.Instance.m_minerals >= 120 && Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] >= 4)
+                {
+                    m_buildings[eBuildingTypes.DECENTTERRAFORMINGSTATION].RemoveRange(0, 2);
+                    m_buildings[type].Add(Factory.Instance.CreatNewBuilding(type, planet));
+                }
                 break;
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -456,6 +487,14 @@ public class BuildingsManager
 [XmlInclude(typeof(BasicPark))]
 [XmlInclude(typeof(DecentPark))]
 [XmlInclude(typeof(AdvancedPark))]
+[XmlInclude(typeof(Hospital))]
+[XmlInclude(typeof(BasicHospital))]
+[XmlInclude(typeof(DecentHospital))]
+[XmlInclude(typeof(AdvancedHospital))]
+[XmlInclude(typeof(TerraformingStation))]
+[XmlInclude(typeof(BasicTerraformingStation))]
+[XmlInclude(typeof(DecentTerraformingStation))]
+[XmlInclude(typeof(AdvancedTerraformingStation))]
 public class Buildings
 {
     protected float m_basicBuildTime = 20;
@@ -480,6 +519,8 @@ public class Buildings
     public int m_healthCost;
     public int m_happynessCost;
 
+    public int m_addPlanetSpace;
+
     public bool m_isbuilding = true;
 
     [XmlIgnore]
@@ -498,6 +539,8 @@ public class Buildings
 
         m_happynessCost = 0;
         m_healthCost = 0;
+
+        m_addPlanetSpace = 0;
     }
 
     public virtual void Update(float deltaTime)
@@ -515,6 +558,8 @@ public class Buildings
 
                 m_planet.m_happiness += -m_happynessCost;
                 m_planet.m_health += -m_healthCost;
+
+                m_planet.m_maxSpace += m_addPlanetSpace;
 
                 m_isbuilding = false;
             }
@@ -539,6 +584,8 @@ public class Buildings
 
             m_planet.m_health += m_healthCost;
             m_planet.m_happiness += m_happynessCost;
+
+            m_planet.m_maxSpace -= m_addPlanetSpace;
         }
     }
 
@@ -872,7 +919,6 @@ public class AdvancedLab : Lab
 
 //////////////////////////////////////////////////////////////////////////////
 
-
 public class Park : Buildings
 {
     public Park() { }
@@ -899,7 +945,7 @@ public class BasicPark : Park
 
         m_planet = planet;
 
-        m_mulitpliyer = 1;
+        m_mulitpliyer = 0;
 
         m_energyMaintanince = 2;
         m_foodMaintanince = 4;
@@ -923,7 +969,7 @@ public class DecentPark : Park
 
         m_planet = planet;
 
-        m_mulitpliyer = 2;
+        m_mulitpliyer = 0;
 
         m_energyMaintanince = 2;
         m_foodMaintanince = 5;
@@ -947,7 +993,7 @@ public class AdvancedPark : Park
 
         m_planet = planet;
 
-        m_mulitpliyer = 4;
+        m_mulitpliyer = 0;
 
         m_energyMaintanince = 2;
         m_foodMaintanince = 6;
@@ -956,3 +1002,182 @@ public class AdvancedPark : Park
         m_healthCost = 0;
     }
 }
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class Hospital : Buildings
+{
+    public Hospital() { }
+
+    protected override void IncomeType()
+    {
+    }
+
+    protected override void CleanUp()
+    {
+    }
+}
+
+public class BasicHospital : Hospital
+{
+    public BasicHospital() { }
+
+    public BasicHospital(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+        Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] -= 1;
+
+        m_timer = m_basicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 4;
+        m_foodMaintanince = 2;
+
+
+        m_happynessCost = 0;
+        m_healthCost = -12;
+    }
+}
+
+public class DecentHospital : Hospital
+{
+    public DecentHospital() { }
+
+    public DecentHospital(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+        Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] -= 2;
+
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 5;
+        m_foodMaintanince = 3;
+
+
+        m_happynessCost = 0;
+        m_healthCost = -24;
+    }
+}
+
+public class AdvancedHospital : Hospital
+{
+    public AdvancedHospital() { }
+
+    public AdvancedHospital(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+        Income.Instance.m_specialResouces[eResouceType.HEALTHSTONE] -= 4;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 4;
+
+        m_happynessCost = 0;
+        m_healthCost = -48;
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+public class TerraformingStation : Buildings
+{
+    public TerraformingStation() { }
+
+    protected override void IncomeType()
+    {
+    }
+
+    protected override void CleanUp()
+    {
+    }
+}
+
+public class BasicTerraformingStation : Hospital
+{
+    public BasicTerraformingStation() { }
+
+    public BasicTerraformingStation(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialBasicCost;
+        Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] -= 1;
+
+        m_timer = m_basicBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 6;
+        m_foodMaintanince = 3;
+
+
+        m_happynessCost = 0;
+        m_healthCost = 0;
+
+        m_addPlanetSpace = 5;
+    }
+}
+
+public class DecentTerraformingStation : Hospital
+{
+    public DecentTerraformingStation() { }
+
+    public DecentTerraformingStation(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialDecentCost;
+        Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] -= 2;
+
+        m_timer = m_decentBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 8;
+        m_foodMaintanince = 4;
+
+
+        m_happynessCost = 0;
+        m_healthCost = 0;
+
+        m_addPlanetSpace = 10;
+    }
+}
+
+public class AdvancedTerraformingStation : Hospital
+{
+    public AdvancedTerraformingStation() { }
+
+    public AdvancedTerraformingStation(Orbital planet)
+    {
+        Income.Instance.m_minerals -= m_specialAdvancedCost;
+        Income.Instance.m_specialResouces[eResouceType.TERRAFORMINGSTONE] -= 4;
+
+        m_timer = m_advancedBuildTime;
+
+        m_planet = planet;
+
+        m_mulitpliyer = 0;
+
+        m_energyMaintanince = 10;
+        m_foodMaintanince = 5;
+
+        m_happynessCost = 0;
+        m_healthCost = 0;
+
+        m_addPlanetSpace = 20;
+    }
+}
+

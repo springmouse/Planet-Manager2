@@ -74,6 +74,24 @@ public class BuilderManager : MonoBehaviour
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+    public void BuildBasicHospital()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICHOSPITAL, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentHospital()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTHOSPITAL, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedHospital()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDHOSPITAL, GameManager.GM.m_activePlanet);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public void BuildBasicPark()
     {
         GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICPARK, GameManager.GM.m_activePlanet);
@@ -87,5 +105,22 @@ public class BuilderManager : MonoBehaviour
     public void BuildAdvancedPark()
     {
         GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDPARK, GameManager.GM.m_activePlanet);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void BuildBasicTerraformer()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.BASICTERRAFORMINGSTATION, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildDecentTerraformer()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.DECENTTERRAFORMINGSTATION, GameManager.GM.m_activePlanet);
+    }
+
+    public void BuildAdvancedTerraformer()
+    {
+        GameManager.GM.m_activePlanet.m_buildings.SetBuilding(eBuildingTypes.ADVANCEDTERRAFORMINGSTATION, GameManager.GM.m_activePlanet);
     }
 }
