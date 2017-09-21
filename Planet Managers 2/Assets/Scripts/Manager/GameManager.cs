@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     public Text m_totalRunTimeText;
     private float m_totalRunTime;
 
+    public GameObject planetBuildings;
+    public GameObject ReaserchPanle;
+
     #region UI
 
     public Text m_mineralText;
@@ -98,6 +101,8 @@ public class GameManager : MonoBehaviour
         gameObject.GetComponent<ButtonBehavioursMenu>().SetMenuState(ms);
 
         Application.runInBackground = true;
+
+        OpenPlanetBuildings();
 	}
 
 
@@ -281,5 +286,17 @@ public class GameManager : MonoBehaviour
 
         STM.RemoveRegisteredState(IGS);
 
+    }
+
+    public void OpenPlanetBuildings()
+    {
+        planetBuildings.SetActive(true);
+        ReaserchPanle.SetActive(false);
+    }
+
+    public void OpenReaserchPanle()
+    {
+        planetBuildings.SetActive(false);
+        ReaserchPanle.SetActive(true);
     }
 }

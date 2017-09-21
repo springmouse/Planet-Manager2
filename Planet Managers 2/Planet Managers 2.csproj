@@ -91,6 +91,8 @@
     <Compile Include="Assets\Scripts\Player\Income.cs" />
     <Compile Include="Assets\Scripts\Player\IncomeSaveFile.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\Tech.cs" />
+    <Compile Include="Assets\Scripts\Player\TechSave.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Saves\Saber Imperium.xml" />
