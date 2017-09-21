@@ -375,12 +375,248 @@ public class Tech : MonoBehaviour
 
     }
 
+    //////////////////////////////////////////////
+    //////////////////////////////////////////////
+
     public void ReaserchDecentMine()
     {
         if (Income.Instance.m_reaserch >= 500)
         {
             Income.Instance.m_reaserch -= 500;
             m_reaserchedDecentMine = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedMine()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentMine)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedMine = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentPower()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentPower = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedPower()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentPower)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedPower = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentFarm()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentFarm = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedFarm()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentFarm)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedFarm = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentLab()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentLab = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedLab()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentLab)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedLab = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentPark()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentPark = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedPark()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentPark)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedPark = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentClinic()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentClinic = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedClinic()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentClinic)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedClinic = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentTerraformingStation()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentTerraformingStation = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedTerraformingStation()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentTerraformingStation)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedTerraformingStation = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentNullMine()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentNullMine = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedNullMine()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentNullMine)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedNullMine = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentHealthMine()
+    { 
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentHealthMine = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedHealthMine()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentHealthMine)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedHealthMine = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentHappyMine()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentHappyMine = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedHappyMine()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentHappyMine)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedHappyMine = true;
+            SetUpActive();
+        }
+    }
+
+    //////////////////////////////////////////////
+
+    public void ReaserchDecentTerraformingMine()
+    {
+        if (Income.Instance.m_reaserch >= 500)
+        {
+            Income.Instance.m_reaserch -= 500;
+            m_reaserchedDecentTerraformingStoneMine = true;
+            SetUpActive();
+        }
+    }
+
+    public void ReaserchAdvancedTerraformingMine()
+    {
+        if (Income.Instance.m_reaserch >= 1000 && m_reaserchedDecentTerraformingStoneMine)
+        {
+            Income.Instance.m_reaserch -= 1000;
+            m_reaserchedAdvancedTerraformingStoneMine = true;
             SetUpActive();
         }
     }

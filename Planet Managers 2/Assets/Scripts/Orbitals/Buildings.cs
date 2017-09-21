@@ -969,6 +969,9 @@ public class BasicLab : Lab
 
         m_energyMaintanince = 6;
         m_foodMaintanince = 3;
+
+        m_happynessCost = 3;
+        m_healthCost = 3;
     }
 }
 
@@ -988,6 +991,9 @@ public class DecentLab : Lab
 
         m_energyMaintanince = 8;
         m_foodMaintanince = 4;
+
+        m_happynessCost = 4;
+        m_healthCost = 4;
     }
 }
 
@@ -1007,6 +1013,9 @@ public class AdvancedLab : Lab
 
         m_energyMaintanince = 12;
         m_foodMaintanince = 6;
+
+        m_happynessCost = 6;
+        m_healthCost = 6;
     }
 }
 

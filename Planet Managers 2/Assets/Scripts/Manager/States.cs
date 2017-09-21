@@ -132,6 +132,8 @@ public class InGameState : States
     [XmlElement(ElementName = "Active_Planet")]
     public Orbital m_activePlanet;
 
+    public TechSave m_saveTech = new TechSave();
+
     public IncomeSaveFile m_incomeSaveFile = new IncomeSaveFile();
 
     public string m_saveName = "tester";
@@ -304,10 +306,50 @@ public class InGameState : States
         StreamWriter streamWriter = new StreamWriter(Application.dataPath + "/Saves/" + m_saveName + ".xml");
         
         ConvertDicToList();
+
+        SaveTech();
        
         mySerializer.Serialize(streamWriter, this);
         
         streamWriter.Close();
+    }
+
+    public void SaveTech()
+    {
+        Tech tech = GameManager.GM.GetTech();
+
+        m_saveTech.m_reaserchedDecentMine = tech.m_reaserchedDecentMine;
+        m_saveTech.m_reaserchedAdvancedMine = tech.m_reaserchedAdvancedMine;
+
+        m_saveTech.m_reaserchedDecentPower = tech.m_reaserchedDecentPower;
+        m_saveTech.m_reaserchedAdvancedPower = tech.m_reaserchedAdvancedPower;
+
+        m_saveTech.m_reaserchedDecentFarm = tech.m_reaserchedDecentFarm;
+        m_saveTech.m_reaserchedAdvancedFarm = tech.m_reaserchedAdvancedFarm;
+
+        m_saveTech.m_reaserchedDecentLab = tech.m_reaserchedDecentLab;
+        m_saveTech.m_reaserchedAdvancedLab = tech.m_reaserchedAdvancedLab;
+
+        m_saveTech.m_reaserchedDecentPark = tech.m_reaserchedDecentPark;
+        m_saveTech.m_reaserchedAdvancedPark = tech.m_reaserchedAdvancedPark;
+
+        m_saveTech.m_reaserchedDecentClinic = tech.m_reaserchedDecentClinic;
+        m_saveTech.m_reaserchedAdvancedClinic = tech.m_reaserchedAdvancedClinic;
+
+        m_saveTech.m_reaserchedDecentTerraformingStation = tech.m_reaserchedDecentTerraformingStation;
+        m_saveTech.m_reaserchedAdvancedTerraformingStation = tech.m_reaserchedAdvancedTerraformingStation;
+
+        m_saveTech.m_reaserchedDecentNullMine = tech.m_reaserchedDecentNullMine;
+        m_saveTech.m_reaserchedAdvancedNullMine = tech.m_reaserchedAdvancedNullMine;
+
+        m_saveTech.m_reaserchedDecentHealthMine = tech.m_reaserchedDecentHealthMine;
+        m_saveTech.m_reaserchedAdvancedHealthMine = tech.m_reaserchedAdvancedHealthMine;
+
+        m_saveTech.m_reaserchedDecentHappyMine = tech.m_reaserchedDecentHappyMine;
+        m_saveTech.m_reaserchedAdvancedHappyMine = tech.m_reaserchedAdvancedHappyMine;
+
+        m_saveTech.m_reaserchedDecentTerraformingStoneMine = tech.m_reaserchedDecentTerraformingStoneMine;
+        m_saveTech.m_reaserchedAdvancedTerraformingStoneMine = tech.m_reaserchedAdvancedTerraformingStoneMine;
     }
 
     public static InGameState Deserialize(string name)
@@ -322,9 +364,51 @@ public class InGameState : States
 
         SetUpContainers(p);
 
+        LoadTech(p);
+
         p.m_changedActivePlanets = true;
 
         return p;
+    }
+
+    private static void LoadTech(InGameState p)
+    {
+        Tech tech = GameManager.GM.GetTech();
+
+        tech.m_reaserchedDecentMine = p.m_saveTech.m_reaserchedDecentMine;
+        tech.m_reaserchedAdvancedMine = p.m_saveTech.m_reaserchedAdvancedMine;
+
+        tech.m_reaserchedDecentPower = p.m_saveTech.m_reaserchedDecentPower;
+        tech.m_reaserchedAdvancedPower = p.m_saveTech.m_reaserchedAdvancedPower;
+
+        tech.m_reaserchedDecentFarm = p.m_saveTech.m_reaserchedDecentFarm;
+        tech.m_reaserchedAdvancedFarm = p.m_saveTech.m_reaserchedAdvancedFarm;
+
+        tech.m_reaserchedDecentLab = p.m_saveTech.m_reaserchedDecentLab;
+        tech.m_reaserchedAdvancedLab = p.m_saveTech.m_reaserchedAdvancedLab;
+
+        tech.m_reaserchedDecentPark = p.m_saveTech.m_reaserchedDecentPark;
+        tech.m_reaserchedAdvancedPark = p.m_saveTech.m_reaserchedAdvancedPark;
+
+        tech.m_reaserchedDecentClinic = p.m_saveTech.m_reaserchedDecentClinic;
+        tech.m_reaserchedAdvancedClinic = p.m_saveTech.m_reaserchedAdvancedClinic;
+
+        tech.m_reaserchedDecentTerraformingStation = p.m_saveTech.m_reaserchedDecentTerraformingStation;
+        tech.m_reaserchedAdvancedTerraformingStation = p.m_saveTech.m_reaserchedAdvancedTerraformingStation;
+
+        tech.m_reaserchedDecentNullMine = p.m_saveTech.m_reaserchedDecentNullMine;
+        tech.m_reaserchedAdvancedNullMine = p.m_saveTech.m_reaserchedAdvancedNullMine;
+
+        tech.m_reaserchedDecentHealthMine = p.m_saveTech.m_reaserchedDecentHealthMine;
+        tech.m_reaserchedAdvancedHealthMine = p.m_saveTech.m_reaserchedAdvancedHealthMine;
+
+        tech.m_reaserchedDecentHappyMine = p.m_saveTech.m_reaserchedDecentHappyMine;
+        tech.m_reaserchedAdvancedHappyMine = p.m_saveTech.m_reaserchedAdvancedHappyMine;
+
+        tech.m_reaserchedDecentTerraformingStoneMine = p.m_saveTech.m_reaserchedDecentTerraformingStoneMine;
+        tech.m_reaserchedAdvancedTerraformingStoneMine = p.m_saveTech.m_reaserchedAdvancedTerraformingStoneMine;
+
+        tech.SetUpActive();
     }
 
     private static void SetUpContainers(InGameState p)

@@ -299,4 +299,9 @@ public class GameManager : MonoBehaviour
         planetBuildings.SetActive(false);
         ReaserchPanle.SetActive(true);
     }
+
+    public Tech GetTech()
+    {
+        return gameObject.GetComponent<Tech>();
+    }
 }

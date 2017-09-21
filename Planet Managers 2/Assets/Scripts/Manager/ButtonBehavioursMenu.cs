@@ -67,42 +67,46 @@ public class ButtonBehavioursMenu : MonoBehaviour {
 
     void LoadGameButtons()
     {
-        if (MS.m_nameListCreated == false)
+        if (MS != null)
         {
-            int count = 50;
-            Vector2 holder = new Vector3(-10, 230, 0);
-
-            foreach (Button btn in m_loadGameButtons)
+            if (MS.m_nameListCreated == false)
             {
-                Destroy(btn.gameObject);
-            }
+                int count = 50;
+                Vector2 holder = new Vector3(-10, 230, 0);
 
-            m_loadGameButtons.Clear();
-
-            foreach (string _name in MS.m_saveNames)
-            {
-                Button btn = Button.Instantiate(m_loadButtonPrefab, holder, Quaternion.identity, m_loadGame.transform);
-
-                btn.gameObject.transform.localPosition = holder;
-
-                btn.onClick.AddListener(() => 
+                foreach (Button btn in m_loadGameButtons)
                 {
-                    GameManager.GM.RegisterInGameState(InGameState.Deserialize(_name));
-                    GameManager.GM.PushState();
-                });
+                    Destroy(btn.gameObject);
+                }
 
-                btn.name = _name;
+                m_loadGameButtons.Clear();
 
-                Text textholder = btn.GetComponentInChildren<Text>();
+                foreach (string _name in MS.m_saveNames)
+                {
+                    Button btn = Button.Instantiate(m_loadButtonPrefab, holder, Quaternion.identity, m_loadGame.transform);
 
-                textholder.text = _name;
+                    btn.gameObject.transform.localPosition = holder;
 
-                m_loadGameButtons.Add(btn);
+                    btn.onClick.AddListener(() =>
+                    {
+                        GameManager.GM.RegisterInGameState(InGameState.Deserialize(_name));
+                        GameManager.GM.PushState();
+                    });
 
-                holder.y -= count;
+                    btn.name = _name;
+
+                    Text textholder = btn.GetComponentInChildren<Text>();
+
+                    textholder.text = _name;
+
+                    m_loadGameButtons.Add(btn);
+
+                    holder.y -= count;
+                }
+
+                MS.m_nameListCreated = true;
             }
 
-            MS.m_nameListCreated = true;
         }
     }
 
