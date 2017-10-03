@@ -132,11 +132,11 @@ public class GameManager : MonoBehaviour
                 m_reaserchTimer.text = "Reaserch in: " + (int)m_activePlanet.GetReaserchTimerRemaining();
                 m_incomeTimer.text = "Income in: " + (int)m_activePlanet.GetResourceTimerRemaining();
                 
-                m_incomeMineralsText.text = "Minerals Income = " + m_activePlanet.CalculateMineralIncome();
-                m_incomeEnergyText.text = "Energy Income = " + m_activePlanet.CalculatePowerIncome();
-                m_incomeFoodText.text = "Food Income = " + m_activePlanet.CalculateFoodIncome();
+                m_incomeMineralsText.text = "Minerals Income = " + System.Math.Round(m_activePlanet.CalculateMineralIncome(), 2);
+                m_incomeEnergyText.text = "Energy Income = " + System.Math.Round(m_activePlanet.CalculatePowerIncome(), 2);
+                m_incomeFoodText.text = "Food Income = " + System.Math.Round(m_activePlanet.CalculateFoodIncome(), 2);
 
-                m_reaserIncomeText.text = "Reaserch Income = " + m_activePlanet.CalculateReaserchIncome();
+                m_reaserIncomeText.text = "Reaserch Income = " + System.Math.Round(m_activePlanet.CalculateReaserchIncome(), 2);
 
                 m_planetSpaceText.text = "Space = " + m_activePlanet.m_usedSpace + "/" + m_activePlanet.m_maxSpace;
                 m_planetHealthText.text = "Health = " + m_activePlanet.m_health;

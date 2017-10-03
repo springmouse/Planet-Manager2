@@ -160,11 +160,13 @@ public class Orbital
     public float CalculateReaserchIncome()
     {
         float r = m_reaserchIncome;
+
         if (Income.Instance.m_energy <= 0 && m_energyIncome <= 0)
         {
             r = 0;
         }
-        return r;
+
+        return CalculatePlanetStatusImpact(CalculatePlanetStatusImpact(r, m_happiness), m_health);
     }
 
     public float CalculateMineralIncome()
@@ -181,7 +183,7 @@ public class Orbital
             m *= 0.5f;
         }
 
-        return m;
+        return CalculatePlanetStatusImpact(CalculatePlanetStatusImpact(m, m_happiness), m_health);
     }
 
     public float CalculatePowerIncome()
@@ -193,7 +195,7 @@ public class Orbital
             e *= 0.5f;
         }
 
-        return e;
+        return CalculatePlanetStatusImpact(CalculatePlanetStatusImpact(e, m_happiness), m_health);
     }
 
     public float CalculateFoodIncome()
@@ -205,7 +207,28 @@ public class Orbital
             f *= 0.5f;
         }
 
-        return f;
+        return CalculatePlanetStatusImpact(CalculatePlanetStatusImpact(f, m_happiness), m_health);
+    }
+
+    public float CalculatePlanetStatusImpact(float amount, float H)
+    {
+        float modifire = 0;
+
+        if (H > 0)
+        {
+            modifire = H / 100;
+        }
+        else
+        {
+            modifire = 0.01f;
+        }
+
+        if (modifire > 2)
+        {
+            modifire = 2;
+        }
+
+        return amount * modifire;
     }
 
 }

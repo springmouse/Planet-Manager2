@@ -18,6 +18,9 @@ public class ButtonBehavioursMenu : MonoBehaviour {
     public Text m_gameName;
     public Text m_notValidName;
 
+    public Scrollbar m_loadGameScrollbar;
+    public float m_previousScrollValue;
+
     public float m_InvalidTimer;
 
    
@@ -25,6 +28,8 @@ public class ButtonBehavioursMenu : MonoBehaviour {
     {
         Menu();
         m_InvalidTimer = 6;
+
+        m_previousScrollValue = m_loadGameScrollbar.value;
     }
 
     public void LoadGameButtonFunction()
@@ -38,8 +43,12 @@ public class ButtonBehavioursMenu : MonoBehaviour {
 
         LoadGameButtons();
 
+        float diff = m_previousScrollValue - ((50 * (m_loadGameButtons.Count - 1)) * m_loadGameScrollbar.value);
+
         foreach (Button btn in m_loadGameButtons)
         {
+            btn.gameObject.transform.localPosition -= new Vector3(0, diff, 0);
+
             if (btn.gameObject.transform.localPosition.y > 230 || btn.gameObject.transform.localPosition.y < -230)
             {
                 btn.gameObject.SetActive(false);
@@ -48,6 +57,8 @@ public class ButtonBehavioursMenu : MonoBehaviour {
             {
                 btn.gameObject.SetActive(true);
             }
+
+            Debug.Log(btn.transform.localPosition);
         }
 
         if (Input.GetKeyDown("escape"))
@@ -63,6 +74,8 @@ public class ButtonBehavioursMenu : MonoBehaviour {
         {
             m_notValidName.gameObject.SetActive(false);
         }
+
+        m_previousScrollValue = ((50 * (m_loadGameButtons.Count - 1)) * m_loadGameScrollbar.value);
     }
 
     void LoadGameButtons()
@@ -71,8 +84,10 @@ public class ButtonBehavioursMenu : MonoBehaviour {
         {
             if (MS.m_nameListCreated == false)
             {
+                Debug.Log("oh no");
+
                 int count = 50;
-                Vector2 holder = new Vector3(-10, 230, 0);
+                Vector2 holder = new Vector3(-10, 220, 0);
 
                 foreach (Button btn in m_loadGameButtons)
                 {

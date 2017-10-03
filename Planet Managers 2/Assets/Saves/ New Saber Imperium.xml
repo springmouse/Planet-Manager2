@@ -1,0 +1,1911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InGameState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List_of_Dictonary_of_universe>
+    <Key_and_Value>
+      <key>Sol</key>
+      <All_orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>177363</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>6</m_baseMinerals>
+          <m_baseEnergy>14</m_baseEnergy>
+          <m_baseFood>5</m_baseFood>
+          <m_mineralIncome>6</m_mineralIncome>
+          <m_energyIncome>14</m_energyIncome>
+          <m_foodIncome>5</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>5</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>364195</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>20</m_baseMinerals>
+          <m_baseEnergy>8</m_baseEnergy>
+          <m_baseFood>1</m_baseFood>
+          <m_mineralIncome>20</m_mineralIncome>
+          <m_energyIncome>8</m_energyIncome>
+          <m_foodIncome>1</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>72</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialEarchLike">
+          <ID>218722</ID>
+          <m_name>Terrastrial Earth Like</m_name>
+          <m_baseMinerals>4</m_baseMinerals>
+          <m_baseEnergy>5</m_baseEnergy>
+          <m_baseFood>9</m_baseFood>
+          <m_mineralIncome>4</m_mineralIncome>
+          <m_energyIncome>5</m_energyIncome>
+          <m_foodIncome>9</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>37</m_maxSpace>
+          <m_health>100</m_health>
+          <m_happiness>100</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>315464</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>18</m_baseMinerals>
+          <m_baseEnergy>7</m_baseEnergy>
+          <m_baseFood>7</m_baseFood>
+          <m_mineralIncome>18</m_mineralIncome>
+          <m_energyIncome>7</m_energyIncome>
+          <m_foodIncome>7</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>87</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>260891</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>3</m_baseMinerals>
+          <m_baseEnergy>2</m_baseEnergy>
+          <m_baseFood>1</m_baseFood>
+          <m_mineralIncome>3</m_mineralIncome>
+          <m_energyIncome>2</m_energyIncome>
+          <m_foodIncome>1</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>39</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="AstroidBelt">
+          <ID>1007318</ID>
+          <m_name>Astroid Belt</m_name>
+          <m_baseMinerals>30</m_baseMinerals>
+          <m_baseEnergy>1</m_baseEnergy>
+          <m_baseFood>2</m_baseFood>
+          <m_mineralIncome>30</m_mineralIncome>
+          <m_energyIncome>1</m_energyIncome>
+          <m_foodIncome>2</m_foodIncome>
+          <m_relics>1</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>9</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="GasGaint">
+          <ID>203250</ID>
+          <m_name>Gas Gaint</m_name>
+          <m_baseMinerals>3</m_baseMinerals>
+          <m_baseEnergy>16</m_baseEnergy>
+          <m_baseFood>2</m_baseFood>
+          <m_mineralIncome>3</m_mineralIncome>
+          <m_energyIncome>16</m_energyIncome>
+          <m_foodIncome>2</m_foodIncome>
+          <m_relics>0</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>13</m_maxSpace>
+          <m_health>25</m_health>
+          <m_happiness>25</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="TerrestrialRocky">
+          <ID>1048587</ID>
+          <m_name>Terrastrial Rocky</m_name>
+          <m_baseMinerals>17</m_baseMinerals>
+          <m_baseEnergy>8</m_baseEnergy>
+          <m_baseFood>3</m_baseFood>
+          <m_mineralIncome>17</m_mineralIncome>
+          <m_energyIncome>8</m_energyIncome>
+          <m_foodIncome>3</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>99</m_maxSpace>
+          <m_health>50</m_health>
+          <m_happiness>75</m_happiness>
+          <m_usedSpace>0</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="TerraFormingStone">
+              <m_name>TerraFormingStone</m_name>
+              <m_type>TERRAFORMINGSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>0</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings />
+          </m_buildings>
+          <m_resourceTimer>0</m_resourceTimer>
+          <m_reaserchTimer>0</m_reaserchTimer>
+        </orbitals_in_system>
+        <orbitals_in_system xsi:type="StarterPlanet">
+          <ID>245419</ID>
+          <m_name>Terrastrial Earth</m_name>
+          <m_baseMinerals>10</m_baseMinerals>
+          <m_baseEnergy>7</m_baseEnergy>
+          <m_baseFood>8</m_baseFood>
+          <m_mineralIncome>60</m_mineralIncome>
+          <m_energyIncome>-12</m_energyIncome>
+          <m_foodIncome>-9</m_foodIncome>
+          <m_relics>2</m_relics>
+          <m_reaserchIncome>0</m_reaserchIncome>
+          <m_maxSpace>69</m_maxSpace>
+          <m_health>99</m_health>
+          <m_happiness>104</m_happiness>
+          <m_usedSpace>13</m_usedSpace>
+          <List_of_Special_Resouses>
+            <Special_Resouses xsi:type="HappyStone">
+              <m_name>HappyStone</m_name>
+              <m_type>HAPPYSTONE</m_type>
+              <m_timeSpentGathering>4.228534</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="HealthStone">
+              <m_name>HealthStone</m_name>
+              <m_type>HEALTHSTONE</m_type>
+              <m_timeSpentGathering>49.2631721</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+            <Special_Resouses xsi:type="NullStone">
+              <m_name>NullStone</m_name>
+              <m_type>NULL</m_type>
+              <m_timeSpentGathering>229.301086</m_timeSpentGathering>
+              <m_amountGathered>1</m_amountGathered>
+            </Special_Resouses>
+          </List_of_Special_Resouses>
+          <m_buildings>
+            <ListOfBuildings>
+              <Buildings>
+                <key>BASICMINE</key>
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.0197485462</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.0276028216</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.0302214473</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.02428379</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicMine">
+                    <m_timer>-0.02270361</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
+              </Buildings>
+              <Buildings>
+                <key>DECENTMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICPOWER</key>
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.0189584084</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPower">
+                    <m_timer>-0.0117305033</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>0</m_energyMaintanince>
+                    <m_foodMaintanince>3</m_foodMaintanince>
+                    <m_healthCost>3</m_healthCost>
+                    <m_happynessCost>2</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
+              </Buildings>
+              <Buildings>
+                <key>DECENTPOWER</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDPOWER</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICFARM</key>
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicFarm">
+                    <m_timer>-0.0317185558</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>0</m_foodMaintanince>
+                    <m_healthCost>2</m_healthCost>
+                    <m_happynessCost>3</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicFarm">
+                    <m_timer>-0.0249918476</m_timer>
+                    <m_mulitpliyer>1</m_mulitpliyer>
+                    <m_energyMaintanince>3</m_energyMaintanince>
+                    <m_foodMaintanince>0</m_foodMaintanince>
+                    <m_healthCost>2</m_healthCost>
+                    <m_happynessCost>3</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
+              </Buildings>
+              <Buildings>
+                <key>DECENTFARM</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDFARM</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICREASERCH</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTREASERCH</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDREASERCH</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICHOSPITAL</key>
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicHospital">
+                    <m_timer>-0.0165065564</m_timer>
+                    <m_mulitpliyer>0</m_mulitpliyer>
+                    <m_energyMaintanince>4</m_energyMaintanince>
+                    <m_foodMaintanince>2</m_foodMaintanince>
+                    <m_healthCost>-12</m_healthCost>
+                    <m_happynessCost>0</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicHospital">
+                    <m_timer>-0.006384153</m_timer>
+                    <m_mulitpliyer>0</m_mulitpliyer>
+                    <m_energyMaintanince>4</m_energyMaintanince>
+                    <m_foodMaintanince>2</m_foodMaintanince>
+                    <m_healthCost>-12</m_healthCost>
+                    <m_happynessCost>0</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
+              </Buildings>
+              <Buildings>
+                <key>DECENTHOSPITAL</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDHOSPITAL</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICPARK</key>
+                <All_Buildings_On_Planet>
+                  <Buildings xsi:type="BasicPark">
+                    <m_timer>-0.0259817615</m_timer>
+                    <m_mulitpliyer>0</m_mulitpliyer>
+                    <m_energyMaintanince>2</m_energyMaintanince>
+                    <m_foodMaintanince>4</m_foodMaintanince>
+                    <m_healthCost>0</m_healthCost>
+                    <m_happynessCost>-12</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                  <Buildings xsi:type="BasicPark">
+                    <m_timer>-0.0174210966</m_timer>
+                    <m_mulitpliyer>0</m_mulitpliyer>
+                    <m_energyMaintanince>2</m_energyMaintanince>
+                    <m_foodMaintanince>4</m_foodMaintanince>
+                    <m_healthCost>0</m_healthCost>
+                    <m_happynessCost>-12</m_happynessCost>
+                    <m_addPlanetSpace>0</m_addPlanetSpace>
+                    <m_isbuilding>false</m_isbuilding>
+                  </Buildings>
+                </All_Buildings_On_Planet>
+              </Buildings>
+              <Buildings>
+                <key>DECENTPARK</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDPARK</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICTERRAFORMINGSTATION</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTTERRAFORMINGSTATION</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDTERRAFORMINGSTATION</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICHEALTHSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTHEALTHSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDHEALTHSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICHAPPYSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTHAPPYSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDHAPPYSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICTERRAFORMINGSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTTERRAFORMINGSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDTERRAFORMINGSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>BASICNULLSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>DECENTNULLSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+              <Buildings>
+                <key>ADVANCEDNULLSTONEMINE</key>
+                <All_Buildings_On_Planet />
+              </Buildings>
+            </ListOfBuildings>
+          </m_buildings>
+          <m_resourceTimer>19.0940971</m_resourceTimer>
+          <m_reaserchTimer>49.2631721</m_reaserchTimer>
+        </orbitals_in_system>
+      </All_orbitals_in_system>
+    </Key_and_Value>
+  </List_of_Dictonary_of_universe>
+  <System_Names_List>
+    <System_Names>Sol</System_Names>
+  </System_Names_List>
+  <Player_orbitals_List>
+    <Player_plantes xsi:type="StarterPlanet">
+      <ID>245419</ID>
+      <m_name>Terrastrial Earth</m_name>
+      <m_baseMinerals>10</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>8</m_baseFood>
+      <m_mineralIncome>60</m_mineralIncome>
+      <m_energyIncome>-12</m_energyIncome>
+      <m_foodIncome>-9</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>69</m_maxSpace>
+      <m_health>99</m_health>
+      <m_happiness>104</m_happiness>
+      <m_usedSpace>13</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>4.228534</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>49.2631721</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>229.301086</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings>
+          <Buildings>
+            <key>BASICMINE</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0197485462</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0276028216</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0302214473</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.02428379</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.02270361</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICPOWER</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0189584084</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0117305033</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTPOWER</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDPOWER</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICFARM</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0317185558</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_healthCost>2</m_healthCost>
+                <m_happynessCost>3</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0249918476</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_healthCost>2</m_healthCost>
+                <m_happynessCost>3</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTFARM</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDFARM</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHOSPITAL</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicHospital">
+                <m_timer>-0.0165065564</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>2</m_foodMaintanince>
+                <m_healthCost>-12</m_healthCost>
+                <m_happynessCost>0</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicHospital">
+                <m_timer>-0.006384153</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>2</m_foodMaintanince>
+                <m_healthCost>-12</m_healthCost>
+                <m_happynessCost>0</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTHOSPITAL</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHOSPITAL</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICPARK</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPark">
+                <m_timer>-0.0259817615</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>2</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_healthCost>0</m_healthCost>
+                <m_happynessCost>-12</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPark">
+                <m_timer>-0.0174210966</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>2</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_healthCost>0</m_healthCost>
+                <m_happynessCost>-12</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTPARK</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDPARK</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+        </ListOfBuildings>
+      </m_buildings>
+      <m_resourceTimer>19.0940971</m_resourceTimer>
+      <m_reaserchTimer>49.2631721</m_reaserchTimer>
+    </Player_plantes>
+  </Player_orbitals_List>
+  <Active_System_of_orbitals_List>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>177363</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>6</m_baseMinerals>
+      <m_baseEnergy>14</m_baseEnergy>
+      <m_baseFood>5</m_baseFood>
+      <m_mineralIncome>6</m_mineralIncome>
+      <m_energyIncome>14</m_energyIncome>
+      <m_foodIncome>5</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>5</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>364195</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>20</m_baseMinerals>
+      <m_baseEnergy>8</m_baseEnergy>
+      <m_baseFood>1</m_baseFood>
+      <m_mineralIncome>20</m_mineralIncome>
+      <m_energyIncome>8</m_energyIncome>
+      <m_foodIncome>1</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>72</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialEarchLike">
+      <ID>218722</ID>
+      <m_name>Terrastrial Earth Like</m_name>
+      <m_baseMinerals>4</m_baseMinerals>
+      <m_baseEnergy>5</m_baseEnergy>
+      <m_baseFood>9</m_baseFood>
+      <m_mineralIncome>4</m_mineralIncome>
+      <m_energyIncome>5</m_energyIncome>
+      <m_foodIncome>9</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>37</m_maxSpace>
+      <m_health>100</m_health>
+      <m_happiness>100</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>315464</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>18</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>7</m_baseFood>
+      <m_mineralIncome>18</m_mineralIncome>
+      <m_energyIncome>7</m_energyIncome>
+      <m_foodIncome>7</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>87</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>260891</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>3</m_baseMinerals>
+      <m_baseEnergy>2</m_baseEnergy>
+      <m_baseFood>1</m_baseFood>
+      <m_mineralIncome>3</m_mineralIncome>
+      <m_energyIncome>2</m_energyIncome>
+      <m_foodIncome>1</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>39</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="AstroidBelt">
+      <ID>1007318</ID>
+      <m_name>Astroid Belt</m_name>
+      <m_baseMinerals>30</m_baseMinerals>
+      <m_baseEnergy>1</m_baseEnergy>
+      <m_baseFood>2</m_baseFood>
+      <m_mineralIncome>30</m_mineralIncome>
+      <m_energyIncome>1</m_energyIncome>
+      <m_foodIncome>2</m_foodIncome>
+      <m_relics>1</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>9</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="GasGaint">
+      <ID>203250</ID>
+      <m_name>Gas Gaint</m_name>
+      <m_baseMinerals>3</m_baseMinerals>
+      <m_baseEnergy>16</m_baseEnergy>
+      <m_baseFood>2</m_baseFood>
+      <m_mineralIncome>3</m_mineralIncome>
+      <m_energyIncome>16</m_energyIncome>
+      <m_foodIncome>2</m_foodIncome>
+      <m_relics>0</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>13</m_maxSpace>
+      <m_health>25</m_health>
+      <m_happiness>25</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="TerrestrialRocky">
+      <ID>1048587</ID>
+      <m_name>Terrastrial Rocky</m_name>
+      <m_baseMinerals>17</m_baseMinerals>
+      <m_baseEnergy>8</m_baseEnergy>
+      <m_baseFood>3</m_baseFood>
+      <m_mineralIncome>17</m_mineralIncome>
+      <m_energyIncome>8</m_energyIncome>
+      <m_foodIncome>3</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>99</m_maxSpace>
+      <m_health>50</m_health>
+      <m_happiness>75</m_happiness>
+      <m_usedSpace>0</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="TerraFormingStone">
+          <m_name>TerraFormingStone</m_name>
+          <m_type>TERRAFORMINGSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>0</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings />
+      </m_buildings>
+      <m_resourceTimer>0</m_resourceTimer>
+      <m_reaserchTimer>0</m_reaserchTimer>
+    </Active_plantes>
+    <Active_plantes xsi:type="StarterPlanet">
+      <ID>245419</ID>
+      <m_name>Terrastrial Earth</m_name>
+      <m_baseMinerals>10</m_baseMinerals>
+      <m_baseEnergy>7</m_baseEnergy>
+      <m_baseFood>8</m_baseFood>
+      <m_mineralIncome>60</m_mineralIncome>
+      <m_energyIncome>-12</m_energyIncome>
+      <m_foodIncome>-9</m_foodIncome>
+      <m_relics>2</m_relics>
+      <m_reaserchIncome>0</m_reaserchIncome>
+      <m_maxSpace>69</m_maxSpace>
+      <m_health>99</m_health>
+      <m_happiness>104</m_happiness>
+      <m_usedSpace>13</m_usedSpace>
+      <List_of_Special_Resouses>
+        <Special_Resouses xsi:type="HappyStone">
+          <m_name>HappyStone</m_name>
+          <m_type>HAPPYSTONE</m_type>
+          <m_timeSpentGathering>4.228534</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="HealthStone">
+          <m_name>HealthStone</m_name>
+          <m_type>HEALTHSTONE</m_type>
+          <m_timeSpentGathering>49.2631721</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+        <Special_Resouses xsi:type="NullStone">
+          <m_name>NullStone</m_name>
+          <m_type>NULL</m_type>
+          <m_timeSpentGathering>229.301086</m_timeSpentGathering>
+          <m_amountGathered>1</m_amountGathered>
+        </Special_Resouses>
+      </List_of_Special_Resouses>
+      <m_buildings>
+        <ListOfBuildings>
+          <Buildings>
+            <key>BASICMINE</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0197485462</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0276028216</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.0302214473</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.02428379</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicMine">
+                <m_timer>-0.02270361</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICPOWER</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0189584084</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPower">
+                <m_timer>-0.0117305033</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>0</m_energyMaintanince>
+                <m_foodMaintanince>3</m_foodMaintanince>
+                <m_healthCost>3</m_healthCost>
+                <m_happynessCost>2</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTPOWER</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDPOWER</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICFARM</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0317185558</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_healthCost>2</m_healthCost>
+                <m_happynessCost>3</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicFarm">
+                <m_timer>-0.0249918476</m_timer>
+                <m_mulitpliyer>1</m_mulitpliyer>
+                <m_energyMaintanince>3</m_energyMaintanince>
+                <m_foodMaintanince>0</m_foodMaintanince>
+                <m_healthCost>2</m_healthCost>
+                <m_happynessCost>3</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTFARM</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDFARM</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDREASERCH</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHOSPITAL</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicHospital">
+                <m_timer>-0.0165065564</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>2</m_foodMaintanince>
+                <m_healthCost>-12</m_healthCost>
+                <m_happynessCost>0</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicHospital">
+                <m_timer>-0.006384153</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>4</m_energyMaintanince>
+                <m_foodMaintanince>2</m_foodMaintanince>
+                <m_healthCost>-12</m_healthCost>
+                <m_happynessCost>0</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTHOSPITAL</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHOSPITAL</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICPARK</key>
+            <All_Buildings_On_Planet>
+              <Buildings xsi:type="BasicPark">
+                <m_timer>-0.0259817615</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>2</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_healthCost>0</m_healthCost>
+                <m_happynessCost>-12</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+              <Buildings xsi:type="BasicPark">
+                <m_timer>-0.0174210966</m_timer>
+                <m_mulitpliyer>0</m_mulitpliyer>
+                <m_energyMaintanince>2</m_energyMaintanince>
+                <m_foodMaintanince>4</m_foodMaintanince>
+                <m_healthCost>0</m_healthCost>
+                <m_happynessCost>-12</m_happynessCost>
+                <m_addPlanetSpace>0</m_addPlanetSpace>
+                <m_isbuilding>false</m_isbuilding>
+              </Buildings>
+            </All_Buildings_On_Planet>
+          </Buildings>
+          <Buildings>
+            <key>DECENTPARK</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDPARK</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDTERRAFORMINGSTATION</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHEALTHSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDHAPPYSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDTERRAFORMINGSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>BASICNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>DECENTNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+          <Buildings>
+            <key>ADVANCEDNULLSTONEMINE</key>
+            <All_Buildings_On_Planet />
+          </Buildings>
+        </ListOfBuildings>
+      </m_buildings>
+      <m_resourceTimer>19.0940971</m_resourceTimer>
+      <m_reaserchTimer>49.2631721</m_reaserchTimer>
+    </Active_plantes>
+  </Active_System_of_orbitals_List>
+  <Active_System_Name>Sol</Active_System_Name>
+  <Active_Planet xsi:type="StarterPlanet">
+    <ID>245419</ID>
+    <m_name>Terrastrial Earth</m_name>
+    <m_baseMinerals>10</m_baseMinerals>
+    <m_baseEnergy>7</m_baseEnergy>
+    <m_baseFood>8</m_baseFood>
+    <m_mineralIncome>60</m_mineralIncome>
+    <m_energyIncome>-12</m_energyIncome>
+    <m_foodIncome>-9</m_foodIncome>
+    <m_relics>2</m_relics>
+    <m_reaserchIncome>0</m_reaserchIncome>
+    <m_maxSpace>69</m_maxSpace>
+    <m_health>99</m_health>
+    <m_happiness>104</m_happiness>
+    <m_usedSpace>13</m_usedSpace>
+    <List_of_Special_Resouses>
+      <Special_Resouses xsi:type="HappyStone">
+        <m_name>HappyStone</m_name>
+        <m_type>HAPPYSTONE</m_type>
+        <m_timeSpentGathering>4.228534</m_timeSpentGathering>
+        <m_amountGathered>1</m_amountGathered>
+      </Special_Resouses>
+      <Special_Resouses xsi:type="HealthStone">
+        <m_name>HealthStone</m_name>
+        <m_type>HEALTHSTONE</m_type>
+        <m_timeSpentGathering>49.2631721</m_timeSpentGathering>
+        <m_amountGathered>1</m_amountGathered>
+      </Special_Resouses>
+      <Special_Resouses xsi:type="NullStone">
+        <m_name>NullStone</m_name>
+        <m_type>NULL</m_type>
+        <m_timeSpentGathering>229.301086</m_timeSpentGathering>
+        <m_amountGathered>1</m_amountGathered>
+      </Special_Resouses>
+    </List_of_Special_Resouses>
+    <m_buildings>
+      <ListOfBuildings>
+        <Buildings>
+          <key>BASICMINE</key>
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.0197485462</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.0276028216</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.0302214473</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.02428379</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicMine">
+              <m_timer>-0.02270361</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
+        </Buildings>
+        <Buildings>
+          <key>DECENTMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICPOWER</key>
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.0189584084</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPower">
+              <m_timer>-0.0117305033</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>0</m_energyMaintanince>
+              <m_foodMaintanince>3</m_foodMaintanince>
+              <m_healthCost>3</m_healthCost>
+              <m_happynessCost>2</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
+        </Buildings>
+        <Buildings>
+          <key>DECENTPOWER</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDPOWER</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICFARM</key>
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicFarm">
+              <m_timer>-0.0317185558</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>0</m_foodMaintanince>
+              <m_healthCost>2</m_healthCost>
+              <m_happynessCost>3</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicFarm">
+              <m_timer>-0.0249918476</m_timer>
+              <m_mulitpliyer>1</m_mulitpliyer>
+              <m_energyMaintanince>3</m_energyMaintanince>
+              <m_foodMaintanince>0</m_foodMaintanince>
+              <m_healthCost>2</m_healthCost>
+              <m_happynessCost>3</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
+        </Buildings>
+        <Buildings>
+          <key>DECENTFARM</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDFARM</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICREASERCH</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTREASERCH</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDREASERCH</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICHOSPITAL</key>
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicHospital">
+              <m_timer>-0.0165065564</m_timer>
+              <m_mulitpliyer>0</m_mulitpliyer>
+              <m_energyMaintanince>4</m_energyMaintanince>
+              <m_foodMaintanince>2</m_foodMaintanince>
+              <m_healthCost>-12</m_healthCost>
+              <m_happynessCost>0</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicHospital">
+              <m_timer>-0.006384153</m_timer>
+              <m_mulitpliyer>0</m_mulitpliyer>
+              <m_energyMaintanince>4</m_energyMaintanince>
+              <m_foodMaintanince>2</m_foodMaintanince>
+              <m_healthCost>-12</m_healthCost>
+              <m_happynessCost>0</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
+        </Buildings>
+        <Buildings>
+          <key>DECENTHOSPITAL</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDHOSPITAL</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICPARK</key>
+          <All_Buildings_On_Planet>
+            <Buildings xsi:type="BasicPark">
+              <m_timer>-0.0259817615</m_timer>
+              <m_mulitpliyer>0</m_mulitpliyer>
+              <m_energyMaintanince>2</m_energyMaintanince>
+              <m_foodMaintanince>4</m_foodMaintanince>
+              <m_healthCost>0</m_healthCost>
+              <m_happynessCost>-12</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+            <Buildings xsi:type="BasicPark">
+              <m_timer>-0.0174210966</m_timer>
+              <m_mulitpliyer>0</m_mulitpliyer>
+              <m_energyMaintanince>2</m_energyMaintanince>
+              <m_foodMaintanince>4</m_foodMaintanince>
+              <m_healthCost>0</m_healthCost>
+              <m_happynessCost>-12</m_happynessCost>
+              <m_addPlanetSpace>0</m_addPlanetSpace>
+              <m_isbuilding>false</m_isbuilding>
+            </Buildings>
+          </All_Buildings_On_Planet>
+        </Buildings>
+        <Buildings>
+          <key>DECENTPARK</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDPARK</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICTERRAFORMINGSTATION</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTTERRAFORMINGSTATION</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDTERRAFORMINGSTATION</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICHEALTHSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTHEALTHSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDHEALTHSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICHAPPYSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTHAPPYSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDHAPPYSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICTERRAFORMINGSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTTERRAFORMINGSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDTERRAFORMINGSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>BASICNULLSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>DECENTNULLSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+        <Buildings>
+          <key>ADVANCEDNULLSTONEMINE</key>
+          <All_Buildings_On_Planet />
+        </Buildings>
+      </ListOfBuildings>
+    </m_buildings>
+    <m_resourceTimer>19.0940971</m_resourceTimer>
+    <m_reaserchTimer>49.2631721</m_reaserchTimer>
+  </Active_Planet>
+  <m_saveTech>
+    <m_reaserchedDecentMine>false</m_reaserchedDecentMine>
+    <m_reaserchedAdvancedMine>false</m_reaserchedAdvancedMine>
+    <m_reaserchedDecentPower>false</m_reaserchedDecentPower>
+    <m_reaserchedAdvancedPower>false</m_reaserchedAdvancedPower>
+    <m_reaserchedDecentFarm>false</m_reaserchedDecentFarm>
+    <m_reaserchedAdvancedFarm>false</m_reaserchedAdvancedFarm>
+    <m_reaserchedDecentLab>false</m_reaserchedDecentLab>
+    <m_reaserchedAdvancedLab>false</m_reaserchedAdvancedLab>
+    <m_reaserchedDecentPark>false</m_reaserchedDecentPark>
+    <m_reaserchedAdvancedPark>false</m_reaserchedAdvancedPark>
+    <m_reaserchedDecentClinic>false</m_reaserchedDecentClinic>
+    <m_reaserchedAdvancedClinic>false</m_reaserchedAdvancedClinic>
+    <m_reaserchedDecentTerraformingStation>false</m_reaserchedDecentTerraformingStation>
+    <m_reaserchedAdvancedTerraformingStation>false</m_reaserchedAdvancedTerraformingStation>
+    <m_reaserchedDecentNullMine>false</m_reaserchedDecentNullMine>
+    <m_reaserchedAdvancedNullMine>false</m_reaserchedAdvancedNullMine>
+    <m_reaserchedDecentHealthMine>false</m_reaserchedDecentHealthMine>
+    <m_reaserchedAdvancedHealthMine>false</m_reaserchedAdvancedHealthMine>
+    <m_reaserchedDecentHappyMine>false</m_reaserchedDecentHappyMine>
+    <m_reaserchedAdvancedHappyMine>false</m_reaserchedAdvancedHappyMine>
+    <m_reaserchedDecentTerraformingStoneMine>false</m_reaserchedDecentTerraformingStoneMine>
+    <m_reaserchedAdvancedTerraformingStoneMine>false</m_reaserchedAdvancedTerraformingStoneMine>
+  </m_saveTech>
+  <m_incomeSaveFile>
+    <All_Special_Resouces>
+      <Special_Resouces>
+        <key>NULL</key>
+        <value>0</value>
+      </Special_Resouces>
+      <Special_Resouces>
+        <key>HEALTHSTONE</key>
+        <value>1</value>
+      </Special_Resouces>
+      <Special_Resouces>
+        <key>HAPPYSTONE</key>
+        <value>3</value>
+      </Special_Resouces>
+      <Special_Resouces>
+        <key>TERRAFORMINGSTONE</key>
+        <value>0</value>
+      </Special_Resouces>
+    </All_Special_Resouces>
+    <m_minerals>63.5840073</m_minerals>
+    <m_energy>87.1736</m_energy>
+    <m_food>99.1848</m_food>
+    <m_reaserch>0</m_reaserch>
+  </m_incomeSaveFile>
+  <m_saveName> New Saber Imperium</m_saveName>
+</InGameState>
